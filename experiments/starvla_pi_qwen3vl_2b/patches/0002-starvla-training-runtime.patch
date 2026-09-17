@@ -1,0 +1,171 @@
+diff --git a/starVLA/dataloader/__init__.py b/starVLA/dataloader/__init__.py
+--- a/starVLA/dataloader/__init__.py
++++ b/starVLA/dataloader/__init__.py
+@@ -2,6 +2,7 @@
+ import os
+ from accelerate.logging import get_logger
+ import numpy as np
++import torch
+ from torch.utils.data import DataLoader
+ import numpy as np
+ import torch.distributed as dist
+@@ -52,12 +53,22 @@
+             "pin_memory": bool(vla_dataset_cfg.get("pin_memory", True)),
+             # shuffle=True
+         }
++        training_dataset = vla_dataset
++        if vla_dataset_cfg.get("shuffle_frames", False):
++            if len(vla_dataset.datasets) != 1:
++                raise ValueError("shuffle_frames requires exactly one training dataset")
++            # Index actual frames once per pass instead of sampling trajectories
++            # with replacement. Accelerate shards this shared permutation.
++            training_dataset = vla_dataset.datasets[0]
++            dataloader_kwargs["shuffle"] = True
++            dataloader_kwargs["generator"] = torch.Generator().manual_seed(int(cfg.seed))
++            logger.info(f"Training with shuffled frame passes: {len(training_dataset)} frames")
+         if num_workers > 0:
+             dataloader_kwargs["persistent_workers"] = bool(vla_dataset_cfg.get("persistent_workers", True))
+             dataloader_kwargs["prefetch_factor"] = int(vla_dataset_cfg.get("prefetch_factor", 2))
+ 
+         vla_train_dataloader = DataLoader(
+-            vla_dataset,
++            training_dataset,
+             **dataloader_kwargs,
+         )
+         if not dist.is_initialized() or dist.get_rank() == 0:
+diff --git a/starVLA/model/framework/share_tools.py b/starVLA/model/framework/share_tools.py
+--- a/starVLA/model/framework/share_tools.py
++++ b/starVLA/model/framework/share_tools.py
+@@ -375,7 +375,12 @@
+         run_dir = checkpoint_pt.parents[1]
+ 
+         # Get paths for `config.json`, `dataset_statistics.json` and pretrained checkpoint
+-        config_yaml, dataset_statistics_json = run_dir / "config.yaml", run_dir / "dataset_statistics.json"
++        # Access-tracked config.yaml can omit observation settings that were
++        # read through untracked helpers. Prefer the complete training snapshot.
++        config_yaml = run_dir / "config.full.yaml"
++        if not config_yaml.exists():
++            config_yaml = run_dir / "config.yaml"
++        dataset_statistics_json = run_dir / "dataset_statistics.json"
+         assert config_yaml.exists(), f"Missing `config.yaml` for `{run_dir = }`"
+         assert dataset_statistics_json.exists(), f"Missing `dataset_statistics.json` for `{run_dir = }`"
+ 
+diff --git a/starVLA/training/train_starvla.py b/starVLA/training/train_starvla.py
+--- a/starVLA/training/train_starvla.py
++++ b/starVLA/training/train_starvla.py
+@@ -13,6 +13,7 @@
+ # Standard Library
+ import argparse
+ import json
++import logging
+ import os
+ import time
+ from pathlib import Path
+@@ -69,6 +70,7 @@
+ 
+ # Initialize logger
+ logger = get_logger(__name__)
++logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
+ 
+ 
+ def load_fast_tokenizer():
+@@ -310,7 +312,9 @@
+             for i, group in enumerate(self.optimizer.param_groups):
+                 group_name = group.get("name", str(i))
+                 metrics[f"learning_rate/{group_name}"] = last_lrs[i] if i < len(last_lrs) else last_lrs[-1]
+-            metrics["epoch"] = round(self.completed_steps / len(self.vla_train_dataloader), 2)
++            frames = int(self.config.trainer.get("num_training_frames", len(self.vla_train_dataloader.dataset)))
++            metrics["samples_seen"] = self.completed_steps * self.total_batch_size
++            metrics["epoch"] = round(metrics["samples_seen"] / frames, 6)
+             if getattr(self, "_wandb_enabled", False):
+                 try:
+                     wandb.log(metrics, step=self.completed_steps)
+@@ -318,6 +322,8 @@
+                     self._wandb_enabled = False
+                     logger.warning(f"W&B log failed; disabling W&B: {exc}")
+             logger.info(f"Step {self.completed_steps}, Loss: {metrics})")
++            with open(Path(self.config.output_dir) / "metrics.jsonl", "a") as stream:
++                stream.write(json.dumps({"step": self.completed_steps, **metrics}) + "\n")
+ 
+     def _create_data_iterators(self):
+         """Create data iterators."""
+@@ -347,6 +353,10 @@
+             disable=not self.accelerator.is_local_main_process,
+         )
+ 
++        accumulated_loss = 0.0
++        accumulated_micro_batches = 0
++        accumulated_data_time = 0.0
++        accumulated_model_time = 0.0
+         while self.completed_steps < self.config.trainer.max_train_steps:
+             t_start_data = time.perf_counter()
+             batch_vla = self._get_next_batch()
+@@ -355,10 +365,19 @@
+             t_start_model = time.perf_counter()
+             step_metrics = self._train_step(batch_vla)
+             t_end_model = time.perf_counter()
++            accumulated_loss += step_metrics["action_dit_loss"]
++            accumulated_micro_batches += 1
++            accumulated_data_time += t_end_data - t_start_data
++            accumulated_model_time += t_end_model - t_start_model
+ 
+             if self.accelerator.sync_gradients:
+                 progress_bar.update(1)
+                 self.completed_steps += 1
++            else:
++                # Checkpoints/evaluation/logging belong to optimizer steps.
++                # Without this guard, step 0 evaluates on every accumulated
++                # micro-batch and each checkpoint is written repeatedly.
++                continue
+ 
+             if self.accelerator.is_local_main_process:
+                 progress_bar.set_postfix(
+@@ -371,9 +390,16 @@
+             if self.completed_steps % self.config.trainer.eval_interval == 0:
+                 step_metrics = self.eval_action_model(step_metrics)
+ 
+-            step_metrics["timing/data"] = t_end_data - t_start_data
+-            step_metrics["timing/model"] = t_end_model - t_start_model
++            mean_loss = torch.tensor(accumulated_loss / accumulated_micro_batches, device=self.accelerator.device)
++            step_metrics["action_dit_loss"] = self.accelerator.reduce(mean_loss, reduction="mean").item()
++            step_metrics["timing/data"] = accumulated_data_time
++            step_metrics["timing/model"] = accumulated_model_time
++            step_metrics["samples_per_second"] = self.total_batch_size / max(accumulated_data_time + accumulated_model_time, 1e-9)
+             self._log_metrics(step_metrics)
++            accumulated_loss = 0.0
++            accumulated_micro_batches = 0
++            accumulated_data_time = 0.0
++            accumulated_model_time = 0.0
+ 
+             if self.completed_steps % self.config.trainer.save_interval == 0 and self.completed_steps > 0:
+                 self._save_checkpoint()
+@@ -469,6 +495,17 @@
+ def main(cfg) -> None:
+     logger.info("VLA Training :: Warming Up")
+ 
++    accumulation = int(cfg.trainer.gradient_accumulation_steps)
++    accelerator.gradient_accumulation_steps = accumulation
++    if accelerator.state.deepspeed_plugin is not None:
++        # ZeRO-2 partitions gradients and cannot enter DeepSpeed.no_sync().
++        # The engine handles accumulation while reducing each micro-batch.
++        accelerator.gradient_state.plugin_kwargs["sync_each_batch"] = True
++        accelerator.gradient_state.plugin_kwargs["sync_with_dataloader"] = False
++        configured = accelerator.state.deepspeed_plugin.deepspeed_config.get("gradient_accumulation_steps", "auto")
++        if configured not in ("auto", accumulation):
++            raise ValueError(f"Gradient accumulation mismatch: YAML={accumulation}, DeepSpeed={configured}")
++
+     cfg = wrap_config(cfg)
+     logger.info("✅ Configuration wrapped for access tracking")
+ 
+diff --git a/starVLA/training/trainer_utils/trainer_tools.py b/starVLA/training/trainer_utils/trainer_tools.py
+--- a/starVLA/training/trainer_utils/trainer_tools.py
++++ b/starVLA/training/trainer_utils/trainer_tools.py
+@@ -296,7 +296,7 @@
+                     print(f"❌ cannot find module path: {path}")
+         else:  # full load
+             try:
+-                model.load_state_dict(checkpoint, strict=False)
++                model.load_state_dict(checkpoint, strict=True)
+                 if _dist_rank() == 0:
+                     print("✅ loaded <full_model> model parameters")
+                 loaded_modules = ["<full_model>"]

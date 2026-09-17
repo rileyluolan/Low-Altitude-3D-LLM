@@ -1,0 +1,6 @@
+plyfile<1.1.3
+trimesh
+rtree
+imageio-ffmpeg
+ninja
+opencv-python-headless==4.11.0.86

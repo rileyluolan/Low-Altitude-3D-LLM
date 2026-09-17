@@ -1,0 +1,12 @@
+{
+  "audit_date": "2026-09-16",
+  "base_sha256": "87e38d987fd2d1b7fd50b77529717d4fc19111b1c0ca58096f24e933b79b6c4b",
+  "all_tensors_finite": true,
+  "qwen_compared_tensors": 625,
+  "qwen_changed_tensors": 593,
+  "qwen_changed_element_fraction": 0.7180881923379662,
+  "language_layers_with_changed_weights": 28,
+  "trained_projector_layernorms": 28,
+  "source": "CPU audit of the existing base against pinned official Qwen3-VL-2B weights",
+  "limit": "Weight differences demonstrate changes, not the exact historical training step count."
+}

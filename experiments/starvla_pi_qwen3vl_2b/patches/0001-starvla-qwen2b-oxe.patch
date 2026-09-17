@@ -1,0 +1,65 @@
+diff --git a/starVLA/model/modules/vlm/QWen3.py b/starVLA/model/modules/vlm/QWen3.py
+--- a/starVLA/model/modules/vlm/QWen3.py
++++ b/starVLA/model/modules/vlm/QWen3.py
+@@ -50,6 +50,7 @@
+         qwenvl_config = config.framework.get("qwenvl", {})
+         model_id = qwenvl_config.get("base_vlm", "Qwen/Qwen3-VL-4B-Instruct")
+         attn_implementation = qwenvl_config.get("attn_implementation", "sdpa")
++        enable_grad_ckpt = bool(qwenvl_config.get("enable_gradient_checkpointing", False))
+         attn_implementation = "sdpa"
+         # Fallback to sdpa if flash_attention_2 is requested but flash_attn is not installed
+         if attn_implementation == "flash_attention_2":
+@@ -66,6 +67,14 @@
+         processor = AutoProcessor.from_pretrained(model_id)
+         processor.tokenizer.padding_side = "left"
+ 
++        if enable_grad_ckpt:
++            model.gradient_checkpointing_enable(
++                gradient_checkpointing_kwargs={"use_reentrant": False}
++            )
++            if hasattr(model, "enable_input_require_grads"):
++                model.enable_input_require_grads()
++            print("[QWen3] gradient_checkpointing ENABLED (use_reentrant=False)", flush=True)
++
+         self.model = model
+         self.processor = processor
+         self.config = config
+@@ -86,6 +95,11 @@
+         Forward pass delegating to underlying Qwen2.5-VL backbone.
+         """
+ 
++        # The VLA head consumes hidden states, not vocabulary logits. Keeping only
++        # the last logit avoids materialising a large [batch, sequence, vocab]
++        # tensor while preserving every hidden state used by the action module.
++        kwargs.setdefault("logits_to_keep", 1)
++        kwargs.setdefault("use_cache", False)
+         with torch.autocast("cuda", dtype=torch.bfloat16):
+             outputs = self.model(
+                 **kwargs,
+diff --git a/starVLA/dataloader/gr00t_lerobot/datasets.py b/starVLA/dataloader/gr00t_lerobot/datasets.py
+--- a/starVLA/dataloader/gr00t_lerobot/datasets.py
++++ b/starVLA/dataloader/gr00t_lerobot/datasets.py
+@@ -636,6 +636,23 @@
+         self._modality_keys = self._get_modality_keys()
+         self._delta_indices = self._get_delta_indices()
+         self._all_steps = self._get_all_steps()
++        if bool(self.data_cfg.get("filter_trajectories_to_cached_steps", False)):
++            # `_get_all_steps` omits episodes with empty language, but the mixture
++            # sampler historically sampled from the unfiltered episode metadata.
++            # Opt in to the same episode population represented by the cache so
++            # dataset sampling and recorded source statistics stay consistent.
++            valid_trajectory_ids = {trajectory_id for trajectory_id, _ in self._all_steps}
++            trajectory_mask = np.array(
++                [trajectory_id in valid_trajectory_ids for trajectory_id in self._trajectory_ids],
++                dtype=bool,
++            )
++            self._trajectory_ids = self._trajectory_ids[trajectory_mask]
++            self._trajectory_lengths = self._trajectory_lengths[trajectory_mask]
++            if int(os.environ.get("RANK", "0")) == 0:
++                print(
++                    f"Filtered {self.dataset_name} to {len(self._trajectory_ids)} "
++                    "trajectories represented by steps_data_index.pkl"
++                )
+         self.set_transforms_metadata(self.metadata)
+         self.set_epoch(0)
+ 

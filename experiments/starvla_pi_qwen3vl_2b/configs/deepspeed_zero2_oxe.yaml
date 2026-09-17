@@ -1,0 +1,9 @@
+compute_environment: LOCAL_MACHINE
+debug: false
+distributed_type: DEEPSPEED
+num_machines: 1
+num_processes: 8
+deepspeed_config:
+  deepspeed_config_file: ${oc.env:EXPERIMENT_ROOT}/configs/ds_zero2_oxe.json
+  deepspeed_multinode_launcher: standard
+  zero3_init_flag: false

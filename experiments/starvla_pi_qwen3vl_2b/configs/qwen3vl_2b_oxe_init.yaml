@@ -1,0 +1,55 @@
+run_id: qwen3vl_2b_pi_v3_oxe_init
+run_root_dir: ${oc.env:EXPERIMENT_ROOT}/artifacts/base
+seed: 42
+trackers: [jsonl]
+wandb_entity: null
+wandb_project: starvla_qwen3vl_2b_oxe
+is_debug: false
+version_id: "0.21"
+
+framework:
+  name: QwenPI_v3
+  qwenvl:
+    base_vlm: ${oc.env:MODEL_ROOT}
+    attn_implementation: sdpa
+  action_model:
+    action_model_type: LayerwiseFM
+    action_dim: 7
+    state_dim: 7
+    action_horizon: 16
+    repeated_diffusion_steps: 8
+    noise_beta_alpha: 1.5
+    noise_beta_beta: 1.0
+    noise_s: 0.999
+    num_inference_timesteps: 4
+    diffusion_model_cfg:
+      action_dit_hidden_dim: 1024
+      output_dim: 1024
+      dropout: 0.2
+      final_dropout: true
+      interleave_self_attention: false
+      norm_type: ada_norm
+      positional_embeddings: null
+      attention_head_dim: 64
+
+trainer:
+  max_train_steps: 1
+  num_warmup_steps: 0
+  save_interval: 1
+  eval_interval: 1000000
+  learning_rate:
+    base: 1.0e-05
+    qwen_vl_interface: 1.0e-05
+    project_layers: 1.0e-04
+    action_model: 1.0e-04
+  lr_scheduler_type: cosine_with_min_lr
+  scheduler_specific_kwargs: {min_lr: 5.0e-07}
+  freeze_modules: ""
+  repeated_diffusion_steps: 8
+  gradient_clipping: 1.0
+  optimizer:
+    name: AdamW
+    betas: [0.9, 0.95]
+    eps: 1.0e-08
+    weight_decay: 1.0e-08
+  save_format: pt

@@ -1,0 +1,21 @@
+{
+  "state": {
+    "x": {"original_key": "state", "start": 0, "end": 1, "dtype": "float32"},
+    "y": {"original_key": "state", "start": 1, "end": 2, "dtype": "float32"},
+    "z": {"original_key": "state", "start": 2, "end": 3, "dtype": "float32"},
+    "yaw": {"original_key": "state", "start": 3, "end": 4, "dtype": "float32"}
+  },
+  "action": {
+    "dx": {"original_key": "actions", "start": 0, "end": 1, "absolute": false, "dtype": "float32"},
+    "dy": {"original_key": "actions", "start": 1, "end": 2, "absolute": false, "dtype": "float32"},
+    "dz": {"original_key": "actions", "start": 2, "end": 3, "absolute": false, "dtype": "float32"},
+    "dyaw": {"original_key": "actions", "start": 3, "end": 4, "absolute": false, "dtype": "float32"}
+  },
+  "video": {
+    "first_image": {"original_key": "first_image"},
+    "current_image": {"original_key": "image"}
+  },
+  "annotation": {
+    "human.action.task_description": {"original_key": "task_index"}
+  }
+}

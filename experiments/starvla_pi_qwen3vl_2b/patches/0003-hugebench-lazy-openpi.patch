@@ -1,0 +1,32 @@
+diff --git a/openpi/scripts/action_infer.py b/openpi/scripts/action_infer.py
+index 2520982..06221b9 100644
+--- a/openpi/scripts/action_infer.py
++++ b/openpi/scripts/action_infer.py
+@@ -24,9 +24,8 @@ import imageio.v2 as imageio
+ # Configure dataset/cache-related environment variables in your shell when needed,
+ # for example HF_ENDPOINT, HF_HUB_CACHE, and HF_LEROBOT_HOME.
+ 
+-from openpi.training import config as train_config
+-from openpi.policies import policy_config
+-import lerobot.common.datasets.lerobot_dataset as lerobot_dataset
++# Model-specific imports live in main so other policies can reuse the official
++# render protocol, pose updates and action-plan averaging without installing OpenPI.
+ 
+ 
+ # ----------------------------
+@@ -789,6 +788,10 @@ def debug_print_dataset_paths(dataset, meta):
+ # Main
+ # ----------------------------
+ def main():
++    from openpi.training import config as train_config
++    from openpi.policies import policy_config
++    import lerobot.common.datasets.lerobot_dataset as lerobot_dataset
++
+     parser = ArgumentParser(
+         "OpenPI rollout + save plot/npz/instruction + GT/Pred videos + print config + dataset load status + metrics"
+     )
+@@ -1134,4 +1137,3 @@ def main():
+ 
+ if __name__ == "__main__":
+     main()
+-

@@ -1,0 +1,51 @@
+{
+  "recorded_at_utc": "2026-09-17T08:29:15.117563+00:00",
+  "run_id": "hugebench_qwen3vl2b_5ep_b512_20260916",
+  "status_at_export": "training_in_progress",
+  "hardware": "4 x NVIDIA A100 80GB",
+  "training": {
+    "epochs_requested": 5,
+    "frames_per_epoch": 1720096,
+    "micro_batch_per_gpu": 8,
+    "gradient_accumulation": 16,
+    "global_batch": 512,
+    "optimizer_steps": 16798,
+    "samples_at_full_steps": 8600576,
+    "rounding_extra_samples": 96,
+    "sampling": "shuffled frame passes",
+    "seed": 42,
+    "warmup_steps": 840,
+    "checkpoint_interval": 1000
+  },
+  "official_pi05_reference": {
+    "global_batch": 512,
+    "optimizer_steps": 25000,
+    "action_horizon": 20,
+    "note": "Global batch and horizon aligned; total updates not aligned."
+  },
+  "base": {
+    "sha256": "87e38d987fd2d1b7fd50b77529717d4fc19111b1c0ca58096f24e933b79b6c4b",
+    "bytes": 5217630556,
+    "tensor_count": 1154,
+    "parameters": 2608557060,
+    "historical_oxe_steps": {
+      "align": 5000,
+      "joint": 50000
+    },
+    "original_oxe_logs_available_at_export": false
+  },
+  "normalization": {
+    "path": "assets/hugebench_dataset_statistics.json",
+    "sha256": "1aa4b4bc00051d4a3f16750a65759bcec11f92d7cac0dc60e15b38529a2be07c",
+    "dataset_repository": "yu781986168/HUGE_Dataset_v0",
+    "revision": "bb1c49d635ad35eff31b10b961647cea306ec061",
+    "split": "train",
+    "note": "Copied from the audited base metadata; preserves the normalization used by the ongoing experiment."
+  },
+  "validation_limits": {
+    "full_oxe_rerun_in_export": false,
+    "full_huge_training_in_export": false,
+    "full_closed_loop_eval_in_export": false,
+    "bitwise_reproduction_claimed": false
+  }
+}
