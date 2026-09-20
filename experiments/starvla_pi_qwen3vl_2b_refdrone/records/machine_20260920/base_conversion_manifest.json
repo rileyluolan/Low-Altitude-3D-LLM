@@ -1,0 +1,76 @@
+{
+  "completed_utc": "2026-09-20T06:36:38.550741+00:00",
+  "identity": "HUGE-pretraining mature VLA base with RefDrone Stage 2 VLM",
+  "source_base": {
+    "checkpoint": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/artifacts/base/qwen3vl_2b_pi_v3_hugebench_mature_base/checkpoints/base_pytorch_model.pt",
+    "sha256": "87e38d987fd2d1b7fd50b77529717d4fc19111b1c0ca58096f24e933b79b6c4b",
+    "bytes": 5217630556
+  },
+  "source_vlm": {
+    "blob_prefix": "output/liyan/lnj/images/0729/qwen3vl_stage2/",
+    "file": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b_refdrone/models/qwen3vl_stage2_raw/model.safetensors",
+    "sha256": "5fd6eba5da2d7ad97ed6e3c61b7ab6baabddfa9f2c421170cb760bd68e9c0196"
+  },
+  "target": {
+    "checkpoint": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b_refdrone/artifacts/base/qwen3vl_2b_pi_v3_hugebench_refdrone_base/checkpoints/base_pytorch_model.pt",
+    "checkpoint_sha256": "e016e41b329f4b16ce8a927d38990f69f1b63a0950c7b9efe26cdf10d55df162",
+    "checkpoint_size": 5217525867,
+    "parameters": 2608557060
+  },
+  "replacement": {
+    "prefix": "qwen_vl_interface.model.",
+    "vlm_tensors": 626,
+    "changed_vlm_tensors": 597,
+    "preserved_projector_tensors": 112,
+    "preserved_action_tensors": 416,
+    "all_reloaded_tensors_exact": true,
+    "all_tensors_finite": true,
+    "tied_embeddings_equal": true
+  },
+  "compatibility": {
+    "transformers": "4.57.0",
+    "raw_saved_version": "5.2.0",
+    "reference_files": [
+      {
+        "name": "chat_template.json",
+        "sha256": "6f8a6a55027e3da5160105556cda5dd69f6423f1c32645f6730d32de7773d0c4"
+      },
+      {
+        "name": "tokenizer.json",
+        "sha256": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7"
+      },
+      {
+        "name": "vocab.json",
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      {
+        "name": "video_preprocessor_config.json",
+        "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13"
+      },
+      {
+        "name": "preprocessor_config.json",
+        "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "sha256": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399"
+      },
+      {
+        "name": "merges.txt",
+        "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+      },
+      {
+        "name": "generation_config.json",
+        "sha256": "1e241830b48b397cb0900101421df5450baddc7adf01e5fc86b5615865f3bae4"
+      },
+      {
+        "name": "config.json",
+        "sha256": "bec4b3d446efa05807365c9e1cec03ac590836879d02f3a6da879971154bdd3b"
+      }
+    ],
+    "rope_parameters_match": true,
+    "token_ids_and_chat_template_match": true
+  },
+  "dataset_statistics_sha256": "1aa4b4bc00051d4a3f16750a65759bcec11f92d7cac0dc60e15b38529a2be07c",
+  "source_weights_modified": false
+}

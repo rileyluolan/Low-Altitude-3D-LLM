@@ -1,0 +1,46 @@
+{
+  "recorded_utc": "2026-09-20T06:43:14.882688+00:00",
+  "status": "training_running",
+  "run_id": "hugebench_qwen3vl2b_refdrone_5ep_b512_20260920",
+  "tmux_session": "hugebench_refdrone_20260920",
+  "tmux_tmpdir": "/root/workspace-ll/.tmp",
+  "source_branch_commit": "6ba394fd51a0b91ee54033cc3547a2229ff3f854",
+  "source_commits": {
+    "starVLA": "2f17402a5ccaa09907516ae5e542b0fa6ee5d155",
+    "HUGE-Bench": "e80e8ac6c39b7503aea31d9c288d24591c0a0a79",
+    "gaussian-splatting": "54c035f7834b564019656c3e3fcc3646292f727d"
+  },
+  "base_sha256": "e016e41b329f4b16ce8a927d38990f69f1b63a0950c7b9efe26cdf10d55df162",
+  "gpus": "4 x NVIDIA A100 80GB",
+  "global_batch": 512,
+  "target_epochs": 5,
+  "target_optimizer_steps": 16798,
+  "seed": 42,
+  "observed_optimizer_steps": 15,
+  "first_record": {
+    "step": 1,
+    "action_dit_loss": 0.6647538542747498,
+    "timing/data": 2.3790448750023643,
+    "timing/model": 15.498885388000417,
+    "samples_per_second": 28.638661884678612,
+    "learning_rate/qwen_vl_interface": 1.1904761904761907e-08,
+    "learning_rate/project_layers": 2.9761904761904767e-08,
+    "learning_rate/action_model": 1.1904761904761907e-07,
+    "samples_seen": 512,
+    "epoch": 0.000298
+  },
+  "latest_record": {
+    "step": 15,
+    "action_dit_loss": 0.686583936214447,
+    "timing/data": 0.007080361001499114,
+    "timing/model": 12.634239557995897,
+    "samples_per_second": 40.50209972382437,
+    "learning_rate/qwen_vl_interface": 1.7857142857142858e-07,
+    "learning_rate/project_layers": 4.464285714285714e-07,
+    "learning_rate/action_model": 1.7857142857142857e-06,
+    "samples_seen": 7680,
+    "epoch": 0.004465
+  },
+  "new_training_completed": false,
+  "new_evaluation_completed": false
+}
