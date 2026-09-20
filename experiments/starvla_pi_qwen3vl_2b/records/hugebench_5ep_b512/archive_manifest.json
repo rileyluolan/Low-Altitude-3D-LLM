@@ -1,0 +1,114 @@
+{
+  "archived_utc": "2026-09-20T02:09:58.355840+00:00",
+  "files": [
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/metrics.jsonl",
+      "archive": "training/metrics.jsonl",
+      "bytes": 6381931,
+      "sha256": "e8095e4954977124cda49aef2b01e86a94af33e8a6e354484f0c51c81c774577"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/summary.jsonl",
+      "archive": "training/summary.jsonl",
+      "bytes": 263,
+      "sha256": "258050701659fc7c021fbd53a2dc340df55e4fdeac1aa3ab6d12b6a88f659949"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/config.full.yaml",
+      "archive": "training/config.full.yaml",
+      "bytes": 2948,
+      "sha256": "860c6d43e7ae15ffc9450b4f01890ea03d3174575a1a74e372a9b6d028b61114"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/source_config.yaml",
+      "archive": "training/source_config.yaml",
+      "bytes": 2431,
+      "sha256": "94c5ed4d8f84dac1a00b82eb79d646b839fe21a813f18d76f7bbf2f051973424"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/dataset_statistics.json",
+      "archive": "training/dataset_statistics.json",
+      "bytes": 1808,
+      "sha256": "041dbbaaf91d7cfc7432d28d3be2d01ff206608d8229d94fe8dbf67a51dbe617"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/results/hugebench_qwen3vl2b_5ep_b512_20260916/pytorch_model/full_seed_42/metrics.json",
+      "archive": "evaluation/metrics.json",
+      "bytes": 692364,
+      "sha256": "7410c36fde1d23b5032538ba39554a01d67be93a6f839e96a94697be850a0b7b"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/results/hugebench_qwen3vl2b_5ep_b512_20260916/pytorch_model/full_seed_42/run_config.json",
+      "archive": "evaluation/run_config.json",
+      "bytes": 552,
+      "sha256": "0d4187b9d05ba7d90bf79886b57ed63cb4f2941be996cd6b3f77a0d9594ead8a"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/results/hugebench_qwen3vl2b_5ep_b512_20260916/pytorch_model/full_seed_42/COMPLETE",
+      "archive": "evaluation/COMPLETE",
+      "bytes": 13,
+      "sha256": "caba96158114d6240bd47c69f0faeba5f0fdf54367fa8d8a00b9c189bef66788"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/results/hugebench_qwen3vl2b_5ep_b512_20260916/pytorch_model/full_seed_42/analysis/rollout_audit.json",
+      "archive": "evaluation/rollout_audit.json",
+      "bytes": 8792,
+      "sha256": "f329e5fa34a17f8bfcc8dce129b219d32bb6f5244350c9bcd9e1b5f9ad3a8a5e"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/results/hugebench_qwen3vl2b_5ep_b512_20260916/pytorch_model/full_seed_42/analysis/endpoint_records.json",
+      "archive": "evaluation/endpoint_records.json",
+      "bytes": 370737,
+      "sha256": "a4b83f16499e8b1cdfd9f3bb5f24cb4652340db7d99dfc9dbc5023724259bc8e"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/results/hugebench_qwen3vl2b_5ep_b512_20260916/pytorch_model/full_seed_42/analysis/evaluation_summary.json",
+      "archive": "evaluation/evaluation_summary.json",
+      "bytes": 5475,
+      "sha256": "a2f8640ef31d31ceb3c8fac3dab32dbc2f0aa1f1067a8914f119879bcbcde002"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/results/hugebench_qwen3vl2b_5ep_b512_20260916/pytorch_model/full_seed_42/analysis/metrics_by_split.csv",
+      "archive": "evaluation/metrics_by_split.csv",
+      "bytes": 424,
+      "sha256": "6be9166682e645efdc186c4d1c67196215975906a287262554ad1a5aee3a67a9"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/results/hugebench_qwen3vl2b_5ep_b512_20260916/pytorch_model/full_seed_42/logs/video_export_worker_0.json",
+      "archive": "evaluation/video_worker_0.json",
+      "bytes": 270,
+      "sha256": "5e06bec989c41b3ff3f40823ca777787290cda55f81fe5ff99ab12374caa1a0b"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/results/hugebench_qwen3vl2b_5ep_b512_20260916/pytorch_model/full_seed_42/logs/video_export_worker_1.json",
+      "archive": "evaluation/video_worker_1.json",
+      "bytes": 269,
+      "sha256": "6f88568fae6043a4455c5015175c8c982d499cb159c86c17325615923b192b44"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/results/hugebench_qwen3vl2b_5ep_b512_20260916/pytorch_model/full_seed_42/logs/video_export_worker_2.json",
+      "archive": "evaluation/video_worker_2.json",
+      "bytes": 270,
+      "sha256": "e6963f86b79aa5e6f037caf551d7dbefb3307f5f0170dd00a3cf8930ed77b941"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/results/hugebench_qwen3vl2b_5ep_b512_20260916/pytorch_model/full_seed_42/logs/video_export_worker_3.json",
+      "archive": "evaluation/video_worker_3.json",
+      "bytes": 269,
+      "sha256": "2f07d46c0e9c311baf9e10aaaf7023d16da1d123c37ce414aac5154240998082"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/results/hugebench_qwen3vl2b_5ep_b512_20260916/pytorch_model/full_seed_42/logs/video_export_manifest.json",
+      "archive": "evaluation/video_manifest.json",
+      "bytes": 464478,
+      "sha256": "3486848446dfa3ae943032f4d510546271987e829017cd31167d0ef7aecf3a70"
+    },
+    {
+      "source": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/results/hugebench_qwen3vl2b_5ep_b512_20260916/pytorch_model/full_seed_42/analysis/video_preview.jpg",
+      "archive": "evaluation/video_preview.jpg",
+      "bytes": 274162,
+      "sha256": "81e51f06951c0761cd4a0659a9358681ec90c6e6476277a06ba1553be309b6e7"
+    }
+  ],
+  "policy": "Copied bytes are unchanged. Historical absolute paths retained for provenance; generated tables use relative episode identifiers."
+}

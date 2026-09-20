@@ -1,0 +1,12 @@
+{
+  "worker": 2,
+  "gpu": "2",
+  "done_episodes": 248,
+  "total_episodes": 248,
+  "done_frames": 84837,
+  "total_frames": 84837,
+  "elapsed_seconds": 56406.830141477985,
+  "updated_utc": "2026-09-19T10:40:09.862387+00:00",
+  "status": "complete",
+  "current_frame": 0
+}

@@ -1,0 +1,22 @@
+{
+  "checkpoint": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/final_model/pytorch_model.pt",
+  "checkpoint_bytes": 5839846728,
+  "checkpoint_mtime_ns": 1789744792126538441,
+  "splits": "test_seen,test_unseen",
+  "num_trajs_per_split": 0,
+  "max_steps": 0,
+  "exec_steps": 10,
+  "seed": 42,
+  "num_shards": 2,
+  "renderer_gpus": [
+    "0",
+    "1"
+  ],
+  "policy_gpus": [
+    "2",
+    "3"
+  ],
+  "smooth_overlap": true,
+  "obstacle_angle_mode": "yaw_legacy",
+  "save_video": false
+}

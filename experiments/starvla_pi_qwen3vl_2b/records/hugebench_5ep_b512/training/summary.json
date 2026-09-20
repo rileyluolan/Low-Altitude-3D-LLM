@@ -1,0 +1,17 @@
+{
+  "optimizer_steps": 16798,
+  "global_batch": 512,
+  "samples_seen": 8600576,
+  "final_epoch": 5.000056,
+  "first_loss": 0.6545383930206299,
+  "final_loss": 0.042197905480861664,
+  "last_100_mean_loss": 0.04166945196688175,
+  "last_500_mean_loss": 0.042094587065279486,
+  "last_1000_mean_loss": 0.042164321560412645,
+  "minimum_loss": 0.03090159222483635,
+  "maximum_loss": 0.70401930809021,
+  "all_losses_finite": true,
+  "loss_definition": "Action flow-matching loss; averaged over 16 microbatches and all 4 ranks per optimizer step.",
+  "smoothing": "Trailing 100/500 optimizer-step means; first plotted at steps 100/500.",
+  "validation_loss_available": false
+}

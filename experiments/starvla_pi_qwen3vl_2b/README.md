@@ -2,6 +2,9 @@
 
 本目录保存模型改造到训练、评测的完整代码路径。它以固定版本的上游源码和公开权重为输入，包含构建脚本、源码补丁、OXE 两阶段训练及 HUGE-Bench 适配器。
 
+**已完成：**[完整训练 loss 和 993 条正式测试结果](records/hugebench_5ep_b512/README.md)。
+后续含 RefDrone 的 VLM 替换实验见[独立实验目录](../starvla_pi_qwen3vl_2b_refdrone/README.md)。
+
 当前 HUGE-Bench 实验采用 **4 × A100 80GB、5 epoch、global batch 512、16,798 次优化器更新**。5 epoch 是当前实验预算；官方 π0.5 的 25,000 次更新属于另一训练预算。两者的全局 batch 和动作 horizon=20 对齐，总更新数不同。
 
 ## 目录与入口
@@ -159,6 +162,6 @@ bash scripts/eval_metrics.sh /absolute/path/to/rollouts
 
 [VALIDATION.md](VALIDATION.md) 记录本次导出的实际检查。已验证补丁、配置、CPU 权重迁移、现有权重哈希、真实 HUGE 元数据及 tmux 启动；未在此提交副本重新运行完整 55k OXE + 5 epoch HUGE 或全量闭环评测。
 
-`records/hugebench_5ep_b512/` 保存当前训练的配方和已有 base 的溯源。历史 base manifest 记录了 5k+50k OXE 训练，但本次没有取回原始 OXE 训练日志，因此应区分“已有权重的溯源记录”和“在新环境中完成复现”。现有训练 loss 不能替代测试集闭环结果。
+`records/hugebench_5ep_b512/` 保存已完成训练的全量指标、正式闭环评测、训练配方和 base 溯源。历史 base manifest 记录了 5k+50k OXE 训练，但没有取回原始 OXE 训练日志，因此应区分“已有权重的溯源记录”和“在新环境中完成复现”。
 
 权重、数据、`.venv`、缓存和原始运行日志被 `.gitignore` 排除。依赖项目、权重和数据保留各自的许可证，见 [THIRD_PARTY.md](THIRD_PARTY.md)。

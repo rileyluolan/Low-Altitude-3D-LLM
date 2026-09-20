@@ -28,3 +28,8 @@ CUDA_VISIBLE_DEVICES='' "$VENV_ROOT/bin/python" -m unittest discover -s tests -v
 - 完整五 epoch HUGE 训练和 993 条闭环测试轨迹。
 
 因此这些检查证明代码衔接、张量迁移规则与当前实验配置可核对，并不等同于全流程训练完成或测试性能已验证。历史 base 的 OXE 步数来源于已有 manifest，原始 OXE 训练日志本次未取得。
+
+
+## 2026-09-20：已完成结果归档
+
+以上为 2026-09-17 发布时的代码验证范围。原本机实验随后完成了 16,798 步训练和 993 条正式闭环测试；结果见 [完整结果](records/hugebench_5ep_b512/README.md)。本次归档逐一核对 18 份原始文件 SHA256，训练步数连续且 loss 有限，993 条逐轨迹指标与官方 seen/unseen 均值一致。图表从完整记录重新生成，视频完成记录为 993 条、339,394 帧。此次未在发布 checkout 重跑训练或闭环评测。

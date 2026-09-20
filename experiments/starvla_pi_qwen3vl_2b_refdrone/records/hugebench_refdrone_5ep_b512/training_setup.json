@@ -1,0 +1,38 @@
+{
+  "baseline_config_differences": {
+    "run_root_dir": [
+      "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints",
+      "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b_refdrone/artifacts/checkpoints"
+    ],
+    "trainer.pretrained_checkpoint": [
+      "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/artifacts/base/qwen3vl_2b_pi_v3_hugebench_mature_base/checkpoints/base_pytorch_model.pt",
+      "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b_refdrone/artifacts/base/qwen3vl_2b_pi_v3_hugebench_refdrone_base/checkpoints/base_pytorch_model.pt"
+    ],
+    "run_id": [
+      "qwen3vl_2b_pi_v3_hugebench_run1",
+      "hugebench_qwen3vl2b_refdrone_5ep_b512_20260919"
+    ],
+    "datasets.vla_data.data_root_dir": [
+      "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/data/lerobot",
+      "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b_refdrone/data/lerobot"
+    ],
+    "framework.qwenvl.base_vlm": [
+      "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/models/Qwen3-VL-2B-Instruct",
+      "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b_refdrone/models/Qwen3-VL-2B-RefDrone-Stage2"
+    ]
+  },
+  "original_weights_stat": [
+    {
+      "path": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/artifacts/base/qwen3vl_2b_pi_v3_hugebench_mature_base/checkpoints/base_pytorch_model.pt",
+      "bytes": 5217630556,
+      "mtime_ns": 1789468700368008807
+    },
+    {
+      "path": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/final_model/pytorch_model.pt",
+      "bytes": 5839846728,
+      "mtime_ns": 1789744792126538441
+    }
+  ],
+  "starvla_commit": "2f17402a5ccaa09907516ae5e542b0fa6ee5d155",
+  "config_sha256": "37b35274232ab4793a4b9fbb1578dcf29985cd4466e3f19d9fc5f1e767bfef3c"
+}

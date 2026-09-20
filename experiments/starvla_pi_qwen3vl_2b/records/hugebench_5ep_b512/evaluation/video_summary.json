@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "episodes": 993,
+  "frames": 339394,
+  "completed_utc": "2026-09-19T10:44:29.554500+00:00",
+  "fps": 5,
+  "layout": "GT left, prediction right",
+  "video_files_uploaded": false,
+  "server_eval_root": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/results/hugebench_qwen3vl2b_5ep_b512_20260916/pytorch_model/full_seed_42",
+  "relative_video_pattern": "rollouts/task_*/test_*/*/episode_*/gt_pred_side_by_side.mp4",
+  "note": "Video files remain in the existing experiment. Replay script can regenerate them from saved trajectories."
+}

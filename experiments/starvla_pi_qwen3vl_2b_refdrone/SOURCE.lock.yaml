@@ -1,0 +1,90 @@
+starvla:
+  repository: https://github.com/starVLA/starVLA.git
+  branch: starVLA_dev
+  commit: 2f17402a5ccaa09907516ae5e542b0fa6ee5d155
+  path: third_party/starVLA
+  local_patches:
+  - path: starVLA/model/modules/vlm/QWen3.py
+    sha256: d931964555a55e0057fd40711dc1b6363c5f0bb3f45205acc0db5eb170e5b822
+  - path: starVLA/dataloader/gr00t_lerobot/datasets.py
+    sha256: 4e7037216f04c3e051659847d7ecc85ba136d1b6264b5a804d20acd275038e0d
+  - path: starVLA/dataloader/__init__.py
+    sha256: c16fe609893dc065d66e5e824e347229082e1295b51c6d6b59abed072a4be672
+  - path: starVLA/model/framework/share_tools.py
+    sha256: b3c3c3851de63a66007cdab451a67d4f76ce5aea6e487c1240bca75fb8a5f932
+  - path: starVLA/training/train_starvla.py
+    sha256: 5755d9f4a5cf2c710ea962fc851bd02ddceffdc35b666dbf88060f1debf1f4ea
+  - path: starVLA/training/trainer_utils/trainer_tools.py
+    sha256: c3829cd36d75c963da554d0ecc42af9e96d3cef51a2c1f3cc420055795bf43a9
+  patches:
+  - 0001-starvla-refdrone-runtime.patch
+qwen3_vl:
+  repository: Qwen/Qwen3-VL-2B-Instruct
+  revision: 89644892e4d85e24eaac8bacfd4f463576704203
+  path: models/Qwen3-VL-2B-Instruct
+  model_safetensors_sha256: 7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0
+starvla_pi_source:
+  repository: StarVLA/Qwen3VL-PI_v3-Bridge-RT_1
+  revision: 72618cfb5084e020b30ad6fd77c288da0c41ed39
+  path: artifacts/source/StarVLA-Qwen3VL-PI_v3-Bridge-RT_1
+  checkpoint: checkpoints/steps_50000_pytorch_model.pt
+  checkpoint_size: 10922634912
+  checkpoint_sha256: 7f59a5d0fa9c167fabd941bca8e606bdf5597bfb4f99ca83e345672dd9c345ed
+oxe_bridge:
+  repository: IPEC-COMMUNITY/bridge_orig_lerobot
+  revision: 0e9d76d07e9df3ea3eba257b2520d4913833fad2
+  path: data/oxe/bridge_orig_1.0.0_lerobot
+  selected_video_key: observation.images.image_0
+  episodes: 53192
+  frames: 1893026
+  training_episodes_after_language_filter: 38660
+  training_frames_after_language_filter: 1305714
+oxe_rt1:
+  repository: IPEC-COMMUNITY/fractal20220817_data_lerobot
+  revision: 91bf7d7f7ce50770a1ba5c6db14b8d1c0815122e
+  path: data/oxe/fractal20220817_data_0.1.0_lerobot
+  selected_video_key: observation.images.image
+  episodes: 87212
+  frames: 3786400
+  training_episodes_after_language_filter: 87204
+  training_frames_after_language_filter: 3786152
+hugebench:
+  repository: https://github.com/jingyu198/HUGE-Bench.git
+  commit: e80e8ac6c39b7503aea31d9c288d24591c0a0a79
+  path: third_party/HUGE-Bench
+  patch: 0003-hugebench-lazy-openpi.patch
+gaussian_splatting:
+  repository: https://github.com/graphdeco-inria/gaussian-splatting.git
+  commit: 54c035f7834b564019656c3e3fcc3646292f727d
+  path: third_party/gaussian-splatting
+  submodules:
+  - submodules/diff-gaussian-rasterization
+  - submodules/simple-knn
+pytorch3d:
+  repository: https://github.com/facebookresearch/pytorch3d.git
+  commit: f34104cf6ebefacd7b7e07955ee7aaa823e616ac
+  path: third_party/pytorch3d
+  scope: pure-Python transforms; PYTORCH3D_NO_EXTENSION=1
+hugebench_trajectories:
+  repository: yu781986168/HUGE_Dataset_v0
+  revision: bb1c49d635ad35eff31b10b961647cea306ec061
+  splits:
+  - train
+  - test_seen
+  - test_unseen
+hugebench_scenes:
+  repository: yu781986168/3DGS_Mesh_Envs
+  revision: f9bed5c1da172aecd5e3942848ee9174599ec59a
+  scenes:
+  - 1_office
+  - 2_city
+  - 3_road
+  - 4_lake
+  - no1_building
+  - no3_door
+  - overhead_bridge
+refdrone_vlm:
+  blob_prefix: output/liyan/lnj/images/0729/qwen3vl_stage2/
+  file_lock: assets/refdrone_vlm.lock.json
+  model_sha256: 5fd6eba5da2d7ad97ed6e3c61b7ab6baabddfa9f2c421170cb760bd68e9c0196
+  mature_base_sha256: 87e38d987fd2d1b7fd50b77529717d4fc19111b1c0ca58096f24e933b79b6c4b

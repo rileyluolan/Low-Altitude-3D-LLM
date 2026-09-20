@@ -1,0 +1,75 @@
+{
+  "source_blob_prefix": "output/liyan/lnj/images/0729/qwen3vl_stage2/",
+  "files": [
+    {
+      "name": "README.md",
+      "bytes": 1699,
+      "sha256": "77280bcacf9cad9a9ee362233bc43aa252a607b6bba3e4491acb7e8b86f326bc"
+    },
+    {
+      "name": "all_results.json",
+      "bytes": 212,
+      "sha256": "c613fcd444838f932ee5bd6ada49ef80e36d8bc9482d3d235c833ada1af5368e"
+    },
+    {
+      "name": "chat_template.jinja",
+      "bytes": 5292,
+      "sha256": "3636d0f0bd6bef02654cdffdc447b79cb2cef8ab02cc75267345946291a489e4"
+    },
+    {
+      "name": "config.json",
+      "bytes": 1700,
+      "sha256": "e569a2fca4d520e4b471842dd014d4b0a89974cfa78677bc96d4cac81c9852d5"
+    },
+    {
+      "name": "generation_config.json",
+      "bytes": 227,
+      "sha256": "f8f82d7ac45f6695fd60544824ef2f2bf05e88afcc4e4b27ceaf9982cd475e1e"
+    },
+    {
+      "name": "model.safetensors",
+      "bytes": 4877470336,
+      "sha256": "5fd6eba5da2d7ad97ed6e3c61b7ab6baabddfa9f2c421170cb760bd68e9c0196"
+    },
+    {
+      "name": "processor_config.json",
+      "bytes": 1300,
+      "sha256": "14932921ca485d458a04dafd8069fbb0a4505622a48208d19ed247115801385b"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 11422650,
+      "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 732,
+      "sha256": "0a890ba8d64f503d773429921a7b1e7df946b15e1e398e5d29c2141d3f40fc79"
+    },
+    {
+      "name": "train_results.json",
+      "bytes": 212,
+      "sha256": "c613fcd444838f932ee5bd6ada49ef80e36d8bc9482d3d235c833ada1af5368e"
+    },
+    {
+      "name": "trainer_log.jsonl",
+      "bytes": 623352,
+      "sha256": "b4009d0c9d8ae853bbaa1d1157ce9a65d449994d44f6b70ab4ff94031f867f36"
+    },
+    {
+      "name": "trainer_state.json",
+      "bytes": 533357,
+      "sha256": "f48bce704517fc89028bb5a5b93fe7fafcce3f4357fee40c22bfbe96f1cdcb49"
+    },
+    {
+      "name": "training_args.bin",
+      "bytes": 6776,
+      "sha256": "03fe6aaa53e00a3773bbfc6fd9e0e4dc5bd01dbe73c4b140834f6e93b3e99952"
+    },
+    {
+      "name": "training_loss.png",
+      "bytes": 32617,
+      "sha256": "de34d90014d9929117aa15b3c552db962e3248c8a7e89f258296b69f32463c9f"
+    }
+  ]
+}

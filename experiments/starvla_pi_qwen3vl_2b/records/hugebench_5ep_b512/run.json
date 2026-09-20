@@ -1,7 +1,7 @@
 {
-  "recorded_at_utc": "2026-09-17T08:29:15.117563+00:00",
+  "recorded_at_utc": "2026-09-20T02:09:58.355569+00:00",
   "run_id": "hugebench_qwen3vl2b_5ep_b512_20260916",
-  "status_at_export": "training_in_progress",
+  "status_at_export": "training_and_full_evaluation_complete",
   "hardware": "4 x NVIDIA A100 80GB",
   "training": {
     "epochs_requested": 5,
@@ -40,12 +40,26 @@
     "dataset_repository": "yu781986168/HUGE_Dataset_v0",
     "revision": "bb1c49d635ad35eff31b10b961647cea306ec061",
     "split": "train",
-    "note": "Copied from the audited base metadata; preserves the normalization used by the ongoing experiment."
+    "note": "Copied from the audited base metadata; preserves normalization used by this completed experiment."
   },
   "validation_limits": {
     "full_oxe_rerun_in_export": false,
     "full_huge_training_in_export": false,
     "full_closed_loop_eval_in_export": false,
     "bitwise_reproduction_claimed": false
+  },
+  "initial_recorded_at_utc": "2026-09-17T08:29:15.117563+00:00",
+  "final_checkpoint": {
+    "relative_path": "artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/final_model/pytorch_model.pt",
+    "sha256": "8ad5b7ef8a0f4a0cce299b0a9a69741a7c94786ee7b5a750e18d6fec7ea4825d",
+    "bytes": 5839846728
+  },
+  "evaluation": {
+    "seed": 42,
+    "episodes": 993,
+    "seen": 576,
+    "unseen": 417,
+    "record": "evaluation/metrics.json",
+    "videos_completed": 993
   }
 }

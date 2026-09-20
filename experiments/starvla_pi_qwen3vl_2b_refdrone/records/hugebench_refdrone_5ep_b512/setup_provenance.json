@@ -1,0 +1,7 @@
+{
+  "source_experiment": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b",
+  "source_base": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/artifacts/base/qwen3vl_2b_pi_v3_hugebench_mature_base/checkpoints/base_pytorch_model.pt",
+  "candidate_blob_prefix": "output/liyan/lnj/images/0729/qwen3vl_stage2/",
+  "environment": "Read-only reuse of the existing .venv; private copy of active StarVLA code",
+  "new_base_checkpoint": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b_refdrone/artifacts/base/qwen3vl_2b_pi_v3_hugebench_refdrone_base/checkpoints/base_pytorch_model.pt"
+}

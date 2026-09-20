@@ -1,0 +1,186 @@
+{
+  "summarized_utc": "2026-09-18T19:02:19.854363+00:00",
+  "checkpoint": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/final_model/pytorch_model.pt",
+  "checkpoint_sha256": "8ad5b7ef8a0f4a0cce299b0a9a69741a7c94786ee7b5a750e18d6fec7ea4825d",
+  "source_commit": "e80e8ac6c39b7503aea31d9c288d24591c0a0a79",
+  "official_metric_file_sha256": "ba1d79bdb6bec57db5bb86af53206e423a42af742da6ceedc7e6a03a41e0fe63",
+  "config": {
+    "out_dir": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b/results/hugebench_qwen3vl2b_5ep_b512_20260916/pytorch_model/full_seed_42/rollouts",
+    "tasks": [
+      "0",
+      "building",
+      "farm",
+      "hl",
+      "obstacle",
+      "orbit",
+      "orbit_multi",
+      "road"
+    ],
+    "tcr_thresholds": [
+      1.0,
+      2.0,
+      5.0
+    ],
+    "success_thresh": 20.0,
+    "eta": 3.0,
+    "yaw_weight": 0.1,
+    "softdtw_gamma": 0.5,
+    "mesh_root": "/root/workspace-ll/HUGE_data/data_3d",
+    "mesh_rel": "terra_ply/simplified_mesh.obj",
+    "stride": 1,
+    "max_len": 0
+  },
+  "by_split": {
+    "seen": {
+      "n": 576.0,
+      "tcr@1": 0.45144320311616365,
+      "tcr@2": 0.6595168184398099,
+      "tcr@5": 0.8485425724379634,
+      "avg_tcr": 0.6531675313313123,
+      "ndtw": 0.5383257168166877,
+      "nsp": 0.6919144654760614,
+      "sr": 0.8315972222222222,
+      "cr": 0.012152777777777778,
+      "cspl": 0.8237009462022762
+    },
+    "unseen": {
+      "n": 417.0,
+      "tcr@1": 0.3729119609277812,
+      "tcr@2": 0.5563591859723228,
+      "tcr@5": 0.7605458695627825,
+      "avg_tcr": 0.5632723388209623,
+      "ndtw": 0.42921892035705694,
+      "nsp": 0.6815989753024758,
+      "sr": 0.7434052757793765,
+      "cr": 0.02158273381294964,
+      "cspl": 0.7353482914907234
+    }
+  },
+  "by_task": {
+    "0": {
+      "n": 341.0,
+      "tcr@1": 0.5858606957608878,
+      "tcr@2": 0.76691575784345,
+      "tcr@5": 0.916861546122589,
+      "avg_tcr": 0.7565459999089758,
+      "ndtw": 0.700577498560955,
+      "nsp": 0.9629061609071499,
+      "sr": 0.9266862170087976,
+      "cr": 0.0,
+      "cspl": 0.9253315883282949
+    },
+    "building": {
+      "n": 102.0,
+      "tcr@1": 0.22364875937455878,
+      "tcr@2": 0.3666364974436304,
+      "tcr@5": 0.5275660621617543,
+      "avg_tcr": 0.3726171063266479,
+      "ndtw": 0.1511760911270828,
+      "nsp": 0.38848309908038425,
+      "sr": 0.47058823529411764,
+      "cr": 0.0,
+      "cspl": 0.46979392116308566
+    },
+    "farm": {
+      "n": 19.0,
+      "tcr@1": 0.2211742256094666,
+      "tcr@2": 0.34079844225500117,
+      "tcr@5": 0.47523508002502035,
+      "avg_tcr": 0.34573591596316267,
+      "ndtw": 0.07638281921484572,
+      "nsp": 0.7198667438735553,
+      "sr": 0.2631578947368421,
+      "cr": 0.0,
+      "cspl": 0.26274605846604737
+    },
+    "hl": {
+      "n": 131.0,
+      "tcr@1": 0.47695719736475845,
+      "tcr@2": 0.7427879818703893,
+      "tcr@5": 0.9584784098356993,
+      "avg_tcr": 0.7260745296902823,
+      "ndtw": 0.5694642482634511,
+      "nsp": 0.4129408873666298,
+      "sr": 0.9312977099236641,
+      "cr": 0.0,
+      "cspl": 0.9300391405003775
+    },
+    "obstacle": {
+      "n": 83.0,
+      "tcr@1": 0.1596246846059953,
+      "tcr@2": 0.2845238382423384,
+      "tcr@5": 0.45874107969946737,
+      "avg_tcr": 0.30096320084926703,
+      "ndtw": 0.1939308653858525,
+      "nsp": 0.942327144211403,
+      "sr": 0.5662650602409639,
+      "cr": 0.1927710843373494,
+      "cspl": 0.4819160708879281
+    },
+    "orbit": {
+      "n": 130.0,
+      "tcr@1": 0.5111669046153845,
+      "tcr@2": 0.759304820223698,
+      "tcr@5": 0.9373957063267717,
+      "avg_tcr": 0.7359558103886181,
+      "ndtw": 0.5490125631194823,
+      "nsp": 0.4187645717765172,
+      "sr": 0.9538461538461539,
+      "cr": 0.0,
+      "cspl": 0.9529132688801659
+    },
+    "orbit_multi": {
+      "n": 70.0,
+      "tcr@1": 0.29502227548409293,
+      "tcr@2": 0.5763197048294139,
+      "tcr@5": 0.9079451503365933,
+      "avg_tcr": 0.5930957102166998,
+      "ndtw": 0.4798640955448899,
+      "nsp": 0.3475058108523994,
+      "sr": 0.9285714285714286,
+      "cr": 0.0,
+      "cspl": 0.9277798958653896
+    },
+    "road": {
+      "n": 117.0,
+      "tcr@1": 0.22144524054341794,
+      "tcr@2": 0.3976101815282279,
+      "tcr@5": 0.6954134495179126,
+      "avg_tcr": 0.43815629052985283,
+      "ndtw": 0.3216542099381363,
+      "nsp": 0.7695944393249454,
+      "sr": 0.5299145299145299,
+      "cr": 0.0,
+      "cspl": 0.5297886916278488
+    }
+  },
+  "overall": {
+    "n": 993.0,
+    "tcr@1": 0.41846482648720545,
+    "tcr@2": 0.6161968458930406,
+    "tcr@5": 0.8115892742517092,
+    "avg_tcr": 0.6154169822106517,
+    "ndtw": 0.4925074548593201,
+    "nsp": 0.687582582895613,
+    "sr": 0.7945619335347432,
+    "cr": 0.016112789526686808,
+    "cspl": 0.7865981697524097
+  },
+  "validation": {
+    "episodes": 993,
+    "ground_truth_matches_test_data": true,
+    "full_length": true,
+    "finite": true,
+    "official_sr_matches_independent_endpoints": true,
+    "zero_length_gt": 0
+  },
+  "episode_mean_aggregation": true,
+  "seed": 42,
+  "num_shards": 2,
+  "notes": [
+    "All reported official scores use the pinned official metric.py without changes.",
+    "SR counts endpoint distance <=20m and does not by itself require collision-free flight.",
+    "TCR thresholds are 1m, 2m, 5m. CR is the fraction of trajectories with at least one mesh collision.",
+    "These results are one evaluation run, not multi-seed means."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-09-19T16:02:21.984011+00:00",
+  "checkpoint": "/root/workspace-ll/experiments/starvla_pi_qwen3vl_2b_refdrone/artifacts/base/qwen3vl_2b_pi_v3_hugebench_refdrone_base/checkpoints/base_pytorch_model.pt",
+  "all_runtime_vlm_tensors_exact": 626,
+  "real_training_sample": true,
+  "dataset_frames": 1720096,
+  "loss": 1.0437064170837402,
+  "gradient_checks": {
+    "qwen_vl_interface": {
+      "tensors_with_grad": 624,
+      "nonzero_grad_tensors": 624
+    },
+    "project_layers": {
+      "tensors_with_grad": 112,
+      "nonzero_grad_tensors": 112
+    },
+    "action_model": {
+      "tensors_with_grad": 408,
+      "nonzero_grad_tensors": 407
+    }
+  },
+  "prediction_shape": [
+    1,
+    20,
+    4
+  ],
+  "prediction_finite": true,
+  "peak_gpu_memory_bytes": 13262052864,
+  "optimizer_steps_performed": 0
+}

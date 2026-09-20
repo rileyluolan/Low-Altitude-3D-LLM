@@ -1,0 +1,84 @@
+run_id: ${oc.env:RUN_ID,hugebench_qwen3vl2b_refdrone_5ep_b512_20260919}
+run_root_dir: ${oc.env:EXPERIMENT_ROOT}/artifacts/checkpoints
+seed: 42
+trackers: [jsonl]
+wandb_entity: null
+wandb_project: starvla_hugebench
+is_debug: false
+version_id: "0.21"
+
+framework:
+  name: QwenPI_v3
+  qwenvl:
+    base_vlm: ${oc.env:MODEL_ROOT}
+    attn_implementation: sdpa
+    enable_gradient_checkpointing: true
+  action_model:
+    action_model_type: LayerwiseFM
+    action_dim: 4
+    state_dim: 4
+    action_horizon: 20
+    repeated_diffusion_steps: 2
+    num_inference_timesteps: 4
+    diffusion_model_cfg:
+      action_dit_hidden_dim: 1024
+      output_dim: 1024
+      dropout: 0.2
+      final_dropout: true
+      interleave_self_attention: false
+      norm_type: ada_norm
+      positional_embeddings: null
+      attention_head_dim: 64
+
+datasets:
+  vla_data:
+    dataset_py: lerobot_datasets
+    data_root_dir: ${oc.env:EXPERIMENT_ROOT}/data/lerobot
+    data_mix: hugebench_train
+    lerobot_version: v2.0
+    include_state: true
+    action_mode: abs
+    per_device_batch_size: 8
+    shuffle_frames: true
+    obs_image_size: [224, 224]
+    image_size: [224, 224]
+    load_all_data_for_training: true
+    video_backend: torchvision_av
+    state_action_dtype: float16
+    num_workers: 4
+    pin_memory: true
+    persistent_workers: true
+    prefetch_factor: 2
+
+trainer:
+  # ceil(5 * 1,720,096 / 512): five complete frame passes plus 96 samples.
+  # Global batch matches official pi05; its 25,000-step total is ~7.44 epochs.
+  num_training_frames: 1720096
+  target_epochs: 5
+  max_train_steps: 16798
+  num_warmup_steps: 840
+  save_interval: 1000
+  eval_interval: 1000000
+  learning_rate:
+    base: 2.5e-05
+    qwen_vl_interface: 1.0e-05
+    project_layers: 2.5e-05
+    action_model: 1.0e-04
+  lr_scheduler_type: cosine_with_min_lr
+  scheduler_specific_kwargs:
+    min_lr: 1.0e-06
+  pretrained_checkpoint: ${oc.env:BASE_CKPT}
+  freeze_modules: ""
+  loss_scale: {vla: 1.0, vlm: 0.1}
+  repeated_diffusion_steps: 2
+  max_grad_norm: 1.0
+  weight_decay: 0.0
+  logging_frequency: 1
+  gradient_clipping: 1.0
+  gradient_accumulation_steps: 16
+  optimizer:
+    name: AdamW
+    betas: [0.9, 0.95]
+    eps: 1.0e-08
+    weight_decay: 1.0e-08
+  save_format: pt

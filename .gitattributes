@@ -1,2 +1,5 @@
-# Unified diffs intentionally contain a space for empty context lines.
+# Preserve archived experiment evidence byte-for-byte, including original CSV CRLF.
+**/records/** -text
+*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Unified patches need their single-space empty context lines.
 *.patch -whitespace
