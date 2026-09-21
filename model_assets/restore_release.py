@@ -9,7 +9,7 @@ import urllib.parse
 import urllib.request
 
 BLOCK = 8 * 1024 * 1024
-EXPERIMENTS = {'starvla_pi_qwen3vl_2b', 'low_altitude_3d_llm'}
+EXPERIMENTS = {'starvla_pi_qwen3vl_2b', 'low_altitude_3d_llm', 'pi05_hugebench'}
 
 
 def checksum(path):

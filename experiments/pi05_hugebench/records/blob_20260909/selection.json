@@ -1061,5 +1061,7 @@
     }
   ],
   "excluded_checkpoints": "1 epoch checkpoint and all intermediate checkpoints",
-  "published_storage": "GitHub Release; actual binary upload pending"
+  "published_storage": "https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/pi05-hugebench-5ep-20260921",
+  "release_file_count": 142,
+  "release_original_bytes": 79131897207
 }

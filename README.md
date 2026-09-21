@@ -25,7 +25,7 @@
 ## pi0.5 / HUGE-Bench 实验
 
 [pi05_hugebench](experiments/pi05_hugebench/IMPORT.md)：从 Blob `ll_0909` 导入的代码、配置和实验记录。
-本次权重范围为 pi0.5 base、官方基线及 5 epoch 最终 checkpoint `67189`；实际二进制上传状态以导入说明为准。
+本次权重范围为 pi0.5 base、官方基线及 5 epoch 最终 checkpoint `67189`；实际二进制已发布到 [pi05 Release](https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/pi05-hugebench-5ep-20260921)。
 
 [状态输入对照](experiments/pi05_state_ablation/README.md)：固定共同初始化、数据和训练预算，比较
 `discrete_state_input=False/True`；包含源码恢复补丁、配对训练/评测入口与历史开环测试说明。

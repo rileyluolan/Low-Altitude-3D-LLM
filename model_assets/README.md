@@ -50,3 +50,9 @@ e016e41b329f4b16ce8a927d38990f69f1b63a0950c7b9efe26cdf10d55df162
 它与历史 RefDrone base 完全一致：替换 626 个 VLM 张量，保留 112 个 projector 张量和 416 个 action 张量。原 HUGE 最终模型单独保存于 `huge-final` 组。
 
 数据集、场景压缩包、运行环境和缓存由各实验的现有准备脚本管理；此清单聚焦模型文件及其必要配套配置。
+
+## pi05_hugebench：5 epoch
+
+[pi05 Release](https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/pi05-hugebench-5ep-20260921) 包含原始 pi0.5 base、官方 HUGE_PI05 基线和完整的 5 epoch 最终 checkpoint `67189`，
+以及已有评测/日志归档。三组权重约 69.63 GB；不包含 1 epoch 或中间 checkpoint。
+恢复说明见 [pi05 导入说明](../experiments/pi05_hugebench/IMPORT.md)。

@@ -1,0 +1,100 @@
+{
+  "official_baseline": {
+    "source_directory": "results/baselines/official_pi05/full",
+    "headline": {
+      "task_unweighted": {
+        "avg_tcr": 0.5627764238840571,
+        "avg_tcr_seg": 0.566488104736119,
+        "ndtw": 0.44972448163356626
+      },
+      "episode_weighted": {
+        "avg_tcr": 0.5627764238840571,
+        "avg_tcr_seg": 0.566488104736119,
+        "ndtw": 0.44972448163356626
+      }
+    },
+    "by_split": {
+      "seen": {
+        "n": 576,
+        "avg_tcr": 0.5987161042187821,
+        "avg_tcr_seg": 0.6029452478884506,
+        "ndtw": 0.49573579343081303
+      },
+      "unseen": {
+        "n": 417,
+        "avg_tcr": 0.5131331244288972,
+        "avg_tcr_seg": 0.516130036496927,
+        "ndtw": 0.3861692883596717
+      }
+    },
+    "recomputed_on_this_machine": false
+  },
+  "one_epoch_history": {
+    "source_directory": "results/trained/pi05_overall_run1/step_13437/seed_0",
+    "headline": {
+      "task_unweighted": {
+        "avg_tcr": 0.4454339999118759,
+        "avg_tcr_seg": 0.44865455172387014,
+        "ndtw": 0.31799244068517857,
+        "cr": 0.04833836858006042
+      },
+      "episode_weighted": {
+        "avg_tcr": 0.4454339999118759,
+        "avg_tcr_seg": 0.44865455172387014,
+        "ndtw": 0.31799244068517857,
+        "cr": 0.04833836858006042
+      }
+    },
+    "by_split": {
+      "seen": {
+        "n": 576,
+        "avg_tcr": 0.4809546113907127,
+        "avg_tcr_seg": 0.4842636126696572,
+        "ndtw": 0.36076268198689626,
+        "cr": 0.04861111111111111
+      },
+      "unseen": {
+        "n": 417,
+        "avg_tcr": 0.39636955815693564,
+        "avg_tcr_seg": 0.39946793516566087,
+        "ndtw": 0.2589141217648202,
+        "cr": 0.047961630695443645
+      }
+    },
+    "recomputed_on_this_machine": false
+  },
+  "five_epoch": {
+    "source_directory": "results/trained/pi05_overall_5ep_run1/step_67189/seed_0",
+    "headline": {
+      "task_unweighted": {
+        "avg_tcr": 0.566999006300707,
+        "avg_tcr_seg": 0.5710442050123672,
+        "ndtw": 0.4593547970343393,
+        "cr": 0.06847935548841894
+      },
+      "episode_weighted": {
+        "avg_tcr": 0.566999006300707,
+        "avg_tcr_seg": 0.5710442050123672,
+        "ndtw": 0.4593547970343393,
+        "cr": 0.06847935548841894
+      }
+    },
+    "by_split": {
+      "seen": {
+        "n": 576,
+        "avg_tcr": 0.6091342727144605,
+        "avg_tcr_seg": 0.6131040403526534,
+        "ndtw": 0.5047433613729493,
+        "cr": 0.07291666666666667
+      },
+      "unseen": {
+        "n": 417,
+        "avg_tcr": 0.5087977749953781,
+        "avg_tcr_seg": 0.5129471662689503,
+        "ndtw": 0.39665980168892145,
+        "cr": 0.06235011990407674
+      }
+    },
+    "recomputed_on_this_machine": false
+  }
+}

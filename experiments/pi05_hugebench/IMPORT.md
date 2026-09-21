@@ -15,7 +15,7 @@
 最终 checkpoint 保留完整目录，包括 `params`、`train_state`、`assets` 和 Orbax 元数据。
 1 epoch checkpoint 和所有中间 checkpoint 不在此次发布范围内。
 
-权重通过 GitHub Release 保存实际二进制分片，完成上传与 SHA256 校验后追加下载入口。
+实际权重分片已发布到 [GitHub Release](https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/pi05-hugebench-5ep-20260921)，全部通过 SHA256 校验。
 实验代码、配置、来源记录保存在 Git；完整评测轨迹、图片、视频和日志将随 Release 归档。
 数据缓存、JAX/uv 缓存和已安装的 `.venv`、`.python` 环境不上传。
 原始 base 虽位于 `artifacts/cache/openpi-assets/`，属于本次保留的模型资产。
@@ -54,3 +54,16 @@ export CHECKPOINT_STEP=67189
 
 `records/blob_20260909/source_files.json` 记录代码、配置、历史文档和日志在下载时的 SHA256 与 Blob ETag。
 其中的原始绝对路径用于来源追溯；不要据此覆盖当前工作目录配置。
+
+## 下载与还原
+
+下载 [Release](https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/pi05-hugebench-5ep-20260921) 中的 `manifest.json` 和 `restore.py`，在目标工作目录执行：
+
+```bash
+python3 restore.py manifest.json --workspace /path/to/workspace
+tar -xf /path/to/workspace/experiments/pi05_hugebench/artifacts/archives/results-and-logs.tar -C /path/to/workspace
+```
+
+还原器检查分片和完整文件 SHA256。归档解包会恢复原来的 `results/` 和 `logs/` 路径；
+请在新的目标目录解包，避免覆盖已有评测产物。
+完整的 Release 文件清单位于仓库的 `model_assets/releases/pi05-hugebench-5ep-20260921.json`。
