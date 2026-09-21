@@ -1,0 +1,17 @@
+{
+  "date": "2026-08-25",
+  "record_kind": "transcribed_historical_inference_summary",
+  "source": "experiments/pi05_hugebench/legacy/docs/PI05_XPOLICYLAB_BRINGUP.md, lines 639-669",
+  "checkpoint": "yu781986168/HUGE_PI05",
+  "same_checkpoint_for_both_arms": true,
+  "split": "test_seen",
+  "paired_samples": 200,
+  "optimizer_updates": 0,
+  "recomputed_for_this_publication": false,
+  "raw_per_sample_outputs_available": false,
+  "endpoint_error_m": {
+    "no_state": {"mean": 0.660, "median": 0.198},
+    "state": {"mean": 1.344, "median": 0.890}
+  },
+  "interpretation_limit": "Tests compatibility of input formats with an existing checkpoint, not training a state-conditioned model."
+}

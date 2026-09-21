@@ -1,0 +1,38 @@
+{
+  "repository": "https://github.com/XPolicyLab/XPolicyLab.git",
+  "commit": "c07a09614dd44cc4a67483bcb9a82e7439d99926",
+  "source_blob_prefix": "output/liyan/ll_0831/XPolicyLab/policy/Pi_05/openpi/",
+  "snapshot_files": [
+    {
+      "path": "src/openpi/training/config.py",
+      "bytes": 42433,
+      "sha256": "c70b89c1613e82e420430504b37a7162d3c281a34caa3a49f288d02e75f1f84c"
+    },
+    {
+      "path": "src/openpi/policies/drone_policy.py",
+      "bytes": 4368,
+      "sha256": "ef42512ba457de37c3553a30da77015d4e0d92d0baefed7bb1609b0faa65588e"
+    },
+    {
+      "path": "scripts/action_infer.py",
+      "bytes": 48423,
+      "sha256": "c632982b6bf04abd209b8a059536118b7b19faf80b87956ac1e1fb2166e22aa8"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 3616,
+      "sha256": "10cc8694d852ddcfc802fd417d824d5b72e873a467f705cb98196fe96cb24f0d"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 673278,
+      "sha256": "a0ff714d6f3597e1389e3b2abe8ff85a4346c66375295a830474a1328fb97b87"
+    }
+  ],
+  "patch_sha256": "3016fdf6487bf426159b5183cfcd09ba3eb2bffff34310c7151cf69e9faad085",
+  "norm_stats": {
+    "path": "assets/norm_stats.json",
+    "sha256": "5d7a7f5dbf601765d5632337a02a56b421170e0935ed23f030f652ade1ed3350",
+    "source_blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/assets/pi05_overall_state/task_overall/train/norm_stats.json"
+  }
+}
