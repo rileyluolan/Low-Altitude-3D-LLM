@@ -1,0 +1,20 @@
+experiment: pi05_hugebench
+training_config: pi05_overall_5ep
+run_name: pi05_overall_5ep_run1
+initialization: gs://openpi-assets/checkpoints/pi05_base/params
+resume_from: null
+dataset: task_overall/train
+epochs: 5
+steps_per_epoch: 13438
+num_train_steps: 67190
+batch_size: 128
+action_horizon: 20
+exec_steps_at_evaluation: 10
+learning_rate:
+  schedule: warmup_cosine_decay
+  warmup_steps: 1000
+  peak: 2.5e-5
+  end: 2.5e-6
+  decay_steps: 67190
+checkpoint_root: /home/aiscuser/workspace-ll/experiments/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1
+previous_one_epoch_run_preserved: /home/aiscuser/workspace-ll/experiments/pi05_hugebench/artifacts/checkpoints/pi05_overall/pi05_overall_run1

@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=lib/common.sh
+source "${SCRIPT_DIR}/lib/common.sh"
+
+prepare_data_links
+require_dir "${OPENPI_ROOT}/src/openpi"
+
+OPENPI_PY="$(find_openpi_python)" || die \
+  "OpenPI Python runtime not found. Restore ${OPENPI_ROOT}/.venv or export OPENPI_PYTHON."
+
+grep -q 'name="pi05_overall"' "${OPENPI_ROOT}/src/openpi/training/config.py" \
+  || die "Training config ${TRAIN_CONFIG} is missing"
+grep -q 'gs://openpi-assets/checkpoints/pi05_base/params' \
+  "${OPENPI_ROOT}/src/openpi/training/config.py" \
+  || die "Training config does not declare the expected pi0.5-base weights"
+
+mkdir -p "${CHECKPOINTS_ROOT}" "${ASSETS_ROOT}" "${LOGS_ROOT}/train"
+TRAIN_LOG="${LOGS_ROOT}/train/${RUN_NAME}.log"
+MODE_ARGS=()
+if [[ -d "${TRAINED_CHECKPOINT_ROOT}" ]]; then
+  MODE_ARGS+=(--resume)
+fi
+
+note "training ${TRAIN_CONFIG}/${RUN_NAME}"
+note "log: ${TRAIN_LOG}"
+cd "${OPENPI_ROOT}"
+"${OPENPI_PY}" scripts/train.py "${TRAIN_CONFIG}" \
+  --exp-name "${RUN_NAME}" \
+  --assets-base-dir "${ASSETS_ROOT}" \
+  --checkpoint-base-dir "${CHECKPOINTS_ROOT}" \
+  "${MODE_ARGS[@]}" 2>&1 | tee -a "${TRAIN_LOG}"
+

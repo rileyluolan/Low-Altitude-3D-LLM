@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=lib/common.sh
+source "${SCRIPT_DIR}/lib/common.sh"
+
+RUN_ROOT="$(evaluation_run_root)"
+ROLLOUT_DIR="${1:-${RUN_ROOT}/rollouts}"
+METRICS_DIR="${2:-${RUN_ROOT}/metrics}"
+METRIC_PY="${METRIC_PYTHON:-}"
+
+require_dir "${ROLLOUT_DIR}"
+if [[ -z "${METRIC_PY}" ]]; then
+  METRIC_PY="$(find_renderer_python)" || die \
+    "Metric runtime not found. Export METRIC_PYTHON to a Python with HUGE-Bench metric dependencies."
+fi
+
+mkdir -p "${METRICS_DIR}" "${LOGS_ROOT}/eval"
+METRIC_JSON="${METRICS_DIR}/paper_aligned.json"
+METRIC_LOG="${LOGS_ROOT}/eval/trained_metrics_step_${CHECKPOINT_STEP:-$(latest_checkpoint_step)}_seed_${SEED}.log"
+
+"${METRIC_PY}" "${HUGEBENCH_ROOT}/eval/robotwin/metric.py" \
+  --input-dir "${ROLLOUT_DIR}" \
+  --output-json "${METRIC_JSON}" \
+  --mesh-root "${HUGE_DATA_ROOT}/data_3d" \
+  --tasks overall \
+  2>&1 | tee "${METRIC_LOG}"
+
+note "metrics: ${METRIC_JSON}"
+

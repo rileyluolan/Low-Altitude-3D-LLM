@@ -1,0 +1,387 @@
+[
+  {
+    "path": ".gitignore",
+    "size": 126,
+    "sha256": "82b2c7d047697313dc0b7e6781bfcb97bf75cd9c0b396783a13d466204922b62",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/.gitignore",
+    "etag": "0x8DF0E6A042C714C"
+  },
+  {
+    "path": "README.md",
+    "size": 3278,
+    "sha256": "e3adb0c9579fdc722c9728a95871e254f5796b010760dab27f444acfc7914427",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/README.md",
+    "etag": "0x8DF0E6A05A931A4"
+  },
+  {
+    "path": "configs/experiment.env",
+    "size": 2115,
+    "sha256": "f2c893a283a45b7bad0de87974e5edb278da3a5431c52a01c66a679e69073cae",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/configs/experiment.env",
+    "etag": "0x8DF0E6A03444847"
+  },
+  {
+    "path": "configs/experiment.yaml",
+    "size": 1030,
+    "sha256": "873493201b7e7c1721aafecea404250b5367f90475dfd5aa2596810c6d109565",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/configs/experiment.yaml",
+    "etag": "0x8DF0E6A041A7004"
+  },
+  {
+    "path": "configs/gaussian-splatting-requirements.txt",
+    "size": 340,
+    "sha256": "a6aca84323c988a298c3131c00a1ac2b91b0d41203f100fe8a5d7fe4cbd35dfd",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/configs/gaussian-splatting-requirements.txt",
+    "etag": "0x8DF0E69FF2A7DD4"
+  },
+  {
+    "path": "docs/provenance.md",
+    "size": 2139,
+    "sha256": "d5edbbc5aa085f2886f3d69abca89ca7a7f40f53811bccc0d537dcc53ccf4abf",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/docs/provenance.md",
+    "etag": "0x8DF0E6A0228EAA9"
+  },
+  {
+    "path": "docs/results.md",
+    "size": 1411,
+    "sha256": "d2397e09df1d1520d1fc19e85b3945ff7052050e940558713c3b38a6f5c97fcd",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/docs/results.md",
+    "etag": "0x8DF0E6A0654FA38"
+  },
+  {
+    "path": "docs/runtime.md",
+    "size": 2936,
+    "sha256": "b358908c8dbc8771b406a796618e415af962782b6d14924cb44f7c7c38f9618d",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/docs/runtime.md",
+    "etag": "0x8DF0E6A04EF3FB7"
+  },
+  {
+    "path": "legacy/README.md",
+    "size": 343,
+    "sha256": "ebe2a72c99c24a10761d690033d1fd66acb33f2819f50de92f6aef8fb5081fdd",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/README.md",
+    "etag": "0x8DF0E6A053E1729"
+  },
+  {
+    "path": "legacy/docs/PI05_HUGEBENCH_RUN.md",
+    "size": 1801,
+    "sha256": "2bc552d4b4c1801ee8080a22fb16daf2c2290a1761f876eb42370ae60dd8e7b9",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/docs/PI05_HUGEBENCH_RUN.md",
+    "etag": "0x8DF0E6A0481B6F7"
+  },
+  {
+    "path": "legacy/docs/PI05_ON_HUGEBENCH_PLAN.md",
+    "size": 29629,
+    "sha256": "09ce9f64d7c1ab8476d211ffc1543a3ac94d585dcb267acca56fead012ce41d1",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/docs/PI05_ON_HUGEBENCH_PLAN.md",
+    "etag": "0x8DF0E6A07277123"
+  },
+  {
+    "path": "legacy/docs/PI05_XPOLICYLAB_BRINGUP.md",
+    "size": 32781,
+    "sha256": "ddcce497e5fa578f6f9bfd0cb20e4630beb02ac4d2352d3c1205d9d320f1a733",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/docs/PI05_XPOLICYLAB_BRINGUP.md",
+    "etag": "0x8DF0E69FF0B321E"
+  },
+  {
+    "path": "legacy/drafts/checksums.sha256.blank-line",
+    "size": 1629,
+    "sha256": "92b044f1bf8a62daefbd29847634f8f4f26a5ac482fdd2dfde0ea52c78a6f438",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/drafts/checksums.sha256.blank-line",
+    "etag": "0x8DF0E6A060C0E54"
+  },
+  {
+    "path": "legacy/drafts/common.sh.interface-mismatch",
+    "size": 2973,
+    "sha256": "e61e5514ff482379f106f0869b59c40e4289c5349a929d5db0319aab871d5bf1",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/drafts/common.sh.interface-mismatch",
+    "etag": "0x8DF0E6A0260103B"
+  },
+  {
+    "path": "legacy/drafts/eval_metrics.sh.interface-mismatch",
+    "size": 997,
+    "sha256": "f7d018f800c6a4a6e2ef2422e6fc333a60b577124122b9164e98634d1879e24d",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/drafts/eval_metrics.sh.interface-mismatch",
+    "etag": "0x8DF0E6A0603DA29"
+  },
+  {
+    "path": "legacy/drafts/eval_rollout.sh.interface-mismatch",
+    "size": 3251,
+    "sha256": "30dc4919533aa4517cab15f20e30d52347eeeca89ccea3c6217c75db88589ee5",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/drafts/eval_rollout.sh.interface-mismatch",
+    "etag": "0x8DF0E69FE81371B"
+  },
+  {
+    "path": "legacy/drafts/eval_rollout.sh.pre-rerun-guard",
+    "size": 4454,
+    "sha256": "793d775f0fd234df4a0b780b68664a61f8b0026bad00cd6a97771ae04403f197",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/drafts/eval_rollout.sh.pre-rerun-guard",
+    "etag": "0x8DF0E6A029FDEA3"
+  },
+  {
+    "path": "legacy/drafts/experiment.env.interface-mismatch",
+    "size": 1850,
+    "sha256": "65f803ead76be2e222968a1b037b873246215018deef1f69ca8b88d55a35efde",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/drafts/experiment.env.interface-mismatch",
+    "etag": "0x8DF0E6A05328B6B"
+  },
+  {
+    "path": "legacy/drafts/experiment.env.missing-openpi-data-home",
+    "size": 1782,
+    "sha256": "095e854b98dbc0b712758029cb56d57db279d36bc3fef37f0e574408befb0d52",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/drafts/experiment.env.missing-openpi-data-home",
+    "etag": "0x8DF0E6A018BCE7E"
+  },
+  {
+    "path": "legacy/drafts/train.sh.interface-mismatch",
+    "size": 1197,
+    "sha256": "e4f8718ea81dc19970b5cbfa3ab80ab7dd99e397f458ff22e12d10fefc699b69",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/drafts/train.sh.interface-mismatch",
+    "etag": "0x8DF0E6A019BC21F"
+  },
+  {
+    "path": "legacy/scripts/chain_eval_after_train.sh",
+    "size": 3629,
+    "sha256": "b664a2f391f6777b1282956d64332dc83ba00c616e1e4535e8a8306a7f775990",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/scripts/chain_eval_after_train.sh",
+    "etag": "0x8DF0E6A07291CEE"
+  },
+  {
+    "path": "legacy/scripts/eval_pi05_4gpu.sh",
+    "size": 4883,
+    "sha256": "8cf749b3fe6d00ec57387683f6b061ca46f60a92c90f7443d978b6393a1b3b97",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/scripts/eval_pi05_4gpu.sh",
+    "etag": "0x8DF0E6A0210C2DB"
+  },
+  {
+    "path": "legacy/scripts/eval_pi05_trained_hugebench.sh",
+    "size": 2802,
+    "sha256": "10922bb4b7204c1be1cd73f1b3e293cade78b0445bbfb44089aaf66e3188c48d",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/scripts/eval_pi05_trained_hugebench.sh",
+    "etag": "0x8DF0E6A05FF4B6A"
+  },
+  {
+    "path": "legacy/scripts/pi05env.sh",
+    "size": 3749,
+    "sha256": "ddca0648fd6e9cf060e386b1f62fc6bd8fb6750b5fc373711028dd63bb37cc22",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/scripts/pi05env.sh",
+    "etag": "0x8DF0E6A06300F99"
+  },
+  {
+    "path": "legacy/scripts/run_pi05_hugebench_eval.sh",
+    "size": 6097,
+    "sha256": "1cc0f088110cbc2e655696c046e2eb8d7da867b8863938737717a1523a64272f",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/scripts/run_pi05_hugebench_eval.sh",
+    "etag": "0x8DF0E6A055948B1"
+  },
+  {
+    "path": "legacy/scripts/train_pi05.sh",
+    "size": 4199,
+    "sha256": "1e201a4f09aa70a3493212a891927f553986132e35aea327464969afe2bf996d",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/scripts/train_pi05.sh",
+    "etag": "0x8DF0E6A03390A65"
+  },
+  {
+    "path": "legacy/scripts/train_pi05_hugebench.sh",
+    "size": 2289,
+    "sha256": "dfdbc24084aa4eacb170cab43237a8ad7c46d7e948b5867baebd495b4eddedc1",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/legacy/scripts/train_pi05_hugebench.sh",
+    "etag": "0x8DF0E6A0668BA1E"
+  },
+  {
+    "path": "logs/eval/official_pi05/chain_eval_20260826_072236.log",
+    "size": 3693,
+    "sha256": "f55a4f167459307a504229d1cd67e1654508816a9513dab251d7ff51268885b8",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/logs/eval/official_pi05/chain_eval_20260826_072236.log",
+    "etag": "0x8DF0E6A062766C2"
+  },
+  {
+    "path": "logs/eval/official_pi05/chain_eval_20260826_090823.log",
+    "size": 3693,
+    "sha256": "ef600cb3ae3231a1dc4138feb82eaa0e8188891794a19f8fd59b7ae2b749bbe0",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/logs/eval/official_pi05/chain_eval_20260826_090823.log",
+    "etag": "0x8DF0E6A0542CCC8"
+  },
+  {
+    "path": "logs/eval/official_pi05/chain_eval_20260826_092621.log",
+    "size": 68322,
+    "sha256": "259fac4efff2db717fe99107098de43eaead188619a44bbea680492d03713b2d",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/logs/eval/official_pi05/chain_eval_20260826_092621.log",
+    "etag": "0x8DF0E6A0613CDC8"
+  },
+  {
+    "path": "logs/eval/official_pi05/eval_progress_live.log",
+    "size": 4683,
+    "sha256": "3d8ebca4d7ca6e4bdd425a8e0c90bf7f460339ba238dc7320df1f676ff4793ce",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/logs/eval/official_pi05/eval_progress_live.log",
+    "etag": "0x8DF0E6A06AB79B6"
+  },
+  {
+    "path": "logs/eval/pi05_overall_5ep_run1_step67189.log",
+    "size": 149726,
+    "sha256": "5d4da4bddc2773b6c31fee9667f7ad9afad2fbc44bba8b9bc3e417a460fb9b07",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/logs/eval/pi05_overall_5ep_run1_step67189.log",
+    "etag": "0x8DF0E6A04E51203"
+  },
+  {
+    "path": "logs/runtime/auto_start_gpu_holder.eval5ep.log",
+    "size": 69103524,
+    "sha256": "be8f638aad0d3c94642b4a9145addec4d96557947a97ab795e3999984a7734f1",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/logs/runtime/auto_start_gpu_holder.eval5ep.log",
+    "etag": "0x8DF0E6A0696BC54"
+  },
+  {
+    "path": "logs/runtime/auto_start_gpu_holder.lock",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/logs/runtime/auto_start_gpu_holder.lock",
+    "etag": "0x8DF0E6A032329FF"
+  },
+  {
+    "path": "logs/runtime/auto_start_gpu_holder.train5ep.log",
+    "size": 222191,
+    "sha256": "7165b39e05de777a39548377b00937aa6c0e9ab0c58ebd367e33627a5a082298",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/logs/runtime/auto_start_gpu_holder.train5ep.log",
+    "etag": "0x8DF0E6A041A7004"
+  },
+  {
+    "path": "logs/runtime/auto_start_gpu_holder_resume_step13437.log",
+    "size": 1117301,
+    "sha256": "d3132b602f962211fee345b027c7ce82031d7205fc594c900c90f34c4f269e2a",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/logs/runtime/auto_start_gpu_holder_resume_step13437.log",
+    "etag": "0x8DF0E6A045A84EF"
+  },
+  {
+    "path": "logs/runtime/auto_start_gpu_holder_step13437.log",
+    "size": 168,
+    "sha256": "363f79e99ad2ff2da728957f140011699a72e2c08844ffe7e498995ca1c7489e",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/logs/runtime/auto_start_gpu_holder_step13437.log",
+    "etag": "0x8DF0E6A00A56670"
+  },
+  {
+    "path": "logs/runtime/manual_gpu_holder.log",
+    "size": 213241,
+    "sha256": "7d2934784d648bc3f950fdc862f214573ed669f8360612f8b0a1e4bc4ba7b313",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/logs/runtime/manual_gpu_holder.log",
+    "etag": "0x8DF0E6A017D86B1"
+  },
+  {
+    "path": "logs/train/pi05_overall_5ep_run1.log",
+    "size": 3016652,
+    "sha256": "f5020f6abe79596715510e0663ca4e771abd8e4bd8ba8777608c4e659965e723",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/logs/train/pi05_overall_5ep_run1.log",
+    "etag": "0x8DF0E6A063D4727"
+  },
+  {
+    "path": "logs/train/pi05_overall_run1.log",
+    "size": 311125,
+    "sha256": "8f058367b2b350133fae4df4bb313723497e193e259c6d14d777c98038b3f1fe",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/logs/train/pi05_overall_run1.log",
+    "etag": "0x8DF0E6A067D8A47"
+  },
+  {
+    "path": "manifests/artifacts.yaml",
+    "size": 1185,
+    "sha256": "628efea92010586b6a79966367b73bd8f73a2d3a46d6383d08bbe5564b0cb0ee",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/manifests/artifacts.yaml",
+    "etag": "0x8DF0E6A067ACE36"
+  },
+  {
+    "path": "manifests/checksums.sha256",
+    "size": 1628,
+    "sha256": "fbc634f53fa3c6a9eef4bf95dbff2b912353907716ec5748021c8eab3af7788e",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/manifests/checksums.sha256",
+    "etag": "0x8DF0E6A03E9ABD4"
+  },
+  {
+    "path": "manifests/runtime.yaml",
+    "size": 1232,
+    "sha256": "4a8d1084a074e78d362b403a2399f21c1e30d61fafeaceb611e98ffacc03fc7b",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/manifests/runtime.yaml",
+    "etag": "0x8DF0E6A04E2F180"
+  },
+  {
+    "path": "manifests/train_5ep.yaml",
+    "size": 716,
+    "sha256": "da09434a4d625045f7bb0457fe344427e8b438bcdca884585ad35c44f0807c92",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/manifests/train_5ep.yaml",
+    "etag": "0x8DF0E69FE8184DC"
+  },
+  {
+    "path": "scripts/eval.sh",
+    "size": 372,
+    "sha256": "6b53d81ffd280c23ada92282720cd6f8491eae28fd5f4265f8035d705f3083cc",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/scripts/eval.sh",
+    "etag": "0x8DF0E6A0687B7FB"
+  },
+  {
+    "path": "scripts/eval_metrics.sh",
+    "size": 1375,
+    "sha256": "c0ec39c64facbea1fe9044d1ff86e1d7cc03af4a6c911f1e10548ea305a9cacf",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/scripts/eval_metrics.sh",
+    "etag": "0x8DF0E6A0412B07B"
+  },
+  {
+    "path": "scripts/eval_rollout.sh",
+    "size": 6260,
+    "sha256": "0f4294afe984c6768dcc94f683e453894c45f5f7c9a472b9c88dbebbfebc54d4",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/scripts/eval_rollout.sh",
+    "etag": "0x8DF0E6A0767FACD"
+  },
+  {
+    "path": "scripts/lib/common.sh",
+    "size": 3358,
+    "sha256": "428d587fa3c7153db1ccaf99f6ff7c533741ed624f30c61420e2a98c22f9e9e0",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/scripts/lib/common.sh",
+    "etag": "0x8DF0E6A03AA520C"
+  },
+  {
+    "path": "scripts/ops/auto_start_gpu_holder.sh",
+    "size": 2061,
+    "sha256": "85b5aad89fb38833a42a6a79364dfc75e1b12d74d9e8164ae9684663ae70a980",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/scripts/ops/auto_start_gpu_holder.sh",
+    "etag": "0x8DF0E6A06B16675"
+  },
+  {
+    "path": "scripts/prepare.sh",
+    "size": 672,
+    "sha256": "6abe02b31c73528b9ec512cd795895c1226f0f93ec4c0966f1fae6090a7c97a5",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/scripts/prepare.sh",
+    "etag": "0x8DF0E6A04948D83"
+  },
+  {
+    "path": "scripts/setup_runtime.sh",
+    "size": 3023,
+    "sha256": "088d81dd41081d767d24ab437962a91b8c4084f306dc391bb1b111b74f6bcbac",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/scripts/setup_runtime.sh",
+    "etag": "0x8DF0E6A04DFE7AA"
+  },
+  {
+    "path": "scripts/smoke.sh",
+    "size": 530,
+    "sha256": "babad0cca8ac2d35df2efe2163d0425f3788e0942af7b496f1ddfb9434e2167c",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/scripts/smoke.sh",
+    "etag": "0x8DF0E6A01812C18"
+  },
+  {
+    "path": "scripts/train.sh",
+    "size": 1825,
+    "sha256": "8dfea0912c61741d1c99887931d0d7d5e9fbbac533f51b1380f07c439292773b",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/scripts/train.sh",
+    "etag": "0x8DF0E6A0197CEEF"
+  },
+  {
+    "path": "scripts/train_5ep.sh",
+    "size": 209,
+    "sha256": "ada144dfe85925f491001156bb73ae73531f4ae28c8feb31c0ca0b22340ea03b",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/scripts/train_5ep.sh",
+    "etag": "0x8DF0E6A06A04E87"
+  },
+  {
+    "path": "scripts/verify_runtime.sh",
+    "size": 1096,
+    "sha256": "18746f5342d916730693833aa9c7054daf0b71a41e5f0b632dccd9e4e5085ffd",
+    "blob": "output/liyan/ll_0909/pi05_hugebench/scripts/verify_runtime.sh",
+    "etag": "0x8DF0E6A0621C7CB"
+  }
+]

@@ -1,0 +1,47 @@
+schema_version: 1
+restored_at: 2026-08-30
+
+openpi:
+  environment: XPolicyLab/policy/Pi_05/openpi/.venv
+  managed_python: experiments/pi05_hugebench/.python/cpython-3.11.16-linux-x86_64-gnu
+  uv: workspace-ll/.tools/bin/uv
+  versions:
+    python: 3.11.16
+    uv: 0.12.7
+    jax: 0.5.3
+    jaxlib: 0.5.3
+    torch: 2.10.0+cu128
+    numpy: 1.26.4
+    pyarrow: 24.0.0
+    lerobot: 0.1.0
+  dependency_lock: XPolicyLab/policy/Pi_05/openpi/uv.lock
+
+renderer_and_metrics:
+  environment: experiments/pi05_hugebench/.venv/gaussian-splatting
+  cloned_from: /opt/conda/envs/ptca
+  versions:
+    python: 3.10.20
+    torch: 2.8.0+cu126
+    torch_cuda: 12.6
+    nvcc: 12.6
+    numpy: 1.26.4
+    trimesh: 5.0.0
+    rtree: 1.4.1
+  cuda_arch: "8.0"
+  local_extensions:
+    - diff-gaussian-rasterization
+    - simple-knn
+    - fused-ssim
+  requirements: experiments/pi05_hugebench/configs/gaussian-splatting-requirements.txt
+
+validation:
+  openpi_imports: passed
+  jax_gpu_backend: passed
+  action_infer_import: passed
+  trained_checkpoint_restore_cpu: passed
+  cuda_extensions: passed
+  renderer_single_frame: passed
+  generic_metric: passed
+  paper_aligned_metric: passed
+  collision_metric: passed
+  trained_model_smoke: pending_gpu_memory_release

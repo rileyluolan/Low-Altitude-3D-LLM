@@ -1,0 +1,1065 @@
+{
+  "blob_prefix": "output/liyan/ll_0909/pi05_hugebench/",
+  "selected_weight_files": 132,
+  "selected_weight_bytes": 69629284055,
+  "selected_weights": [
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/.gitignore",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/.gitignore",
+      "size": 1,
+      "etag": "0x8DF0E6A46827EBD",
+      "md5": "M4na42GvebBMnI5wV/YMxg==",
+      "modified": "Wed, 09 Sep 2026 12:02:52 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/CACHEDIR.TAG",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/CACHEDIR.TAG",
+      "size": 191,
+      "etag": "0x8DF0E6A49B93722",
+      "md5": "dhDD8KYemYCYFHGdlxLyeA==",
+      "modified": "Wed, 09 Sep 2026 12:02:57 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/.gitattributes.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/.gitattributes.metadata",
+      "size": 101,
+      "etag": "0x8DF0E6A99B9A8F9",
+      "md5": "Vtmr82oeikVcD255p7g6PA==",
+      "modified": "Wed, 09 Sep 2026 12:05:11 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/_CHECKPOINT_METADATA.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/_CHECKPOINT_METADATA.metadata",
+      "size": 101,
+      "etag": "0x8DF0E6A9D1FDB56",
+      "md5": "dfedYr4d2UVA2xoITM0hcQ==",
+      "modified": "Wed, 09 Sep 2026 12:05:17 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/assets/task_overall/train/norm_stats.json.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/assets/task_overall/train/norm_stats.json.metadata",
+      "size": 100,
+      "etag": "0x8DF0E6C20C82F4A",
+      "md5": "iYq/8ZwX0ByFxSmNSkdb/A==",
+      "modified": "Wed, 09 Sep 2026 12:16:07 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/_METADATA.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/_METADATA.metadata",
+      "size": 100,
+      "etag": "0x8DF0E6B2CA8C490",
+      "md5": "sVTQFWIyiW/G8Wju3SSL5g==",
+      "modified": "Wed, 09 Sep 2026 12:09:18 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/_sharding.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/_sharding.metadata",
+      "size": 101,
+      "etag": "0x8DF0E6B31D8B50A",
+      "md5": "Tm+KIL9ht+4TdJlb6QmDqg==",
+      "modified": "Wed, 09 Sep 2026 12:09:27 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/array_metadatas/process_0.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/array_metadatas/process_0.metadata",
+      "size": 101,
+      "etag": "0x8DF0E6BFE1D3670",
+      "md5": "W4EDTeePn+mCmiR5z4DqZQ==",
+      "modified": "Wed, 09 Sep 2026 12:15:09 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/d/7dd9904775b02138369a087119271656.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/d/7dd9904775b02138369a087119271656.metadata",
+      "size": 101,
+      "etag": "0x8DF0E6C002ABE46",
+      "md5": "vdf5kjmTBVVJIzZ1etc16A==",
+      "modified": "Wed, 09 Sep 2026 12:15:13 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/manifest.ocdbt.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/manifest.ocdbt.metadata",
+      "size": 99,
+      "etag": "0x8DF0E6AF2D1DE73",
+      "md5": "jG9/HOzG0ewI4ls3PzYarQ==",
+      "modified": "Wed, 09 Sep 2026 12:07:41 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/230f86a9f759cdea9d77882a893d0963.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/230f86a9f759cdea9d77882a893d0963.metadata",
+      "size": 125,
+      "etag": "0x8DF0E6C21FDD654",
+      "md5": "pAD+E2r1yF3V780811N9SA==",
+      "modified": "Wed, 09 Sep 2026 12:16:09 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/27f3aa3e30d366768a7180a1b58cf903.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/27f3aa3e30d366768a7180a1b58cf903.metadata",
+      "size": 100,
+      "etag": "0x8DF0E6C24D80950",
+      "md5": "Mzyi68hErsb2RWl3LuIWhg==",
+      "modified": "Wed, 09 Sep 2026 12:16:14 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/2954301148cf617b9f089b1b37adbd50.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/2954301148cf617b9f089b1b37adbd50.metadata",
+      "size": 125,
+      "etag": "0x8DF0E6C213BF294",
+      "md5": "2Lp+Iucek+pdCBa/NPJ0xQ==",
+      "modified": "Wed, 09 Sep 2026 12:16:08 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/30622ea84158152e551976761b6e369b.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/30622ea84158152e551976761b6e369b.metadata",
+      "size": 125,
+      "etag": "0x8DF0E6C22B92EF0",
+      "md5": "eQ1yKHt2dgeGEWdXGyLjNQ==",
+      "modified": "Wed, 09 Sep 2026 12:16:11 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/38da34d221b435358562aa6a86c3acea.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/38da34d221b435358562aa6a86c3acea.metadata",
+      "size": 125,
+      "etag": "0x8DF0E6C23845FB8",
+      "md5": "ufUa9DcN65BY6wz/0ZlnVg==",
+      "modified": "Wed, 09 Sep 2026 12:16:12 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/59e744453a5fbf301cb9d3d61cca0fe0.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/59e744453a5fbf301cb9d3d61cca0fe0.metadata",
+      "size": 101,
+      "etag": "0x8DF0E6C1F85B9AC",
+      "md5": "TTMyCugygqNMvECTM3Og9g==",
+      "modified": "Wed, 09 Sep 2026 12:16:05 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/9f19df2f69d8650349ca3890ee98eee0.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/9f19df2f69d8650349ca3890ee98eee0.metadata",
+      "size": 125,
+      "etag": "0x8DF0E6C23A387CD",
+      "md5": "yrBFUmIcV3MgoyhfTMC6Cg==",
+      "modified": "Wed, 09 Sep 2026 12:16:12 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/b5fdfa2e578d61e50768b6dd8118463a.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/b5fdfa2e578d61e50768b6dd8118463a.metadata",
+      "size": 101,
+      "etag": "0x8DF0E6C25273651",
+      "md5": "i631ip3aLkvOzpL1p6u2sg==",
+      "modified": "Wed, 09 Sep 2026 12:16:15 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/b8aacd28ff02948ad34b169d4b23bdd0.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/b8aacd28ff02948ad34b169d4b23bdd0.metadata",
+      "size": 124,
+      "etag": "0x8DF0E6C248DE646",
+      "md5": "LlNX+g8I+GE1BRI99CjcjA==",
+      "modified": "Wed, 09 Sep 2026 12:16:14 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/d292a17205b485db6de3bc44843bf94c.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/d292a17205b485db6de3bc44843bf94c.metadata",
+      "size": 125,
+      "etag": "0x8DF0E6C262E45AD",
+      "md5": "Ql0ZrEb3rviAC0EWI981Wg==",
+      "modified": "Wed, 09 Sep 2026 12:16:16 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/db0dd4077afb3b90de44cce8e3a151ac.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/d/db0dd4077afb3b90de44cce8e3a151ac.metadata",
+      "size": 124,
+      "etag": "0x8DF0E6C237061AD",
+      "md5": "C5RW5BpB0uCURbebYQy5ew==",
+      "modified": "Wed, 09 Sep 2026 12:16:12 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/manifest.ocdbt.metadata",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/download/params/ocdbt.process_0/manifest.ocdbt.metadata",
+      "size": 101,
+      "etag": "0x8DF0E6BD7BB6BCB",
+      "md5": "R3fx2DdUJxyJ7gXv1IRHSA==",
+      "modified": "Wed, 09 Sep 2026 12:14:05 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.cache/huggingface/trees/a66531a8991aa585b8e2a356900d5fb07475fdd7.json",
+      "path": "artifacts/baselines/official_pi05/.cache/huggingface/trees/a66531a8991aa585b8e2a356900d5fb07475fdd7.json",
+      "size": 4243,
+      "etag": "0x8DF0E6A9B273C8A",
+      "md5": "QOh63IolIeN4bvAymv0feg==",
+      "modified": "Wed, 09 Sep 2026 12:05:14 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/.gitattributes",
+      "path": "artifacts/baselines/official_pi05/.gitattributes",
+      "size": 2271,
+      "etag": "0x8DF0E6A04F3A788",
+      "md5": "Wh1ZIvAIRrTga/ZB4dnQsg==",
+      "modified": "Wed, 09 Sep 2026 12:01:02 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/_CHECKPOINT_METADATA",
+      "path": "artifacts/baselines/official_pi05/_CHECKPOINT_METADATA",
+      "size": 426,
+      "etag": "0x8DF0E6A062042E4",
+      "md5": "vEj3yqAt84pLFiVP5B/7eA==",
+      "modified": "Wed, 09 Sep 2026 12:01:04 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/assets/task_overall/train/norm_stats.json",
+      "path": "artifacts/baselines/official_pi05/assets/task_overall/train/norm_stats.json",
+      "size": 1149,
+      "etag": "0x8DF0E6A9975E751",
+      "md5": "jU5EZlSH7MZC2pCcWUtnEw==",
+      "modified": "Wed, 09 Sep 2026 12:05:11 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/_METADATA",
+      "path": "artifacts/baselines/official_pi05/params/_METADATA",
+      "size": 23493,
+      "etag": "0x8DF0E6A05C8FC8B",
+      "md5": "h87nNUGOGM+SlQTXZuiH5w==",
+      "modified": "Wed, 09 Sep 2026 12:01:03 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/_sharding",
+      "path": "artifacts/baselines/official_pi05/params/_sharding",
+      "size": 17952,
+      "etag": "0x8DF0E69FF431A2E",
+      "md5": "uQbKjd0yzEAsRluwGbXx7g==",
+      "modified": "Wed, 09 Sep 2026 12:00:52 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/array_metadatas/process_0",
+      "path": "artifacts/baselines/official_pi05/params/array_metadatas/process_0",
+      "size": 9062,
+      "etag": "0x8DF0E6A46A3EAE2",
+      "md5": "6L3QQHzl7m1hSqp/D9Ilrw==",
+      "modified": "Wed, 09 Sep 2026 12:02:52 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/d/7dd9904775b02138369a087119271656",
+      "path": "artifacts/baselines/official_pi05/params/d/7dd9904775b02138369a087119271656",
+      "size": 38170,
+      "etag": "0x8DF0E6A483B073A",
+      "md5": "VTpmLpe8f34ssZGbGeE2Kg==",
+      "modified": "Wed, 09 Sep 2026 12:02:55 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/manifest.ocdbt",
+      "path": "artifacts/baselines/official_pi05/params/manifest.ocdbt",
+      "size": 120,
+      "etag": "0x8DF0E6A013F8AFA",
+      "md5": "4yvk9Z/BfjCN0kT7YcA9DA==",
+      "modified": "Wed, 09 Sep 2026 12:00:56 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/ocdbt.process_0/d/230f86a9f759cdea9d77882a893d0963",
+      "path": "artifacts/baselines/official_pi05/params/ocdbt.process_0/d/230f86a9f759cdea9d77882a893d0963",
+      "size": 2272452532,
+      "etag": "0x8DF0E6A9EF39408",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:05:20 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/ocdbt.process_0/d/27f3aa3e30d366768a7180a1b58cf903",
+      "path": "artifacts/baselines/official_pi05/params/ocdbt.process_0/d/27f3aa3e30d366768a7180a1b58cf903",
+      "size": 217,
+      "etag": "0x8DF0E6A9D2746FF",
+      "md5": "wenKw3gyf+/fW/vslaBp7Q==",
+      "modified": "Wed, 09 Sep 2026 12:05:17 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/ocdbt.process_0/d/2954301148cf617b9f089b1b37adbd50",
+      "path": "artifacts/baselines/official_pi05/params/ocdbt.process_0/d/2954301148cf617b9f089b1b37adbd50",
+      "size": 2240365890,
+      "etag": "0x8DF0E6AA038F0E9",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:05:22 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/ocdbt.process_0/d/30622ea84158152e551976761b6e369b",
+      "path": "artifacts/baselines/official_pi05/params/ocdbt.process_0/d/30622ea84158152e551976761b6e369b",
+      "size": 2173629289,
+      "etag": "0x8DF0E6AA039B369",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:05:22 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/ocdbt.process_0/d/38da34d221b435358562aa6a86c3acea",
+      "path": "artifacts/baselines/official_pi05/params/ocdbt.process_0/d/38da34d221b435358562aa6a86c3acea",
+      "size": 1078169618,
+      "etag": "0x8DF0E6A9BE3C75F",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:05:15 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/ocdbt.process_0/d/59e744453a5fbf301cb9d3d61cca0fe0",
+      "path": "artifacts/baselines/official_pi05/params/ocdbt.process_0/d/59e744453a5fbf301cb9d3d61cca0fe0",
+      "size": 1077,
+      "etag": "0x8DF0E6A9B4419EF",
+      "md5": "9FWQ08KGmJK/8T7dQ0vkQg==",
+      "modified": "Wed, 09 Sep 2026 12:05:14 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/ocdbt.process_0/d/9f19df2f69d8650349ca3890ee98eee0",
+      "path": "artifacts/baselines/official_pi05/params/ocdbt.process_0/d/9f19df2f69d8650349ca3890ee98eee0",
+      "size": 2485165268,
+      "etag": "0x8DF0E6A9FA39A9A",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:05:21 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/ocdbt.process_0/d/b5fdfa2e578d61e50768b6dd8118463a",
+      "path": "artifacts/baselines/official_pi05/params/ocdbt.process_0/d/b5fdfa2e578d61e50768b6dd8118463a",
+      "size": 5554,
+      "etag": "0x8DF0E6A9985DAF0",
+      "md5": "LgztFhH0qOSVzhBrf6h44Q==",
+      "modified": "Wed, 09 Sep 2026 12:05:11 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/ocdbt.process_0/d/b8aacd28ff02948ad34b169d4b23bdd0",
+      "path": "artifacts/baselines/official_pi05/params/ocdbt.process_0/d/b8aacd28ff02948ad34b169d4b23bdd0",
+      "size": 506147693,
+      "etag": "0x8DF0E6A9E00550A",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:05:19 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/ocdbt.process_0/d/d292a17205b485db6de3bc44843bf94c",
+      "path": "artifacts/baselines/official_pi05/params/ocdbt.process_0/d/d292a17205b485db6de3bc44843bf94c",
+      "size": 1680330202,
+      "etag": "0x8DF0E6A9ECB78B8",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:05:20 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/ocdbt.process_0/d/db0dd4077afb3b90de44cce8e3a151ac",
+      "path": "artifacts/baselines/official_pi05/params/ocdbt.process_0/d/db0dd4077afb3b90de44cce8e3a151ac",
+      "size": 3901582,
+      "etag": "0x8DF0E6A9B5C6888",
+      "md5": "lga2zHfeh8qPX3Y/WpJN8g==",
+      "modified": "Wed, 09 Sep 2026 12:05:14 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/baselines/official_pi05/params/ocdbt.process_0/manifest.ocdbt",
+      "path": "artifacts/baselines/official_pi05/params/ocdbt.process_0/manifest.ocdbt",
+      "size": 400,
+      "etag": "0x8DF0E6A464EB0CD",
+      "md5": "gCfncvOd0kqiCivi/UtRDg==",
+      "modified": "Wed, 09 Sep 2026 12:02:51 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params.lock",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params.lock",
+      "size": 0,
+      "etag": "0x8DF0E6A4755C58E",
+      "md5": "1B2M2Y8AsgTpgAmY7PhCfg==",
+      "modified": "Wed, 09 Sep 2026 12:02:53 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/_CHECKPOINT_METADATA",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/_CHECKPOINT_METADATA",
+      "size": 258,
+      "etag": "0x8DF0E6A99ADA87E",
+      "md5": "uDrD0GJ9/soyYRTjoi8CTw==",
+      "modified": "Wed, 09 Sep 2026 12:05:11 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/_METADATA",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/_METADATA",
+      "size": 21402,
+      "etag": "0x8DF0E6A9C6B603F",
+      "md5": "2KbT3SeW+TztM+bI4gRvTQ==",
+      "modified": "Wed, 09 Sep 2026 12:05:16 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/_sharding",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/_sharding",
+      "size": 11420,
+      "etag": "0x8DF0E6A9C383F0F",
+      "md5": "fWlnNNk1SS+IQh+CEMIX6g==",
+      "modified": "Wed, 09 Sep 2026 12:05:16 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/array_metadatas/process_0",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/array_metadatas/process_0",
+      "size": 8856,
+      "etag": "0x8DF0E6B368D939E",
+      "md5": "/YmvRR2S0+o29qZiGEPt0w==",
+      "modified": "Wed, 09 Sep 2026 12:09:34 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/commit_success.txt",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/commit_success.txt",
+      "size": 0,
+      "etag": "0x8DF0E6A9AA12604",
+      "md5": "1B2M2Y8AsgTpgAmY7PhCfg==",
+      "modified": "Wed, 09 Sep 2026 12:05:13 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/d/1c4302d2d2000b5f3eb4fa1350fdef9a",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/d/1c4302d2d2000b5f3eb4fa1350fdef9a",
+      "size": 2132,
+      "etag": "0x8DF0E6B2B8E52F3",
+      "md5": "M9VQtg9mmNpNxUk3PFqKaA==",
+      "modified": "Wed, 09 Sep 2026 12:09:16 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/manifest.ocdbt",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/manifest.ocdbt",
+      "size": 117,
+      "etag": "0x8DF0E6A9AB83D8F",
+      "md5": "JHMt8vA2+4zTj7e08rGstQ==",
+      "modified": "Wed, 09 Sep 2026 12:05:13 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/0832cad6c37f82d4eedd897dcbb8da9d",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/0832cad6c37f82d4eedd897dcbb8da9d",
+      "size": 2240590484,
+      "etag": "0x8DF0E6BF87F08E9",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:15:00 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/247d4b7c814d8b1a23fa8a20f36a88f7",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/247d4b7c814d8b1a23fa8a20f36a88f7",
+      "size": 34945019,
+      "etag": "0x8DF0E6BF8D6E433",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:15:00 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/35a545f74995e511808d4f94dfbef3b6",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/35a545f74995e511808d4f94dfbef3b6",
+      "size": 70041571,
+      "etag": "0x8DF0E6BF9B8DB70",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:15:02 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/73bbae8a4deba6498bf07d96b215a574",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/73bbae8a4deba6498bf07d96b215a574",
+      "size": 2935855,
+      "etag": "0x8DF0E6BB398BF0A",
+      "md5": "HVlWzNlQc0i4zG5dA3jWrA==",
+      "modified": "Wed, 09 Sep 2026 12:13:04 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/7bc9d3296d23a6fb83a6b3778ac6e964",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/7bc9d3296d23a6fb83a6b3778ac6e964",
+      "size": 2240315383,
+      "etag": "0x8DF0E6C26E5E845",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:16:18 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/7d78f38c5d8be1eea31406644dde9bd6",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/7d78f38c5d8be1eea31406644dde9bd6",
+      "size": 133821,
+      "etag": "0x8DF0E6BD0F7E8A6",
+      "md5": "qA3aTOnuJOm8TSyveL+ScA==",
+      "modified": "Wed, 09 Sep 2026 12:13:54 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/828bee85475e37c61e1cc19e32d1c5ef",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/828bee85475e37c61e1cc19e32d1c5ef",
+      "size": 929,
+      "etag": "0x8DF0E6C07792FA4",
+      "md5": "l5njiIkDe+WMHZv9hjz9yQ==",
+      "modified": "Wed, 09 Sep 2026 12:15:25 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/8c5d7070ea57bdce2f0a19f95b8a21b4",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/8c5d7070ea57bdce2f0a19f95b8a21b4",
+      "size": 3077149148,
+      "etag": "0x8DF0E6BDA75C476",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:14:09 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/b4349aaadb7dfa45c3a53fc67c04b8f6",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/b4349aaadb7dfa45c3a53fc67c04b8f6",
+      "size": 1120156687,
+      "etag": "0x8DF0E6BFE70C7E5",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:15:10 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/caf01a82962cbd4651563d2ac1063e0b",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/caf01a82962cbd4651563d2ac1063e0b",
+      "size": 27445152,
+      "etag": "0x8DF0E6BF5442D07",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:14:54 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/deefd3c43390a50472cbcd317b0fff58",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/deefd3c43390a50472cbcd317b0fff58",
+      "size": 2393670849,
+      "etag": "0x8DF0E6BD38B0A36",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:13:58 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/ec484cf8f02dcf59e1892180f0862e40",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/d/ec484cf8f02dcf59e1892180f0862e40",
+      "size": 1234292390,
+      "etag": "0x8DF0E6BF2F93965",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:14:51 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/manifest.ocdbt",
+      "path": "artifacts/cache/openpi-assets/checkpoints/pi05_base/params/ocdbt.process_0/manifest.ocdbt",
+      "size": 458,
+      "etag": "0x8DF0E6AF2F606A6",
+      "md5": "76clmla5BpNyk9xZmuw44g==",
+      "modified": "Wed, 09 Sep 2026 12:07:41 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/_CHECKPOINT_METADATA",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/_CHECKPOINT_METADATA",
+      "size": 426,
+      "etag": "0x8DF0E6A47161E0E",
+      "md5": "I6nXg97gUpiaFKcioQQs8w==",
+      "modified": "Wed, 09 Sep 2026 12:02:53 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/assets/task_overall/train/norm_stats.json",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/assets/task_overall/train/norm_stats.json",
+      "size": 1149,
+      "etag": "0x8DF0E6BF02AD8EC",
+      "md5": "jU5EZlSH7MZC2pCcWUtnEw==",
+      "modified": "Wed, 09 Sep 2026 12:14:46 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/_METADATA",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/_METADATA",
+      "size": 23493,
+      "etag": "0x8DF0E6A9AAE5D94",
+      "md5": "h87nNUGOGM+SlQTXZuiH5w==",
+      "modified": "Wed, 09 Sep 2026 12:05:13 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/_sharding",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/_sharding",
+      "size": 17952,
+      "etag": "0x8DF0E6A9B3F8B2C",
+      "md5": "uQbKjd0yzEAsRluwGbXx7g==",
+      "modified": "Wed, 09 Sep 2026 12:05:14 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/array_metadatas/process_0",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/array_metadatas/process_0",
+      "size": 9062,
+      "etag": "0x8DF0E6B0E923D39",
+      "md5": "6L3QQHzl7m1hSqp/D9Ilrw==",
+      "modified": "Wed, 09 Sep 2026 12:08:27 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/d/05accf4d236d4a54a03a4f857327df06",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/d/05accf4d236d4a54a03a4f857327df06",
+      "size": 42409,
+      "etag": "0x8DF0E6B005EE9FF",
+      "md5": "u4E/sN/RE3ukYHwzhglA6w==",
+      "modified": "Wed, 09 Sep 2026 12:08:04 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/manifest.ocdbt",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/manifest.ocdbt",
+      "size": 120,
+      "etag": "0x8DF0E6A9C4C9A81",
+      "md5": "lHLYKI2s/qfXYp92kFxVrA==",
+      "modified": "Wed, 09 Sep 2026 12:05:16 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/0e5963b04fd6de978b314dff03a34a26",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/0e5963b04fd6de978b314dff03a34a26",
+      "size": 132777,
+      "etag": "0x8DF0E6BB3DCE2CD",
+      "md5": "cmI4wdV6aS3VGOg6us+d5g==",
+      "modified": "Wed, 09 Sep 2026 12:13:05 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/230618c25934e74e0c76beac6e4d4046",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/230618c25934e74e0c76beac6e4d4046",
+      "size": 1053,
+      "etag": "0x8DF0E6C0FE0F778",
+      "md5": "c9JZyZT5ZPcLetQ3Qq6sIw==",
+      "modified": "Wed, 09 Sep 2026 12:15:39 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/36f4e5b752287d8dc4276fc214992e86",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/36f4e5b752287d8dc4276fc214992e86",
+      "size": 42389,
+      "etag": "0x8DF0E6BDBFC36A5",
+      "md5": "drFbqAxBbJlsfsjeuERwkQ==",
+      "modified": "Wed, 09 Sep 2026 12:14:12 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/40ea2ed18ec72945ee23e7b7bc7783f4",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/40ea2ed18ec72945ee23e7b7bc7783f4",
+      "size": 4026080,
+      "etag": "0x8DF0E6BDBC38D9B",
+      "md5": "IFeGicRfWPlZEY//LDW/cQ==",
+      "modified": "Wed, 09 Sep 2026 12:14:12 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/45399ce0d38baa58f7b0b8cd0afa3705",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/45399ce0d38baa58f7b0b8cd0afa3705",
+      "size": 1723,
+      "etag": "0x8DF0E6BEE8653B1",
+      "md5": "hwRFI9oWUP/CMnKBcPz1EA==",
+      "modified": "Wed, 09 Sep 2026 12:14:43 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/93f608d711c49afb0d823ff3310f9722",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/93f608d711c49afb0d823ff3310f9722",
+      "size": 2240377572,
+      "etag": "0x8DF0E6C2758E914",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:16:18 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/9aa7b74fb8fa85fccf46d9296d32502a",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/9aa7b74fb8fa85fccf46d9296d32502a",
+      "size": 2240335541,
+      "etag": "0x8DF0E6C24B7D453",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:16:14 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/b41ade01d525eb10ef019e4aebfb8cd7",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/b41ade01d525eb10ef019e4aebfb8cd7",
+      "size": 2385694151,
+      "etag": "0x8DF0E6BEF59ACA2",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:14:44 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/b5a6b8b22877167e0096cbb6a3ae944c",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/b5a6b8b22877167e0096cbb6a3ae944c",
+      "size": 1007427320,
+      "etag": "0x8DF0E6C0167877D",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:15:15 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/b69f0b79e2c8d33d5ef80f959695ce4a",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/b69f0b79e2c8d33d5ef80f959695ce4a",
+      "size": 2183125131,
+      "etag": "0x8DF0E6BF06B69D1",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:14:46 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/ba6497cc74f1ecf2796bdd9a4237d394",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/ba6497cc74f1ecf2796bdd9a4237d394",
+      "size": 2378824623,
+      "etag": "0x8DF0E6C24FA5EC8",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:16:14 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/e4bd9d2d937b6154bd706d67ab08e2d5",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/e4bd9d2d937b6154bd706d67ab08e2d5",
+      "size": 217,
+      "etag": "0x8DF0E6BB3F8D6CC",
+      "md5": "wenKw3gyf+/fW/vslaBp7Q==",
+      "modified": "Wed, 09 Sep 2026 12:13:05 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/fa1ccd216da20ea659c8a189a2408e44",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/d/fa1ccd216da20ea659c8a189a2408e44",
+      "size": 1077,
+      "etag": "0x8DF0E6BB30907BA",
+      "md5": "9FWQ08KGmJK/8T7dQ0vkQg==",
+      "modified": "Wed, 09 Sep 2026 12:13:03 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/manifest.ocdbt",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/params/ocdbt.process_0/manifest.ocdbt",
+      "size": 472,
+      "etag": "0x8DF0E6AFB099FA5",
+      "md5": "pa+scIQY8cfemP1LRvK4bQ==",
+      "modified": "Wed, 09 Sep 2026 12:07:55 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/_METADATA",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/_METADATA",
+      "size": 82865,
+      "etag": "0x8DF0E6A9B8BCEB7",
+      "md5": "mchWudNRgRA8iTNQmlIiuQ==",
+      "modified": "Wed, 09 Sep 2026 12:05:14 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/_sharding",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/_sharding",
+      "size": 56075,
+      "etag": "0x8DF0E6A9B644EE8",
+      "md5": "HYTsFlyu2vbSYtXNXsF5PA==",
+      "modified": "Wed, 09 Sep 2026 12:05:14 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/array_metadatas/process_0",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/array_metadatas/process_0",
+      "size": 28506,
+      "etag": "0x8DF0E6B1C7B0BD2",
+      "md5": "49Hs6ecC/3m0nQqMckOxSQ==",
+      "modified": "Wed, 09 Sep 2026 12:08:51 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/d/633072c82f5c4b2d30c2ebc351a8e003",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/d/633072c82f5c4b2d30c2ebc351a8e003",
+      "size": 119570,
+      "etag": "0x8DF0E6B0EA696B7",
+      "md5": "/SeRPWqhZDWVONaqW2Fd2g==",
+      "modified": "Wed, 09 Sep 2026 12:08:27 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/manifest.ocdbt",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/manifest.ocdbt",
+      "size": 120,
+      "etag": "0x8DF0E6A99B9A8F9",
+      "md5": "JLaSYtLyyPbkl8yotLL9vg==",
+      "modified": "Wed, 09 Sep 2026 12:05:11 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/17273ebdeaf45da0830faf492e9570bf",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/17273ebdeaf45da0830faf492e9570bf",
+      "size": 2117994787,
+      "etag": "0x8DF0E6C212B6365",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:16:08 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/1f534a0caeb3dc75ccc73b4370681f07",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/1f534a0caeb3dc75ccc73b4370681f07",
+      "size": 2343676629,
+      "etag": "0x8DF0E6BEC283427",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:14:39 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/24b54e13a0dd8ca4905e70d6d4223be3",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/24b54e13a0dd8ca4905e70d6d4223be3",
+      "size": 645,
+      "etag": "0x8DF0E6BB360FDE0",
+      "md5": "9Up5u9Zcru1mu2Ia8rdqYw==",
+      "modified": "Wed, 09 Sep 2026 12:13:04 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/2664c5e7f84021fc2377dd74a1bd7f83",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/2664c5e7f84021fc2377dd74a1bd7f83",
+      "size": 1257,
+      "etag": "0x8DF0E6BB493EBD6",
+      "md5": "zAf/8uk5fI9VLXlY877swA==",
+      "modified": "Wed, 09 Sep 2026 12:13:06 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/2d9c5ff3de0a42776ffd26aa1040cc25",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/2d9c5ff3de0a42776ffd26aa1040cc25",
+      "size": 1184,
+      "etag": "0x8DF0E6BFD7F56E7",
+      "md5": "4o8tHdKfGEhWfLLgLlQD/g==",
+      "modified": "Wed, 09 Sep 2026 12:15:08 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/3ef559cba5caab7586e486f6fa86bd8e",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/3ef559cba5caab7586e486f6fa86bd8e",
+      "size": 2211326111,
+      "etag": "0x8DF0E6C02A9C450",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:15:17 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/4041cc5b2f0d92556e62dfdfd22122d1",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/4041cc5b2f0d92556e62dfdfd22122d1",
+      "size": 2235887669,
+      "etag": "0x8DF0E6C21853671",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:16:09 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/432bce9b54b6bd83738eeb333ece726c",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/432bce9b54b6bd83738eeb333ece726c",
+      "size": 2166214379,
+      "etag": "0x8DF0E6BFB4F31B1",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:15:05 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/447b320971e63d8cc494c1801885410e",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/447b320971e63d8cc494c1801885410e",
+      "size": 677,
+      "etag": "0x8DF0E6BF7B45520",
+      "md5": "Cyae+dgD185kQQWv4S6Mfg==",
+      "modified": "Wed, 09 Sep 2026 12:14:58 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/4dc2e51abf9d1839acf6ec59bd67820c",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/4dc2e51abf9d1839acf6ec59bd67820c",
+      "size": 1283,
+      "etag": "0x8DF0E6BD04E9355",
+      "md5": "Ug+KF+Jbufdk5fwhGKmVWw==",
+      "modified": "Wed, 09 Sep 2026 12:13:52 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/5204f3849ee487e5c4718edb9029c74e",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/5204f3849ee487e5c4718edb9029c74e",
+      "size": 2382713086,
+      "etag": "0x8DF0E6C2285F51C",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:16:10 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/566bc76b32abee11a4696d022fa3c203",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/566bc76b32abee11a4696d022fa3c203",
+      "size": 1149,
+      "etag": "0x8DF0E6BDA170923",
+      "md5": "p2cpdyjPiJotxcuHIZCT/w==",
+      "modified": "Wed, 09 Sep 2026 12:14:09 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/6812ef3cb4df3b601eeccd55481dd7fb",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/6812ef3cb4df3b601eeccd55481dd7fb",
+      "size": 2198884739,
+      "etag": "0x8DF0E6C214AFCDC",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:16:08 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/6dbc901c4773b9785388481031dc0ef4",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/6dbc901c4773b9785388481031dc0ef4",
+      "size": 2472,
+      "etag": "0x8DF0E6BE15805E7",
+      "md5": "+//n1KhmiZZEDBQJy8xV9w==",
+      "modified": "Wed, 09 Sep 2026 12:14:21 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/75ee911049b1f4a192d792753e838b84",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/75ee911049b1f4a192d792753e838b84",
+      "size": 2182380000,
+      "etag": "0x8DF0E6BE9610DF0",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:14:34 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/7a11597dee8793e734d865004a4c3428",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/7a11597dee8793e734d865004a4c3428",
+      "size": 171,
+      "etag": "0x8DF0E6C07818043",
+      "md5": "HCFdE//xyuKinoUa6D6/mg==",
+      "modified": "Wed, 09 Sep 2026 12:15:25 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/7ac2d4a0d5050dc4072c21f4bc11f0b3",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/7ac2d4a0d5050dc4072c21f4bc11f0b3",
+      "size": 1039,
+      "etag": "0x8DF0E6BFDA1FA2B",
+      "md5": "l5pucPSS0RKhaziGik0Hwg==",
+      "modified": "Wed, 09 Sep 2026 12:15:08 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/7c630b45a1d16fee3389c36b0bcca5ac",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/7c630b45a1d16fee3389c36b0bcca5ac",
+      "size": 2701573425,
+      "etag": "0x8DF0E6C22AE8C84",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:16:11 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/8a71c999dcb0430834c1d16bc5eb0ce6",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/8a71c999dcb0430834c1d16bc5eb0ce6",
+      "size": 894,
+      "etag": "0x8DF0E6BD572B6D8",
+      "md5": "qr3RpoP8CNCto1r2WztOKQ==",
+      "modified": "Wed, 09 Sep 2026 12:14:01 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/8b8724e752f24c7350dd5522b662b685",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/8b8724e752f24c7350dd5522b662b685",
+      "size": 3285162,
+      "etag": "0x8DF0E6BFA8BC5AD",
+      "md5": "YPS6SjblFazahCiFdrCeTg==",
+      "modified": "Wed, 09 Sep 2026 12:15:03 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/9c84051d3c5db6481208f993d0f4b597",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/9c84051d3c5db6481208f993d0f4b597",
+      "size": 2325725434,
+      "etag": "0x8DF0E6BF5309408",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:14:54 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/9dd14b9397fc8e5c023bd25bf0893d56",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/9dd14b9397fc8e5c023bd25bf0893d56",
+      "size": 872,
+      "etag": "0x8DF0E6BCEC27865",
+      "md5": "39xs43Jlx4XYU47ETVaLNA==",
+      "modified": "Wed, 09 Sep 2026 12:13:50 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/a23e67fb2c683f648126bfc743905765",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/a23e67fb2c683f648126bfc743905765",
+      "size": 2272621070,
+      "etag": "0x8DF0E6BFC8F99D7",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:15:07 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/a3adf3d80527bd00bdc6782641aa06d1",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/a3adf3d80527bd00bdc6782641aa06d1",
+      "size": 1274,
+      "etag": "0x8DF0E6BB46F77DF",
+      "md5": "vOs3D30DpALUMj6slUNLTw==",
+      "modified": "Wed, 09 Sep 2026 12:13:06 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/a3cfc51e640176187b6136343cde737e",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/a3cfc51e640176187b6136343cde737e",
+      "size": 1212,
+      "etag": "0x8DF0E6BD0909A81",
+      "md5": "DkE7LYpKMvAZSMAXS736jA==",
+      "modified": "Wed, 09 Sep 2026 12:13:53 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/a994b1098518c7d521ef48475e9353cb",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/a994b1098518c7d521ef48475e9353cb",
+      "size": 1270,
+      "etag": "0x8DF0E6BF6896B3D",
+      "md5": "eqS9BKio0LglXcCUxT0Xsg==",
+      "modified": "Wed, 09 Sep 2026 12:14:57 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/aadc507db0ea88252b4f6ae2511ea9f3",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/aadc507db0ea88252b4f6ae2511ea9f3",
+      "size": 2364521621,
+      "etag": "0x8DF0E6BFB29AB7A",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:15:04 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/b1bd222f4c457a5a03d4e6975b3fd73b",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/b1bd222f4c457a5a03d4e6975b3fd73b",
+      "size": 1267,
+      "etag": "0x8DF0E6BD7BE4EBD",
+      "md5": "W8MeU2asQg14FPVs9c/EKA==",
+      "modified": "Wed, 09 Sep 2026 12:14:05 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/b61eb02d220829e054fab45e89af0fa5",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/b61eb02d220829e054fab45e89af0fa5",
+      "size": 1933,
+      "etag": "0x8DF0E6BFE9EA923",
+      "md5": "yvuvrBae29A3eV8dfof/Og==",
+      "modified": "Wed, 09 Sep 2026 12:15:10 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/b7d5687011431504476bb14f27d78d4f",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/b7d5687011431504476bb14f27d78d4f",
+      "size": 1261,
+      "etag": "0x8DF0E6BB44E37D5",
+      "md5": "DZR3xG0uMnNQJcEaaFeKxQ==",
+      "modified": "Wed, 09 Sep 2026 12:13:05 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/b8254cad910dcf8b8b4133fc830e2380",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/b8254cad910dcf8b8b4133fc830e2380",
+      "size": 564,
+      "etag": "0x8DF0E6BB6057F12",
+      "md5": "bRXWGOwY9euvjO3sHUyO4g==",
+      "modified": "Wed, 09 Sep 2026 12:13:08 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/c156a5b8609c2eba890b19ecbe2890af",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/c156a5b8609c2eba890b19ecbe2890af",
+      "size": 1237,
+      "etag": "0x8DF0E6C152113C5",
+      "md5": "WxuO/ryd5ENN8V3lxaAuVg==",
+      "modified": "Wed, 09 Sep 2026 12:15:48 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/c9321ca32defd6969f14719843c3363e",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/c9321ca32defd6969f14719843c3363e",
+      "size": 1227,
+      "etag": "0x8DF0E6BFFD5AB0C",
+      "md5": "DCr0eepsaozDlwV/ZV3rbg==",
+      "modified": "Wed, 09 Sep 2026 12:15:12 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/d29205bdd3121c9a0bf9bbbe15cdfc1e",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/d29205bdd3121c9a0bf9bbbe15cdfc1e",
+      "size": 1210,
+      "etag": "0x8DF0E6BE9D0904A",
+      "md5": "HjRTed/JdndpuylqTO9wuw==",
+      "modified": "Wed, 09 Sep 2026 12:14:35 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/d8e5970e80b52a055a71223d0853d9fa",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/d8e5970e80b52a055a71223d0853d9fa",
+      "size": 917,
+      "etag": "0x8DF0E6BB65E4EF1",
+      "md5": "ddrlFtWjDjEWT+q7j/kDgA==",
+      "modified": "Wed, 09 Sep 2026 12:13:09 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/dcc96a9e1a64b2da0d04b189d1d3433e",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/dcc96a9e1a64b2da0d04b189d1d3433e",
+      "size": 397,
+      "etag": "0x8DF0E6BEAFDF503",
+      "md5": "V4r4q+0rMyPuC/8Liy7Nag==",
+      "modified": "Wed, 09 Sep 2026 12:14:37 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/e9cf8ff72ed4f756e6fc36cb5828d72a",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/e9cf8ff72ed4f756e6fc36cb5828d72a",
+      "size": 1207,
+      "etag": "0x8DF0E6BEBCFA274",
+      "md5": "PiUfF1z/qRQYprY84lp8Lw==",
+      "modified": "Wed, 09 Sep 2026 12:14:39 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/ed1a0af1fc9fc3cf315e705f5ad8f63c",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/ed1a0af1fc9fc3cf315e705f5ad8f63c",
+      "size": 1264,
+      "etag": "0x8DF0E6BF83C5799",
+      "md5": "codfbeAq7+6WAurOouodHg==",
+      "modified": "Wed, 09 Sep 2026 12:14:59 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/eda0dab862aeac0aeebe7a593b19a3cf",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/eda0dab862aeac0aeebe7a593b19a3cf",
+      "size": 1276,
+      "etag": "0x8DF0E6BDEB4CCB2",
+      "md5": "G04JtSsG4vUFz1wOuIQwRg==",
+      "modified": "Wed, 09 Sep 2026 12:14:17 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/fad0fbe0e0fa5aea220d85b40bfdcbd6",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/fad0fbe0e0fa5aea220d85b40bfdcbd6",
+      "size": 2631879511,
+      "etag": "0x8DF0E6C21EE5759",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:16:09 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/fae977fc1f0aac86f6e03f6d3556216a",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/d/fae977fc1f0aac86f6e03f6d3556216a",
+      "size": 2168208257,
+      "etag": "0x8DF0E6BF339559F",
+      "md5": "",
+      "modified": "Wed, 09 Sep 2026 12:14:51 GMT"
+    },
+    {
+      "blob": "output/liyan/ll_0909/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/manifest.ocdbt",
+      "path": "artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189/train_state/ocdbt.process_0/manifest.ocdbt",
+      "size": 607,
+      "etag": "0x8DF0E6B06530451",
+      "md5": "jsItB3tQDdy9ZDdJl8w7Bw==",
+      "modified": "Wed, 09 Sep 2026 12:08:14 GMT"
+    }
+  ],
+  "excluded_checkpoints": "1 epoch checkpoint and all intermediate checkpoints",
+  "published_storage": "GitHub Release; actual binary upload pending"
+}

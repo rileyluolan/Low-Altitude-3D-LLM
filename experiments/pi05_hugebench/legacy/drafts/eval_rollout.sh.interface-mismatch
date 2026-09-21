@@ -1,0 +1,93 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=lib/common.sh
+source "${SCRIPT_DIR}/lib/common.sh"
+
+SPLITS="${1:-test_seen,test_unseen}"
+RUN_ROOT="$(evaluation_run_root)"
+OUTPUT_DIR="${2:-${RUN_ROOT}/rollouts}"
+NUM_TRAJS="${NUM_TRAJS:-0}"
+NUM_INFERENCE_WORKERS="${NUM_INFERENCE_WORKERS:-4}"
+NUM_RENDERER_WORKERS="${NUM_RENDERER_WORKERS:-4}"
+CHECKPOINT="$(checkpoint_path)"
+
+prepare_data_links
+OPENPI_PY="$(find_openpi_python)" || die \
+  "OpenPI Python runtime not found. Restore it or export OPENPI_PYTHON."
+RENDERER_PY="$(find_renderer_python)" || die \
+  "Gaussian-splatting Python runtime not found. Restore it or export RENDERER_PYTHON."
+
+require_dir "${HUGEBENCH_ROOT}/eval/robotwin"
+require_dir "${HUGE_DATA_ROOT}/data_3d"
+require_port_free "${ACTION_SERVER_PORT}"
+for ((worker = 0; worker < NUM_RENDERER_WORKERS; worker++)); do
+  require_port_free "$((RENDERER_START_PORT + worker))"
+done
+
+mkdir -p "${OUTPUT_DIR}" "${LOGS_ROOT}/eval"
+RUN_LOG="${LOGS_ROOT}/eval/trained_$(basename "${CHECKPOINT}")_seed_${SEED}.log"
+PID_DIR="$(mktemp -d /tmp/pi05-hugebench-eval.XXXXXX)"
+
+cleanup() {
+  local pid_file pid
+  for pid_file in "${PID_DIR}"/*.pid; do
+    [[ -f "${pid_file}" ]] || continue
+    pid="$(<"${pid_file}")"
+    kill "${pid}" 2>/dev/null || true
+  done
+  wait 2>/dev/null || true
+  rmdir "${PID_DIR}" 2>/dev/null || true
+}
+trap cleanup EXIT INT TERM
+
+print_identity | tee -a "${RUN_LOG}"
+note "rollouts: ${OUTPUT_DIR}" | tee -a "${RUN_LOG}"
+
+CUDA_VISIBLE_DEVICES=0 "${OPENPI_PY}" \
+  "${OPENPI_ROOT}/scripts/serve_policy.py" \
+  --env HUGE \
+  --default-prompt "please accomplish the task described in task_info" \
+  policy:checkpoint \
+  --policy.config "${TRAIN_CONFIG}" \
+  --policy.dir "${CHECKPOINT}" \
+  --host "${ACTION_SERVER_HOST}" \
+  --port "${ACTION_SERVER_PORT}" \
+  >>"${RUN_LOG}" 2>&1 &
+printf '%s\n' "$!" >"${PID_DIR}/action_server.pid"
+
+for ((worker = 0; worker < NUM_RENDERER_WORKERS; worker++)); do
+  gpu="$((4 + worker))"
+  port="$((RENDERER_START_PORT + worker))"
+  CUDA_VISIBLE_DEVICES="${gpu}" "${RENDERER_PY}" \
+    "${HUGEBENCH_ROOT}/eval/robotwin/start_renderer.py" \
+    --port "${port}" \
+    --gs-root "${HUGE_DATA_ROOT}/data_3d" \
+    >>"${RUN_LOG}" 2>&1 &
+  printf '%s\n' "$!" >"${PID_DIR}/renderer_${worker}.pid"
+done
+
+ACTION_SERVER_HOST="${ACTION_SERVER_HOST}" ACTION_SERVER_PORT="${ACTION_SERVER_PORT}" \
+RENDERER_START_PORT="${RENDERER_START_PORT}" \
+"${OPENPI_PY}" "${HUGEBENCH_ROOT}/eval/robotwin/client.py" \
+  --dataset-root "${HUGE_DATA_ROOT}/data_traj" \
+  --splits "${SPLITS}" \
+  --output-dir "${OUTPUT_DIR}" \
+  --num-trajs "${NUM_TRAJS}" \
+  --num-inference-workers "${NUM_INFERENCE_WORKERS}" \
+  --num-renderer-workers "${NUM_RENDERER_WORKERS}" \
+  --seed "${SEED}" \
+  2>&1 | tee -a "${RUN_LOG}"
+
+trajectory_count="$(find "${OUTPUT_DIR}" -type f -name '*.pkl' | wc -l)"
+{
+  printf 'model_source: trained\n'
+  printf 'base_weights: %s\n' "${BASE_WEIGHTS_URI}"
+  printf 'checkpoint: %s\n' "${CHECKPOINT}"
+  printf 'splits: %s\n' "${SPLITS}"
+  printf 'seed: %s\n' "${SEED}"
+  printf 'trajectory_count: %s\n' "${trajectory_count}"
+} >"${RUN_ROOT}/run_manifest.yaml"
+note "rollout complete: ${trajectory_count} trajectories"
+

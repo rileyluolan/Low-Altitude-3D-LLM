@@ -21,3 +21,8 @@
 
 两个实验的实际权重分片保存在 [GitHub Release](https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/starvla-artifacts-20260921)。
 下载和还原说明见 [model_assets](model_assets/README.md)；源码树里的 `artifacts/README.md` 提供对应入口。
+
+## pi0.5 / HUGE-Bench 实验
+
+[pi05_hugebench](experiments/pi05_hugebench/IMPORT.md)：从 Blob `ll_0909` 导入的代码、配置和实验记录。
+本次权重范围为 pi0.5 base、官方基线及 5 epoch 最终 checkpoint `67189`；实际二进制上传状态以导入说明为准。

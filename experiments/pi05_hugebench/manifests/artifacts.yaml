@@ -1,0 +1,38 @@
+schema_version: 1
+generated_at: 2026-08-30
+
+trained_model:
+  status: training_complete_evaluation_pending
+  initialization: gs://openpi-assets/checkpoints/pi05_base/params
+  config: pi05_overall
+  run: pi05_overall_run1
+  checkpoint_root: artifacts/checkpoints/pi05_overall/pi05_overall_run1
+  steps: [4000, 8000, 12000, 13437]
+  selected_step: 13437
+  final_train_log:
+    last_logged_step: 13400
+    loss: 0.0032
+    grad_norm: 0.0362
+    param_norm: 1804.0521
+
+baseline_model:
+  name: HUGE_PI05
+  source: HUGE_data/HUGE_PI05
+  role: official_evaluation_pipeline_baseline
+  results: results/baselines/official_pi05/full
+  trajectory_count: 993
+  paper_aligned_metrics: results/baselines/official_pi05/full/metric_paper_aligned.json
+
+datasets:
+  source: HUGE_data/data_traj
+  links: data/lerobot_home/task_overall
+  splits:
+    train: {episodes: 5175, frames: 1720096}
+    test_seen: {episodes: 576, frames: 195336}
+    test_unseen: {episodes: 417, frames: 144058}
+
+repositories:
+  xpolicylab: {commit: c07a09614dd44cc4a67483bcb9a82e7439d99926}
+  huge_bench: {commit: d000b99794e9da85dff117db61ef874659b91ae8}
+  gaussian_splatting: {commit: 54c035f7834b564019656c3e3fcc3646292f727d}
+

@@ -1,0 +1,46 @@
+schema_version: 1
+experiment:
+  name: pi05_hugebench
+  purpose: Fine-tune XPolicyLab pi0.5-base on HUGE-Bench and evaluate the trained checkpoint.
+  train_config: pi05_overall
+  run_name: pi05_overall_run1
+  seed: 0
+
+model:
+  implementation: XPolicyLab/policy/Pi_05/openpi
+  architecture: pi0.5
+  initialization: gs://openpi-assets/checkpoints/pi05_base/params
+  trained_checkpoint_steps: [4000, 8000, 12000, 13437]
+  selected_checkpoint_step: 13437
+
+dataset:
+  lerobot_repo_id: task_overall/train
+  source: HUGE_data/data_traj
+  train:
+    episodes: 5175
+    frames: 1720096
+  test_seen:
+    episodes: 576
+    frames: 195336
+  test_unseen:
+    episodes: 417
+    frames: 144058
+
+training:
+  num_train_steps: 13438
+  effective_last_step: 13437
+  batch_size: 128
+  fsdp_devices: 8
+  save_interval: 2000
+  keep_period: 4000
+
+evaluation:
+  expected_trajectories:
+    test_seen: 576
+    test_unseen: 417
+    total: 993
+  action_horizon: 20
+  default_inference_workers: 4
+  default_renderer_workers: 4
+  metric_protocol: paper_aligned
+

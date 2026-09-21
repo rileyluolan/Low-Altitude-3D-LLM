@@ -1,0 +1,7 @@
+# Generated outputs and heavyweight artifacts.
+artifacts/cache/
+artifacts/checkpoints/
+results/trained/
+results/smoke/
+logs/
+
