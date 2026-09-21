@@ -1,7 +1,7 @@
-# RefDrone VLM → StarVLA-PI → HUGE-Bench
+# Low-Altitude-3D-LLM：VLA 联合训练
 
 将含 RefDrone 微调的 Qwen3-VL-2B 接入既有 mature VLA base，再进行 HUGE-Bench 5 epoch 联合训练。
-本目录对应本机实验 `starvla_pi_qwen3vl_2b_refdrone`；Git 中的启动器已改为可配置路径。
+本目录对应本机实验 `low_altitude_3d_llm`；Git 中的启动器已改为可配置路径。
 
 ## 模型替换
 

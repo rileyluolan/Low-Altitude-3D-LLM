@@ -3,7 +3,7 @@
 本目录保存模型改造到训练、评测的完整代码路径。它以固定版本的上游源码和公开权重为输入，包含构建脚本、源码补丁、OXE 两阶段训练及 HUGE-Bench 适配器。
 
 **已完成：**[完整训练 loss 和 993 条正式测试结果](records/hugebench_5ep_b512/README.md)。
-后续含 RefDrone 的 VLM 替换实验见[独立实验目录](../starvla_pi_qwen3vl_2b_refdrone/README.md)。
+后续含 RefDrone 的 VLM 替换实验见[独立实验目录](../low_altitude_3d_llm/README.md)。
 
 当前 HUGE-Bench 实验采用 **4 × A100 80GB、5 epoch、global batch 512、16,798 次优化器更新**。5 epoch 是当前实验预算；官方 π0.5 的 25,000 次更新属于另一训练预算。两者的全局 batch 和动作 horizon=20 对齐，总更新数不同。
 

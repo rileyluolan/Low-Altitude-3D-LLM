@@ -18,7 +18,7 @@ python3 model_assets/fetch.py huge-final \
 
 ## RefDrone base
 
-RefDrone base 由原 mature base 与固定的 RefDrone VLM 重建。先获取 `mature-base` 和 `original-vlm`，然后按 [RefDrone 实验说明](../experiments/starvla_pi_qwen3vl_2b_refdrone/README.md) 执行 `download_vlm.py` 和 `assemble_base.py`。下载器还会生成组装所需的 `DOWNLOAD_MANIFEST.json`。
+RefDrone base 由原 mature base 与固定的 RefDrone VLM 重建。先获取 `mature-base` 和 `original-vlm`，然后按 [RefDrone 实验说明](../experiments/low_altitude_3d_llm/README.md) 执行 `download_vlm.py` 和 `assemble_base.py`。下载器还会生成组装所需的 `DOWNLOAD_MANIFEST.json`。
 
 本机于 2026-09-20 重建的 base 为 5,217,525,867 字节，SHA256：
 
