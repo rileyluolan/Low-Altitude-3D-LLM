@@ -1,4 +1,25 @@
-# 本机权重目录与恢复
+# 模型权重下载
+
+## 两个实验的实际 artifacts
+
+2026-09-21 的两个 `artifacts/` 快照（约 138.92 GB）以实际二进制分片保存在
+[本 fork 的 GitHub Release](https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/starvla-artifacts-20260921)，无需 Blob SAS。
+包含原 base、原 HUGE 完整训练权重、全部已保存中间 checkpoint，以及新的 VLM 替换 base 和新训练的 1000–5000 步 checkpoint。
+新训练仍在进行，后续产物需要另行同步。
+
+在目标工作目录中执行：
+
+```bash
+mkdir -p .tmp
+curl -fL https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/download/starvla-artifacts-20260921/manifest.json -o .tmp/artifacts-manifest.json
+python3 model_assets/restore_release.py .tmp/artifacts-manifest.json --workspace .
+```
+
+下载器将文件还原到 `experiments/starvla_pi_qwen3vl_2b/artifacts/` 与
+`experiments/low_altitude_3d_llm/artifacts/`，检查分片和完整文件 SHA256，并拒绝覆盖不同内容。
+Git clone 和源码 ZIP 不包括 Release 附件。
+
+## 现有 Blob 来源
 
 `manifest.json` 为 2026-09-20 本机现有权重的清单：包含原 mature base、HUGE 五 epoch 最终模型、16 个中间 checkpoint、官方 Qwen3-VL-2B 资源及 RefDrone VLM。每项记录对应的本地路径、Blob 对象名、字节数和实际计算的 SHA256。
 

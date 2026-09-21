@@ -16,3 +16,8 @@
 
 两个实验的代码和已完成结果位于 `feat/starvla-qwen3vl2b-hugebench` 分支。
 权重、原始数据、运行环境、原始轨迹及视频留在实验存储中；已完成实验的轻量结果归档在 `records/`。
+
+## 权重文件
+
+两个实验的实际权重分片保存在 [GitHub Release](https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/starvla-artifacts-20260921)。
+下载和还原说明见 [model_assets](model_assets/README.md)；源码树里的 `artifacts/README.md` 提供对应入口。

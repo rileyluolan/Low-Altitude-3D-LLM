@@ -1,0 +1,874 @@
+{
+  "version": 1,
+  "repository": "rileyluolan/Low-Altitude-3D-LLM",
+  "tag": "starvla-artifacts-20260921",
+  "created_utc": "2026-09-21T02:59:02.634665+00:00",
+  "files": [
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/base/qwen3vl_2b_pi_v3_hugebench_mature_base/checkpoints/base_pytorch_model.pt",
+      "size": 5217630556,
+      "parts": [
+        {
+          "asset": "f0000-p0000-da571153b98bd727.bin",
+          "size": 1887436800,
+          "sha256": "da571153b98bd727997ef7599da46136a421fa28aa4d6278af27f4e7a78e0ac2"
+        },
+        {
+          "asset": "f0000-p0001-78dcdbb44d5b8924.bin",
+          "size": 1887436800,
+          "sha256": "78dcdbb44d5b89243e7f087abbbbfb62421fbf845fbe1675101344c958d064e8"
+        },
+        {
+          "asset": "f0000-p0002-afd8a5b3681126dc.bin",
+          "size": 1442756956,
+          "sha256": "afd8a5b3681126dc0d5e669665b553f859293fb127a3e98ec9b18699e912452d"
+        }
+      ],
+      "sha256": "87e38d987fd2d1b7fd50b77529717d4fc19111b1c0ca58096f24e933b79b6c4b"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/base/qwen3vl_2b_pi_v3_hugebench_mature_base/config.full.yaml",
+      "size": 1913,
+      "parts": [
+        {
+          "asset": "f0001-p0000-8a1067d88b715509.bin",
+          "size": 1913,
+          "sha256": "8a1067d88b715509284ed252a501e1ceab56740b0394bd68d9901fe812f061b5"
+        }
+      ],
+      "sha256": "8a1067d88b715509284ed252a501e1ceab56740b0394bd68d9901fe812f061b5"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/base/qwen3vl_2b_pi_v3_hugebench_mature_base/config.yaml",
+      "size": 1913,
+      "parts": [
+        {
+          "asset": "f0002-p0000-8a1067d88b715509.bin",
+          "size": 1913,
+          "sha256": "8a1067d88b715509284ed252a501e1ceab56740b0394bd68d9901fe812f061b5"
+        }
+      ],
+      "sha256": "8a1067d88b715509284ed252a501e1ceab56740b0394bd68d9901fe812f061b5"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/base/qwen3vl_2b_pi_v3_hugebench_mature_base/conversion_manifest.json",
+      "size": 158029,
+      "parts": [
+        {
+          "asset": "f0003-p0000-9f95add4e20ec7e2.bin",
+          "size": 158029,
+          "sha256": "9f95add4e20ec7e29b26d94850847c80f8abd78c8224e2e0fdfa1a25adb53fef"
+        }
+      ],
+      "sha256": "9f95add4e20ec7e29b26d94850847c80f8abd78c8224e2e0fdfa1a25adb53fef"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/base/qwen3vl_2b_pi_v3_hugebench_mature_base/dataset_statistics.json",
+      "size": 1808,
+      "parts": [
+        {
+          "asset": "f0004-p0000-1aa4b4bc00051d4a.bin",
+          "size": 1808,
+          "sha256": "1aa4b4bc00051d4a3f16750a65759bcec11f92d7cac0dc60e15b38529a2be07c"
+        }
+      ],
+      "sha256": "1aa4b4bc00051d4a3f16750a65759bcec11f92d7cac0dc60e15b38529a2be07c"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_10000_pytorch_model.pt",
+      "size": 5839860688,
+      "parts": [
+        {
+          "asset": "f0005-p0000-7ccba0d049d4a0be.bin",
+          "size": 1887436800,
+          "sha256": "7ccba0d049d4a0be56995285bb5405422f5a8711aa899c57e47c0f5b8cd0ad80"
+        },
+        {
+          "asset": "f0005-p0001-592d1d59d1d19191.bin",
+          "size": 1887436800,
+          "sha256": "592d1d59d1d191910e2fb7cb097c31fd24a353c1ee132e467ab0f76ac697283d"
+        },
+        {
+          "asset": "f0005-p0002-3f46eade7f6563df.bin",
+          "size": 1887436800,
+          "sha256": "3f46eade7f6563df51ec37488519e4ed57724834fec13e2257fc8455e9d5a423"
+        },
+        {
+          "asset": "f0005-p0003-d0e555087c68bc34.bin",
+          "size": 177550288,
+          "sha256": "d0e555087c68bc34382b1ad7fb68a23d0145793025157adc6dd3b1df8a6a39b6"
+        }
+      ],
+      "sha256": "90167f7694f12173f6558499218bd179cf56fb2f95f0eac360e4e832b066a864"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_1000_pytorch_model.pt",
+      "size": 5839859530,
+      "parts": [
+        {
+          "asset": "f0006-p0000-c8db8aa2e4d06e75.bin",
+          "size": 1887436800,
+          "sha256": "c8db8aa2e4d06e7575e154a9f3ec3d36c1bc9cc5da4a8d24217408f0956b470b"
+        },
+        {
+          "asset": "f0006-p0001-6586275ff8252512.bin",
+          "size": 1887436800,
+          "sha256": "6586275ff8252512bfede7544fe3e0f286db02f6f4e4dcf25e4c10930cbd470c"
+        },
+        {
+          "asset": "f0006-p0002-b05d9e7bc34a0323.bin",
+          "size": 1887436800,
+          "sha256": "b05d9e7bc34a032323deb8f799860d62cda5a6c1d2aebf70afccd04a1ff3c501"
+        },
+        {
+          "asset": "f0006-p0003-203fcce9d8c71836.bin",
+          "size": 177549130,
+          "sha256": "203fcce9d8c71836737436c9d31c4f33f97113d489bf86ab2ef4b93ce4feda1a"
+        }
+      ],
+      "sha256": "781fed88ebb2c68d6bdf47f0243a0d568874dff0baf4082f8aea75020c7bb916"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_11000_pytorch_model.pt",
+      "size": 5839860688,
+      "parts": [
+        {
+          "asset": "f0007-p0000-6f19ea58877dafd1.bin",
+          "size": 1887436800,
+          "sha256": "6f19ea58877dafd16db0a5759cdde94ee4c7c3595f0805368a587f5fa04ff798"
+        },
+        {
+          "asset": "f0007-p0001-3f295885397f5d74.bin",
+          "size": 1887436800,
+          "sha256": "3f295885397f5d7443223ef729b9ef350183f36c490c69a76f0a7d03bee493a9"
+        },
+        {
+          "asset": "f0007-p0002-a5f70651888640df.bin",
+          "size": 1887436800,
+          "sha256": "a5f70651888640dfeda4129bb10fae71b3f9ed40bd6ed0472dc85fa56c267e0e"
+        },
+        {
+          "asset": "f0007-p0003-13ec86d6d63238a6.bin",
+          "size": 177550288,
+          "sha256": "13ec86d6d63238a680fc178f23fddb4e07f9aa70cd0d9ebe76476375f9b2499f"
+        }
+      ],
+      "sha256": "f6a548aebe406017b4fd078b763341d54f480e3ddc45e42c126beda56dd65601"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_12000_pytorch_model.pt",
+      "size": 5839860688,
+      "parts": [
+        {
+          "asset": "f0008-p0000-01847157be0846c4.bin",
+          "size": 1887436800,
+          "sha256": "01847157be0846c4ea2b798e32bc375f3f9d8bcecc6342ba168bac3b11001b42"
+        },
+        {
+          "asset": "f0008-p0001-b720b4779ccb0b2f.bin",
+          "size": 1887436800,
+          "sha256": "b720b4779ccb0b2f49822f72d6e06ac92079d71f8225e7a27cdb5ab1621fbce9"
+        },
+        {
+          "asset": "f0008-p0002-2db6f644dd9fe694.bin",
+          "size": 1887436800,
+          "sha256": "2db6f644dd9fe69438530716ef01e13be40a4029729a7c0d805834785f7a5bad"
+        },
+        {
+          "asset": "f0008-p0003-951237b0d1e1af53.bin",
+          "size": 177550288,
+          "sha256": "951237b0d1e1af53850fdffe172730ff617f471b85dd6c6cc126a707484df071"
+        }
+      ],
+      "sha256": "eebc0820cea1221a6addf5f2e2d3f1a96f2954bb00d9243ca1110b6f19000858"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_13000_pytorch_model.pt",
+      "size": 5839860688,
+      "parts": [
+        {
+          "asset": "f0009-p0000-14bc9b1d9bb11278.bin",
+          "size": 1887436800,
+          "sha256": "14bc9b1d9bb1127827648ba4a66b16bfe0fff5abc6bb5d668ae99a1e38371521"
+        },
+        {
+          "asset": "f0009-p0001-b65a04a5a65dd179.bin",
+          "size": 1887436800,
+          "sha256": "b65a04a5a65dd179fb19aee221e64136a9961e69fa00d4cbf295f7c36010bd15"
+        },
+        {
+          "asset": "f0009-p0002-97709efba0a832e6.bin",
+          "size": 1887436800,
+          "sha256": "97709efba0a832e64f7fb260b43c998a759958b64cd7a92879c7a30b3ce5f076"
+        },
+        {
+          "asset": "f0009-p0003-31fa427b6d78c8b2.bin",
+          "size": 177550288,
+          "sha256": "31fa427b6d78c8b2052ece7ffcbadfcd5f517035a315ab9f06d835a920099912"
+        }
+      ],
+      "sha256": "48747a45467f9db6cf9968ee68c01dfd485453774c217c5e7b492996c41e1579"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_14000_pytorch_model.pt",
+      "size": 5839860688,
+      "parts": [
+        {
+          "asset": "f0010-p0000-791268a10a1e2dee.bin",
+          "size": 1887436800,
+          "sha256": "791268a10a1e2dee92a7a558e8ce8b4c45121b184a7c84351265b3df6baa0330"
+        },
+        {
+          "asset": "f0010-p0001-29fe399134905db2.bin",
+          "size": 1887436800,
+          "sha256": "29fe399134905db2a90baf920d1eb2ba89025550247080bf33b66e8b32c7cf7a"
+        },
+        {
+          "asset": "f0010-p0002-431f51cc6208130f.bin",
+          "size": 1887436800,
+          "sha256": "431f51cc6208130ff73230c86c391637d452f08c9ede8d173506735e07f1c784"
+        },
+        {
+          "asset": "f0010-p0003-159fdb4ef85599c2.bin",
+          "size": 177550288,
+          "sha256": "159fdb4ef85599c28ae38fda99519428438a8db64d0e3861f785c3d74039e83a"
+        }
+      ],
+      "sha256": "db467a5b3ffdc41d0ea1723610dddd73b01593180896947b43a61b81149b1461"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_15000_pytorch_model.pt",
+      "size": 5839860688,
+      "parts": [
+        {
+          "asset": "f0011-p0000-386794a14a3e9da4.bin",
+          "size": 1887436800,
+          "sha256": "386794a14a3e9da437ca283f13e89f33f04059be60f581dbb02405e07827b945"
+        },
+        {
+          "asset": "f0011-p0001-e104c1c210cc6c47.bin",
+          "size": 1887436800,
+          "sha256": "e104c1c210cc6c4731e9b41df048300f540e57a4d9ebb451281607d6e942f456"
+        },
+        {
+          "asset": "f0011-p0002-c478c0e0c5c624a5.bin",
+          "size": 1887436800,
+          "sha256": "c478c0e0c5c624a58ef93acc564325a4d7f8f3dceac9f3505835d8dcf87ee451"
+        },
+        {
+          "asset": "f0011-p0003-fc6d28923219f9df.bin",
+          "size": 177550288,
+          "sha256": "fc6d28923219f9dfe904dcd02aa30610312855d1e94724dc8a1a4ce2251214ba"
+        }
+      ],
+      "sha256": "33b28ed6be5db3ff25354d091f849a10a063822740a75de9a28b91f3f6e92044"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_16000_pytorch_model.pt",
+      "size": 5839860688,
+      "parts": [
+        {
+          "asset": "f0012-p0000-b7ee5ca928d3c390.bin",
+          "size": 1887436800,
+          "sha256": "b7ee5ca928d3c3904c0ca9eb605cfe97f7ef290675d878b3f89949c485eece21"
+        },
+        {
+          "asset": "f0012-p0001-960224bd8bd4dfb0.bin",
+          "size": 1887436800,
+          "sha256": "960224bd8bd4dfb000157eb763d2eed0314f014812c041a1d7df675be4586ac2"
+        },
+        {
+          "asset": "f0012-p0002-ae566ec0558c47a7.bin",
+          "size": 1887436800,
+          "sha256": "ae566ec0558c47a7f31a62b3a7966f528d1796c52d1272f23ea3b4bd80948580"
+        },
+        {
+          "asset": "f0012-p0003-289e95c5468d6bfd.bin",
+          "size": 177550288,
+          "sha256": "289e95c5468d6bfd1be3f21d8d92718e613364b0b3562a236852fd4a39e4ad30"
+        }
+      ],
+      "sha256": "a2633565f2a69716c094808ab6bfdad90a362ffcbfee55d77bc4a8f2c72db8a9"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_2000_pytorch_model.pt",
+      "size": 5839859530,
+      "parts": [
+        {
+          "asset": "f0013-p0000-93f1619f7b749f19.bin",
+          "size": 1887436800,
+          "sha256": "93f1619f7b749f19663a060c85fb8671a5316c1b8a94743bf93d87822c9f5131"
+        },
+        {
+          "asset": "f0013-p0001-35c26a02a2d6a580.bin",
+          "size": 1887436800,
+          "sha256": "35c26a02a2d6a5806ee7a1a8e87ea1913547cd8aae2e809c6f2976a71dfb2012"
+        },
+        {
+          "asset": "f0013-p0002-2164eadbc4622c94.bin",
+          "size": 1887436800,
+          "sha256": "2164eadbc4622c94d7d9c4c08c069325dba97208001a5d5d3b81b21c5f163b97"
+        },
+        {
+          "asset": "f0013-p0003-5c2939eefb1069d3.bin",
+          "size": 177549130,
+          "sha256": "5c2939eefb1069d383f93562bcfd5d0b79013b1c08667d73787c5254c3d9d374"
+        }
+      ],
+      "sha256": "c3e371d485fcf6caa781af9d9b53fb47729afda8438d5567e8506910c8f83fd9"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_3000_pytorch_model.pt",
+      "size": 5839859530,
+      "parts": [
+        {
+          "asset": "f0014-p0000-780b5589cd977991.bin",
+          "size": 1887436800,
+          "sha256": "780b5589cd9779914f8e42a34b1c552bcb41c990c61d62a7f1bdb09bb12e21db"
+        },
+        {
+          "asset": "f0014-p0001-354973f11b5d684c.bin",
+          "size": 1887436800,
+          "sha256": "354973f11b5d684c75f17384e0d14eb79339e887f5af5a97436f63642fe99464"
+        },
+        {
+          "asset": "f0014-p0002-cc362f63343e63f7.bin",
+          "size": 1887436800,
+          "sha256": "cc362f63343e63f759e45011e0a4dfc670a42204eadc11595216501bfb15c785"
+        },
+        {
+          "asset": "f0014-p0003-280690ff517fcb1c.bin",
+          "size": 177549130,
+          "sha256": "280690ff517fcb1ce48d884d5420e094197de6f80ee2c33447e4eec3de3c16e1"
+        }
+      ],
+      "sha256": "03a71c3638ef4c3c11f9ca2aab5f8dbb057a6de0757876b1f3eff064db28f62e"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_4000_pytorch_model.pt",
+      "size": 5839859530,
+      "parts": [
+        {
+          "asset": "f0015-p0000-e2ecfd3a3fad8efd.bin",
+          "size": 1887436800,
+          "sha256": "e2ecfd3a3fad8efdd1dd64348bb8e755a5cf1bfcd564d3bc8a7a89ab1c54bf3c"
+        },
+        {
+          "asset": "f0015-p0001-6fc2196459b87439.bin",
+          "size": 1887436800,
+          "sha256": "6fc2196459b874396ac354b9454e38725ee46c3c97fc616b9485ef67590d379a"
+        },
+        {
+          "asset": "f0015-p0002-b4409a104751ef46.bin",
+          "size": 1887436800,
+          "sha256": "b4409a104751ef467d5f74dee9eea1856971fa75eb340b7f3478d6ceae5a6cd7"
+        },
+        {
+          "asset": "f0015-p0003-bc18bf6fb4780f7f.bin",
+          "size": 177549130,
+          "sha256": "bc18bf6fb4780f7fbdb166694d69461ae4f91e05da9eb20cd03d7e064d765381"
+        }
+      ],
+      "sha256": "f7c3c0e56c52d57089e0d8922fcde41779ddd8bf49a5c1d3d899589ecfd1d3c6"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_5000_pytorch_model.pt",
+      "size": 5839859530,
+      "parts": [
+        {
+          "asset": "f0016-p0000-b4eb458a8c96bfb0.bin",
+          "size": 1887436800,
+          "sha256": "b4eb458a8c96bfb0a2746f6705eecaf8b065c15595d4232bcacc8dd70f6fe06a"
+        },
+        {
+          "asset": "f0016-p0001-fc2df7094b79152f.bin",
+          "size": 1887436800,
+          "sha256": "fc2df7094b79152fd96feee7ab6cdaa5699def462c1b65ca4e0262b723e87b4a"
+        },
+        {
+          "asset": "f0016-p0002-1472d15f741e1640.bin",
+          "size": 1887436800,
+          "sha256": "1472d15f741e16402f8898d5cc9c1876bebee9f5e47a50a5f65366bc26589cd3"
+        },
+        {
+          "asset": "f0016-p0003-ddd2e25e0949376f.bin",
+          "size": 177549130,
+          "sha256": "ddd2e25e0949376f97ef5379c8d3a8cf21cf738f562df29187fbf4a64595cc19"
+        }
+      ],
+      "sha256": "58eea65fc7ce55646639b70360e28bc5d3159943a5989b001f450dc271a76582"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_6000_pytorch_model.pt",
+      "size": 5839859530,
+      "parts": [
+        {
+          "asset": "f0017-p0000-1a63362d711e344c.bin",
+          "size": 1887436800,
+          "sha256": "1a63362d711e344c00c36aad545f5bfdd1471ef877007d4652b030ec606a3ff6"
+        },
+        {
+          "asset": "f0017-p0001-1d9e460431035664.bin",
+          "size": 1887436800,
+          "sha256": "1d9e460431035664ab0c6d36ffc944ce866ce1760c66a30bfe083dbc7a479665"
+        },
+        {
+          "asset": "f0017-p0002-e03379580e61b390.bin",
+          "size": 1887436800,
+          "sha256": "e03379580e61b3905938b2a3d2dfe8ade4898f53725ebc07f39743b5d30d944f"
+        },
+        {
+          "asset": "f0017-p0003-0eff031f1225b32b.bin",
+          "size": 177549130,
+          "sha256": "0eff031f1225b32b7391549ad3780783e3299a5dc9ca89dfd967db9792d5d320"
+        }
+      ],
+      "sha256": "1c4fdb84b60ad5164b0641ebb2f42458e53eab879dcb6e4436df10f0dd072c25"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_7000_pytorch_model.pt",
+      "size": 5839859530,
+      "parts": [
+        {
+          "asset": "f0018-p0000-4f89427f7e0b6ae9.bin",
+          "size": 1887436800,
+          "sha256": "4f89427f7e0b6ae91ccbc94a59c918e4c69e0c558cfb43068f1d4013efea5eaf"
+        },
+        {
+          "asset": "f0018-p0001-b42204f3f3d5922a.bin",
+          "size": 1887436800,
+          "sha256": "b42204f3f3d5922a2f8fc1ffb7fff32b1565310df2fb65138199183677cd992b"
+        },
+        {
+          "asset": "f0018-p0002-ddce62a0285c733b.bin",
+          "size": 1887436800,
+          "sha256": "ddce62a0285c733bac04f80a675c8b5fb7cedc2a7846a36dfdc007337f4cd58f"
+        },
+        {
+          "asset": "f0018-p0003-c8381145f8b92f35.bin",
+          "size": 177549130,
+          "sha256": "c8381145f8b92f35dbc101d78f3ca9bbac5f6da58e5ff39f80b7bef86de7247c"
+        }
+      ],
+      "sha256": "edb68ccc9b3a1a7ea10a81150d2fe406ad71c335992e8622c7ca09b993217ba4"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_8000_pytorch_model.pt",
+      "size": 5839859530,
+      "parts": [
+        {
+          "asset": "f0019-p0000-487273357cb4eb39.bin",
+          "size": 1887436800,
+          "sha256": "487273357cb4eb39345163dd4e39ff293a8738535a842503220cc524e3dbbf10"
+        },
+        {
+          "asset": "f0019-p0001-b04ed67085c99eb8.bin",
+          "size": 1887436800,
+          "sha256": "b04ed67085c99eb8f5e042dc9115461a9d4ef26400259f7b058e0525c01f8155"
+        },
+        {
+          "asset": "f0019-p0002-789b4faf33e0e5b1.bin",
+          "size": 1887436800,
+          "sha256": "789b4faf33e0e5b18263fdfe9e831c36cecd5dd28d0788cc09ca3f82c4eb3053"
+        },
+        {
+          "asset": "f0019-p0003-0c4c5d25cf2b70a0.bin",
+          "size": 177549130,
+          "sha256": "0c4c5d25cf2b70a001b0a9adc1cd9f86db0a4729b68b0ba3163acae5dd65c18e"
+        }
+      ],
+      "sha256": "0da5fa4ad2fe0968c26ede45782db724ad861425a8b23f69bdabacca0169fc65"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/checkpoints/steps_9000_pytorch_model.pt",
+      "size": 5839859530,
+      "parts": [
+        {
+          "asset": "f0020-p0000-2bf21e519dc6cbef.bin",
+          "size": 1887436800,
+          "sha256": "2bf21e519dc6cbef09b56300cf47dbcee8f367bac9f608f9fdbfd481baec7a9f"
+        },
+        {
+          "asset": "f0020-p0001-79da854aebc48951.bin",
+          "size": 1887436800,
+          "sha256": "79da854aebc48951c51eb0590e9c79ea32c161e5b58d5cbefa7526189474da3a"
+        },
+        {
+          "asset": "f0020-p0002-08b644368888044e.bin",
+          "size": 1887436800,
+          "sha256": "08b644368888044ed541728e88b3a84458eb8d03ed8edaf27ba62199129f20de"
+        },
+        {
+          "asset": "f0020-p0003-3adc668965380fe0.bin",
+          "size": 177549130,
+          "sha256": "3adc668965380fe0c8abc9eb7fd606a2dce74fe677368f5824791f4b83e430eb"
+        }
+      ],
+      "sha256": "3d4819d70d963699dfe4e46f9fbca220c403738c855906a695f09c8f72edf797"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/config.full.yaml",
+      "size": 2948,
+      "parts": [
+        {
+          "asset": "f0021-p0000-860c6d43e7ae15ff.bin",
+          "size": 2948,
+          "sha256": "860c6d43e7ae15ffc9450b4f01890ea03d3174575a1a74e372a9b6d028b61114"
+        }
+      ],
+      "sha256": "860c6d43e7ae15ffc9450b4f01890ea03d3174575a1a74e372a9b6d028b61114"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/config.yaml",
+      "size": 2286,
+      "parts": [
+        {
+          "asset": "f0022-p0000-d1b1e9ad5f8ae882.bin",
+          "size": 2286,
+          "sha256": "d1b1e9ad5f8ae882f5ef3242c111ee62135813fbd68643d1100f273d180ad08f"
+        }
+      ],
+      "sha256": "d1b1e9ad5f8ae882f5ef3242c111ee62135813fbd68643d1100f273d180ad08f"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/dataset_statistics.json",
+      "size": 1808,
+      "parts": [
+        {
+          "asset": "f0023-p0000-041dbbaaf91d7cfc.bin",
+          "size": 1808,
+          "sha256": "041dbbaaf91d7cfc7432d28d3be2d01ff206608d8229d94fe8dbf67a51dbe617"
+        }
+      ],
+      "sha256": "041dbbaaf91d7cfc7432d28d3be2d01ff206608d8229d94fe8dbf67a51dbe617"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/final_model/pytorch_model.pt",
+      "size": 5839846728,
+      "parts": [
+        {
+          "asset": "f0024-p0000-cc3a192ab51d366c.bin",
+          "size": 1887436800,
+          "sha256": "cc3a192ab51d366cc7b567f5903695e509848fb869fad6590abc5f14b4b5486d"
+        },
+        {
+          "asset": "f0024-p0001-421b8520e1ee0e3f.bin",
+          "size": 1887436800,
+          "sha256": "421b8520e1ee0e3f4f0464f21ce0f4710fb39d5fd0260d6d8b6280d74ad4a194"
+        },
+        {
+          "asset": "f0024-p0002-7ce81220acfe9655.bin",
+          "size": 1887436800,
+          "sha256": "7ce81220acfe9655346d5fb69ab776ee522d857b795a02ee0ba60b6a22ac8e6a"
+        },
+        {
+          "asset": "f0024-p0003-286b4eb612f03d62.bin",
+          "size": 177536328,
+          "sha256": "286b4eb612f03d621e0ea3ed5a8e69c23f785d28468bb84b4854358cf20106c2"
+        }
+      ],
+      "sha256": "8ad5b7ef8a0f4a0cce299b0a9a69741a7c94786ee7b5a750e18d6fec7ea4825d"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/metrics.jsonl",
+      "size": 6381931,
+      "parts": [
+        {
+          "asset": "f0025-p0000-e8095e4954977124.bin",
+          "size": 6381931,
+          "sha256": "e8095e4954977124cda49aef2b01e86a94af33e8a6e354484f0c51c81c774577"
+        }
+      ],
+      "sha256": "e8095e4954977124cda49aef2b01e86a94af33e8a6e354484f0c51c81c774577"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/source_config.yaml",
+      "size": 2431,
+      "parts": [
+        {
+          "asset": "f0026-p0000-94c5ed4d8f84dac1.bin",
+          "size": 2431,
+          "sha256": "94c5ed4d8f84dac1a00b82eb79d646b839fe21a813f18d76f7bbf2f051973424"
+        }
+      ],
+      "sha256": "94c5ed4d8f84dac1a00b82eb79d646b839fe21a813f18d76f7bbf2f051973424"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/summary.jsonl",
+      "size": 263,
+      "parts": [
+        {
+          "asset": "f0027-p0000-258050701659fc7c.bin",
+          "size": 263,
+          "sha256": "258050701659fc7c021fbd53a2dc340df55e4fdeac1aa3ab6d12b6a88f659949"
+        }
+      ],
+      "sha256": "258050701659fc7c021fbd53a2dc340df55e4fdeac1aa3ab6d12b6a88f659949"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/base/qwen3vl_2b_pi_v3_hugebench_refdrone_base/checkpoints/base_pytorch_model.pt",
+      "size": 5217525867,
+      "parts": [
+        {
+          "asset": "f0028-p0000-b43929ef2beab5eb.bin",
+          "size": 1887436800,
+          "sha256": "b43929ef2beab5eb8e534b36895df511d3a653fce83eae7e67d330eab39c407c"
+        },
+        {
+          "asset": "f0028-p0001-5c6238e9e424f8c0.bin",
+          "size": 1887436800,
+          "sha256": "5c6238e9e424f8c06b639e3dfb518cef8a78cdd2067f18e10e19425986b79cf1"
+        },
+        {
+          "asset": "f0028-p0002-9bb843476d4378a9.bin",
+          "size": 1442652267,
+          "sha256": "9bb843476d4378a9a93262739cf31401bed6e2499a6cfd1ab37bcf8c2667ddef"
+        }
+      ],
+      "sha256": "e016e41b329f4b16ce8a927d38990f69f1b63a0950c7b9efe26cdf10d55df162"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/base/qwen3vl_2b_pi_v3_hugebench_refdrone_base/config.yaml",
+      "size": 2212,
+      "parts": [
+        {
+          "asset": "f0029-p0000-f1436b26e5452b36.bin",
+          "size": 2212,
+          "sha256": "f1436b26e5452b36cd716f79c7d1f750d411cfcf45d37e477cbef52dadd13c69"
+        }
+      ],
+      "sha256": "f1436b26e5452b36cd716f79c7d1f750d411cfcf45d37e477cbef52dadd13c69"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/base/qwen3vl_2b_pi_v3_hugebench_refdrone_base/conversion_manifest.json",
+      "size": 2967,
+      "parts": [
+        {
+          "asset": "f0030-p0000-beb2fdaba7463fff.bin",
+          "size": 2967,
+          "sha256": "beb2fdaba7463fffa8563ffdfc85ed9f9433f9ff15c143d7b9934131d885af65"
+        }
+      ],
+      "sha256": "beb2fdaba7463fffa8563ffdfc85ed9f9433f9ff15c143d7b9934131d885af65"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/base/qwen3vl_2b_pi_v3_hugebench_refdrone_base/dataset_statistics.json",
+      "size": 1808,
+      "parts": [
+        {
+          "asset": "f0031-p0000-1aa4b4bc00051d4a.bin",
+          "size": 1808,
+          "sha256": "1aa4b4bc00051d4a3f16750a65759bcec11f92d7cac0dc60e15b38529a2be07c"
+        }
+      ],
+      "sha256": "1aa4b4bc00051d4a3f16750a65759bcec11f92d7cac0dc60e15b38529a2be07c"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/checkpoints/steps_1000_pytorch_model.pt",
+      "size": 5839859530,
+      "parts": [
+        {
+          "asset": "f0032-p0000-77ee8a5756d1958b.bin",
+          "size": 1887436800,
+          "sha256": "77ee8a5756d1958b69e12051bdf63b61a5fe00f92856843b86597239c87ec315"
+        },
+        {
+          "asset": "f0032-p0001-9e112067a61b063b.bin",
+          "size": 1887436800,
+          "sha256": "9e112067a61b063b82578027f92531001487c7a1fb3937f7d8c3c5c94afa8299"
+        },
+        {
+          "asset": "f0032-p0002-e4bd1555819c0e2d.bin",
+          "size": 1887436800,
+          "sha256": "e4bd1555819c0e2d95f76d425c008f02589dfe836d901955e5bb638846d3d7e9"
+        },
+        {
+          "asset": "f0032-p0003-bdc15b1a92664e77.bin",
+          "size": 177549130,
+          "sha256": "bdc15b1a92664e778996c2a68a3c9e2de327a5cb71ad9c7c58dc4471d2d00734"
+        }
+      ],
+      "sha256": "a42169a315f1c34501db780805fb654152e4a009ae8525a6cb4224f92bc6c2d1"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/checkpoints/steps_2000_pytorch_model.pt",
+      "size": 5839859530,
+      "parts": [
+        {
+          "asset": "f0033-p0000-9e93d0599f530799.bin",
+          "size": 1887436800,
+          "sha256": "9e93d0599f53079921c285ce4d623c8654b70362f9880e581539d582f47c935b"
+        },
+        {
+          "asset": "f0033-p0001-e139a1448f164eb5.bin",
+          "size": 1887436800,
+          "sha256": "e139a1448f164eb528ac0dcb6547a1a2f2088f545b1a9468092642d7c9a9da6c"
+        },
+        {
+          "asset": "f0033-p0002-cafaaaa2ca67f331.bin",
+          "size": 1887436800,
+          "sha256": "cafaaaa2ca67f33112a6bab95c07404e9fce9d41cd44e011f40723afbde611ba"
+        },
+        {
+          "asset": "f0033-p0003-0313cd83b44359f2.bin",
+          "size": 177549130,
+          "sha256": "0313cd83b44359f247ff7be68bdeac1bd3d56b449836b1962bb7d52c591986f5"
+        }
+      ],
+      "sha256": "f9338d52295de35651ec5e415ae233a964a5b0ad5c349def9a714474b640662e"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/checkpoints/steps_3000_pytorch_model.pt",
+      "size": 5839859530,
+      "parts": [
+        {
+          "asset": "f0034-p0000-2a0885dcd3dce98e.bin",
+          "size": 1887436800,
+          "sha256": "2a0885dcd3dce98ea71ce5bc8ea805c15ec2169f56c6d6d12e044f9cf0a53d79"
+        },
+        {
+          "asset": "f0034-p0001-ca6203207ecb3f59.bin",
+          "size": 1887436800,
+          "sha256": "ca6203207ecb3f595a45edcdbf14361c1237fc7a5e0e887b4b3734afba5f300b"
+        },
+        {
+          "asset": "f0034-p0002-a7ea9bdd06ff7a47.bin",
+          "size": 1887436800,
+          "sha256": "a7ea9bdd06ff7a47e7d97efa05333d1a2dc28785b482f47b33f54caa6bbef348"
+        },
+        {
+          "asset": "f0034-p0003-c965660f3944dc9a.bin",
+          "size": 177549130,
+          "sha256": "c965660f3944dc9aba8c41e746ca9268fb95ec474d2ba8aae5a6b361e486d3a9"
+        }
+      ],
+      "sha256": "1d66e07af41b70d7334f7e7a1f55f69e32077f5d03162d4dbc961b1bd38bb7de"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/checkpoints/steps_4000_pytorch_model.pt",
+      "size": 5839859530,
+      "parts": [
+        {
+          "asset": "f0035-p0000-511c3c71c921f52b.bin",
+          "size": 1887436800,
+          "sha256": "511c3c71c921f52b00df30d193f3e0c10e2a56a2d90bede5379fa878158d041e"
+        },
+        {
+          "asset": "f0035-p0001-cb96c437468bde53.bin",
+          "size": 1887436800,
+          "sha256": "cb96c437468bde53c870713f01ab45cecf298a0ed5555056b4ed1d4750155e39"
+        },
+        {
+          "asset": "f0035-p0002-5c35082d88f38ccf.bin",
+          "size": 1887436800,
+          "sha256": "5c35082d88f38ccf4a205a414e1de075e9a8b98c519acf82b7866f19f09f7e77"
+        },
+        {
+          "asset": "f0035-p0003-544c1d350da4164c.bin",
+          "size": 177549130,
+          "sha256": "544c1d350da4164c5bdfe992bd0f695e4d08d769d5c14ece4454facc7713c59c"
+        }
+      ],
+      "sha256": "e7755d7d580574818f8fc99c31f4af7529803ea85b1d4fa3a8637b6618e377fc"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/checkpoints/steps_5000_pytorch_model.pt",
+      "size": 5839859530,
+      "parts": [
+        {
+          "asset": "f0036-p0000-56369a6f541dd1ad.bin",
+          "size": 1887436800,
+          "sha256": "56369a6f541dd1ada9134db6560d142c3fcadb7f8cbffedb62f55eed150d5130"
+        },
+        {
+          "asset": "f0036-p0001-ea8a4d63443574f7.bin",
+          "size": 1887436800,
+          "sha256": "ea8a4d63443574f732b6c8e89998725fc8164775adc4f1fc4ca898a6bf969da8"
+        },
+        {
+          "asset": "f0036-p0002-d1d85e0a597ca7b1.bin",
+          "size": 1887436800,
+          "sha256": "d1d85e0a597ca7b1b349f09ff38e219269b0cc4510e6ed76b02406869e3dabee"
+        },
+        {
+          "asset": "f0036-p0003-fbd4e3c873674ba9.bin",
+          "size": 177549130,
+          "sha256": "fbd4e3c873674ba9d4a7a1c45be9def7b2af19f3e22d39fdc22c0214c10aad0c"
+        }
+      ],
+      "sha256": "87e54cd2b10cd06f686ce6d737f390d2a46b0aef2e5f207afb038195319807c2"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/config.full.yaml",
+      "size": 3061,
+      "parts": [
+        {
+          "asset": "f0037-p0000-8a878fcf6e599e34.bin",
+          "size": 3061,
+          "sha256": "8a878fcf6e599e34d25ec47d5f3c54372bbc7dee11c20944a721e3f7fa3dc9ae"
+        }
+      ],
+      "sha256": "8a878fcf6e599e34d25ec47d5f3c54372bbc7dee11c20944a721e3f7fa3dc9ae"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/config.yaml",
+      "size": 2358,
+      "parts": [
+        {
+          "asset": "f0038-p0000-2f01533483f63f1e.bin",
+          "size": 2358,
+          "sha256": "2f01533483f63f1e4b6938d10df45d6736915ef6d0fe5ab5b88fa79e88468ef7"
+        }
+      ],
+      "sha256": "2f01533483f63f1e4b6938d10df45d6736915ef6d0fe5ab5b88fa79e88468ef7"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/dataset_statistics.json",
+      "size": 1808,
+      "parts": [
+        {
+          "asset": "f0039-p0000-041dbbaaf91d7cfc.bin",
+          "size": 1808,
+          "sha256": "041dbbaaf91d7cfc7432d28d3be2d01ff206608d8229d94fe8dbf67a51dbe617"
+        }
+      ],
+      "sha256": "041dbbaaf91d7cfc7432d28d3be2d01ff206608d8229d94fe8dbf67a51dbe617"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/metrics.jsonl",
+      "size": 2160638,
+      "parts": [
+        {
+          "asset": "f0040-p0000-6380a89916349877.bin",
+          "size": 2160638,
+          "sha256": "6380a89916349877257b6e40ded609384646ea949659c35ba2c4039cf16b7e29"
+        }
+      ],
+      "sha256": "6380a89916349877257b6e40ded609384646ea949659c35ba2c4039cf16b7e29"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/source_config.yaml",
+      "size": 2365,
+      "parts": [
+        {
+          "asset": "f0041-p0000-749002e3f498516d.bin",
+          "size": 2365,
+          "sha256": "749002e3f498516da3a55546e957653c4032ac90b3d536097f9865c6dbef91b4"
+        }
+      ],
+      "sha256": "749002e3f498516da3a55546e957653c4032ac90b3d536097f9865c6dbef91b4"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/summary.jsonl",
+      "size": 80,
+      "parts": [
+        {
+          "asset": "f0042-p0000-b2a6eec75ded56a2.bin",
+          "size": 80,
+          "sha256": "b2a6eec75ded56a2007ece6285a21eba1eacbc827a58826015f1d9c747aaddae"
+        }
+      ],
+      "sha256": "b2a6eec75ded56a2007ece6285a21eba1eacbc827a58826015f1d9c747aaddae"
+    }
+  ]
+}
