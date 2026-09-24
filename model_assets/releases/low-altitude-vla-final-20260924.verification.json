@@ -1,0 +1,13 @@
+{
+  "completed_utc": "2026-09-24T10:05:24.349520+00:00",
+  "url": "https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/low-altitude-vla-final-20260924",
+  "release_id": 395544927,
+  "files": 7,
+  "bytes": 10157034192,
+  "parts": 12,
+  "videos": 993,
+  "checkpoint_sha256": "aa7a180744dddbe47b599347ab8bbfa38f606cd0734af6cf950333c0364e7e99",
+  "existing_pi05_final_files_verified": 68,
+  "existing_starvla_final_files_verified": 5,
+  "verification": "GitHub uploaded state, size and SHA256 of all referenced parts"
+}

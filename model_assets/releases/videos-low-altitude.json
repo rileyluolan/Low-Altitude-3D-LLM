@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "repository": "rileyluolan/Low-Altitude-3D-LLM",
+  "tag": "low-altitude-vla-final-20260924",
+  "created_utc": "2026-09-24T09:58:15.192358+00:00",
+  "files": [
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/archives/final-videos-20260924.tar",
+      "size": 4316528640,
+      "parts": [
+        {
+          "asset": "f0005-p0000-1cbcf877804ede20.bin",
+          "size": 1887436800,
+          "sha256": "1cbcf877804ede204e6da5e9c8c93f54709be8be881a177e3608a14aa81b188d"
+        },
+        {
+          "asset": "f0005-p0001-d151d43655ebe3f3.bin",
+          "size": 1887436800,
+          "sha256": "d151d43655ebe3f3ffb40525c85b5f02c70f8ce488bf6be85ed65f6782ff0c55"
+        },
+        {
+          "asset": "f0005-p0002-8eaf6a5396999af2.bin",
+          "size": 541655040,
+          "sha256": "8eaf6a5396999af282e0c807e8bd5298e0643ae06e917d3d045ca8ea1813e4b9"
+        }
+      ],
+      "sha256": "80e4f9e207a6c444c852775ca5232404c3ce2b5b421cd50ccb02b52b8ca02050"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/archives/final-videos-20260924.manifest.json",
+      "size": 649232,
+      "parts": [
+        {
+          "asset": "f0006-p0000-2a2dbd916649ab84.bin",
+          "size": 649232,
+          "sha256": "2a2dbd916649ab84119aee8581410376bab5c5cc8e707179aba34457e845887e"
+        }
+      ],
+      "sha256": "2a2dbd916649ab84119aee8581410376bab5c5cc8e707179aba34457e845887e"
+    }
+  ]
+}

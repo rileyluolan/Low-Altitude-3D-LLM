@@ -15,9 +15,13 @@
 [实验复现说明](experiments/low_altitude_3d_llm/README.md)：下载微调过的 VLM，将其接入 HUGEBENCH 训练前的 mature base，保留原 projector/action 权重，在独立目录中进行四卡 5 epoch 训练、官方评测与视频生成。
 
 两个实验的代码和已完成结果位于 `feat/starvla-qwen3vl2b-hugebench` 分支。
-权重、原始数据、运行环境、原始轨迹及视频留在实验存储中；已完成实验的轻量结果归档在 `records/`。
+权重和自有 VLA 的完整评测视频通过 GitHub Releases 发布；已完成实验的轻量结果归档在 `records/`。
+原始数据和运行环境按各实验的准备说明恢复。
 
 ## 权重文件
+
+[三版最终 checkpoint 与自有 VLA 的 993 个视频](model_assets/FINAL_CHECKPOINTS.md)：
+分别提供 pi05、StarVLA 2B、自有 VLM 版本的最终权重下载清单，以及自有模型全部视频的下载入口。
 
 两个实验的实际权重分片保存在 [GitHub Release](https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/starvla-artifacts-20260921)。
 下载和还原说明见 [model_assets](model_assets/README.md)；源码树里的 `artifacts/README.md` 提供对应入口。

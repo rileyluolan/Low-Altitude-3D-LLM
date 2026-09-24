@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "repository": "rileyluolan/Low-Altitude-3D-LLM",
+  "tag": "starvla-artifacts-20260921",
+  "created_utc": "2026-09-21T02:59:02.634665+00:00",
+  "files": [
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/config.full.yaml",
+      "size": 2948,
+      "parts": [
+        {
+          "asset": "f0021-p0000-860c6d43e7ae15ff.bin",
+          "size": 2948,
+          "sha256": "860c6d43e7ae15ffc9450b4f01890ea03d3174575a1a74e372a9b6d028b61114"
+        }
+      ],
+      "sha256": "860c6d43e7ae15ffc9450b4f01890ea03d3174575a1a74e372a9b6d028b61114"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/config.yaml",
+      "size": 2286,
+      "parts": [
+        {
+          "asset": "f0022-p0000-d1b1e9ad5f8ae882.bin",
+          "size": 2286,
+          "sha256": "d1b1e9ad5f8ae882f5ef3242c111ee62135813fbd68643d1100f273d180ad08f"
+        }
+      ],
+      "sha256": "d1b1e9ad5f8ae882f5ef3242c111ee62135813fbd68643d1100f273d180ad08f"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/dataset_statistics.json",
+      "size": 1808,
+      "parts": [
+        {
+          "asset": "f0023-p0000-041dbbaaf91d7cfc.bin",
+          "size": 1808,
+          "sha256": "041dbbaaf91d7cfc7432d28d3be2d01ff206608d8229d94fe8dbf67a51dbe617"
+        }
+      ],
+      "sha256": "041dbbaaf91d7cfc7432d28d3be2d01ff206608d8229d94fe8dbf67a51dbe617"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/final_model/pytorch_model.pt",
+      "size": 5839846728,
+      "parts": [
+        {
+          "asset": "f0024-p0000-cc3a192ab51d366c.bin",
+          "size": 1887436800,
+          "sha256": "cc3a192ab51d366cc7b567f5903695e509848fb869fad6590abc5f14b4b5486d"
+        },
+        {
+          "asset": "f0024-p0001-421b8520e1ee0e3f.bin",
+          "size": 1887436800,
+          "sha256": "421b8520e1ee0e3f4f0464f21ce0f4710fb39d5fd0260d6d8b6280d74ad4a194"
+        },
+        {
+          "asset": "f0024-p0002-7ce81220acfe9655.bin",
+          "size": 1887436800,
+          "sha256": "7ce81220acfe9655346d5fb69ab776ee522d857b795a02ee0ba60b6a22ac8e6a"
+        },
+        {
+          "asset": "f0024-p0003-286b4eb612f03d62.bin",
+          "size": 177536328,
+          "sha256": "286b4eb612f03d621e0ea3ed5a8e69c23f785d28468bb84b4854358cf20106c2"
+        }
+      ],
+      "sha256": "8ad5b7ef8a0f4a0cce299b0a9a69741a7c94786ee7b5a750e18d6fec7ea4825d"
+    },
+    {
+      "path": "experiments/starvla_pi_qwen3vl_2b/artifacts/checkpoints/hugebench_qwen3vl2b_5ep_b512_20260916/source_config.yaml",
+      "size": 2431,
+      "parts": [
+        {
+          "asset": "f0026-p0000-94c5ed4d8f84dac1.bin",
+          "size": 2431,
+          "sha256": "94c5ed4d8f84dac1a00b82eb79d646b839fe21a813f18d76f7bbf2f051973424"
+        }
+      ],
+      "sha256": "94c5ed4d8f84dac1a00b82eb79d646b839fe21a813f18d76f7bbf2f051973424"
+    }
+  ]
+}

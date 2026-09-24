@@ -3,6 +3,14 @@
 将含 RefDrone 微调的 Qwen3-VL-2B 接入既有 mature VLA base，再进行 HUGE-Bench 5 epoch 联合训练。
 本目录对应本机实验 `low_altitude_3d_llm`；Git 中的启动器已改为可配置路径。
 
+## 已完成的最终权重与视频
+
+实际发布 run 为 `hugebench_qwen3vl2b_refdrone_5ep_b512_20260920`，已完成 5 epoch / 16,798 次更新，
+最终模型为 `artifacts/checkpoints/<run>/final_model/pytorch_model.pt`。
+完整 Seen 576、Unseen 417 评测及全部 993 个视频已完成。
+最终 checkpoint、必要配置和全部视频见 [GitHub Release](https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/low-altitude-vla-final-20260924)；
+独立下载和还原命令见 [三版最终 checkpoint 与视频](../../model_assets/FINAL_CHECKPOINTS.md)。
+
 ## 模型替换
 
 - 起点是 **HUGE 训练前**的 `qwen3vl_2b_pi_v3_hugebench_mature_base`，不是原实验的 HUGE final checkpoint。
@@ -25,7 +33,7 @@
 [原实验](../starvla_pi_qwen3vl_2b/README.md)。本实验锁定已审计 base 的哈希；重新训练得到的权重
 通常不会逐位一致，应另建实验记录，不能声称是同一初始化。
 
-Blob VLM 需要有权访问该容器的凭据；仓库不包含权重或凭据。默认读取 `~/.blob_config.json`
+从 Blob 下载原始 VLM 时需要有权访问该容器的凭据；SAS 凭据不提交 Git。默认读取 `~/.blob_config.json`
 中的 `sas_url`、`sas_token`，也可通过 `BLOB_CONFIG` 或环境变量设置。约下载 4.9 GB。
 
 在本目录执行：
@@ -95,5 +103,5 @@ bash scripts/render_eval_videos.sh \
 - [发布验证说明](VALIDATION.md)：移植脚本的检查范围。
 
 归档记录保留历史绝对路径以便核对来源；执行脚本使用 `env.local` 和相对实验目录。
-此处没有 RefDrone 的最终成绩。原模型已完成的训练及 993 条评测结果见
+自有 VLM 最终评测的 `metrics.json`、`metrics_table.md` 随上述视频归档发布。原模型已完成的训练及 993 条评测结果见
 [原实验结果](../starvla_pi_qwen3vl_2b/records/hugebench_5ep_b512/README.md)。

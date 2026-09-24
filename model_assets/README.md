@@ -1,11 +1,17 @@
 # 模型权重下载
 
+## 三版最终 checkpoint 与自有 VLA 视频
+
+[最终 checkpoint 下载入口](FINAL_CHECKPOINTS.md) 提供 pi05、原 StarVLA 2B、自有 VLM 版本三套独立清单。
+自有 VLA 的最终 checkpoint 及全部 993 个评测视频已补充发布到
+[2026-09-24 Release](https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/low-altitude-vla-final-20260924)。
+
 ## 两个实验的实际 artifacts
 
 2026-09-21 的两个 `artifacts/` 快照（约 138.92 GB）以实际二进制分片保存在
 [本 fork 的 GitHub Release](https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/starvla-artifacts-20260921)，无需 Blob SAS。
 包含原 base、原 HUGE 完整训练权重、全部已保存中间 checkpoint，以及新的 VLM 替换 base 和新训练的 1000–5000 步 checkpoint。
-新训练仍在进行，后续产物需要另行同步。
+这是历史训练中途快照。自有 VLM 实验后来完成的最终 checkpoint 和视频见上方最终下载入口。
 
 在目标工作目录中执行：
 

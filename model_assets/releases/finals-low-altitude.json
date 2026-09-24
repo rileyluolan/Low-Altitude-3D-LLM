@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "repository": "rileyluolan/Low-Altitude-3D-LLM",
+  "tag": "low-altitude-vla-final-20260924",
+  "created_utc": "2026-09-24T09:58:15.192358+00:00",
+  "files": [
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/final_model/pytorch_model.pt",
+      "size": 5839846728,
+      "parts": [
+        {
+          "asset": "f0000-p0000-5d9450b211d27201.bin",
+          "size": 1887436800,
+          "sha256": "5d9450b211d272011e718071077f1f1b7ef7baf152474dec460b108ccc2c0299"
+        },
+        {
+          "asset": "f0000-p0001-c3bf639dbb9282a6.bin",
+          "size": 1887436800,
+          "sha256": "c3bf639dbb9282a67217683a0ed1cee010babbba5221a9f5d0d3a95330dd6e76"
+        },
+        {
+          "asset": "f0000-p0002-fec6841501e79f2a.bin",
+          "size": 1887436800,
+          "sha256": "fec6841501e79f2a292d74302642305fd4546ae99f41264360cfb1f80e79c84b"
+        },
+        {
+          "asset": "f0000-p0003-0a84827206cfb565.bin",
+          "size": 177536328,
+          "sha256": "0a84827206cfb56534dd177b165962a94bdb9e429e819f7e572ea1923776ed21"
+        }
+      ],
+      "sha256": "aa7a180744dddbe47b599347ab8bbfa38f606cd0734af6cf950333c0364e7e99"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/config.full.yaml",
+      "size": 3061,
+      "parts": [
+        {
+          "asset": "f0001-p0000-8a878fcf6e599e34.bin",
+          "size": 3061,
+          "sha256": "8a878fcf6e599e34d25ec47d5f3c54372bbc7dee11c20944a721e3f7fa3dc9ae"
+        }
+      ],
+      "sha256": "8a878fcf6e599e34d25ec47d5f3c54372bbc7dee11c20944a721e3f7fa3dc9ae"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/config.yaml",
+      "size": 2358,
+      "parts": [
+        {
+          "asset": "f0002-p0000-2f01533483f63f1e.bin",
+          "size": 2358,
+          "sha256": "2f01533483f63f1e4b6938d10df45d6736915ef6d0fe5ab5b88fa79e88468ef7"
+        }
+      ],
+      "sha256": "2f01533483f63f1e4b6938d10df45d6736915ef6d0fe5ab5b88fa79e88468ef7"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/dataset_statistics.json",
+      "size": 1808,
+      "parts": [
+        {
+          "asset": "f0003-p0000-041dbbaaf91d7cfc.bin",
+          "size": 1808,
+          "sha256": "041dbbaaf91d7cfc7432d28d3be2d01ff206608d8229d94fe8dbf67a51dbe617"
+        }
+      ],
+      "sha256": "041dbbaaf91d7cfc7432d28d3be2d01ff206608d8229d94fe8dbf67a51dbe617"
+    },
+    {
+      "path": "experiments/low_altitude_3d_llm/artifacts/checkpoints/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/source_config.yaml",
+      "size": 2365,
+      "parts": [
+        {
+          "asset": "f0004-p0000-749002e3f498516d.bin",
+          "size": 2365,
+          "sha256": "749002e3f498516da3a55546e957653c4032ac90b3d536097f9865c6dbef91b4"
+        }
+      ],
+      "sha256": "749002e3f498516da3a55546e957653c4032ac90b3d536097f9865c6dbef91b4"
+    }
+  ]
+}
