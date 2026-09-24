@@ -1,0 +1,42 @@
+{
+  "stage": "complete",
+  "repository": "lld-koi/Low-Altitude-3D-LLM",
+  "updated_utc": "2026-09-24T10:23:00Z",
+  "revision": "39d7ac07e9d172c52e3589403fa12ef6d6868e81",
+  "files": 2070,
+  "videos": 993,
+  "source_bytes": 60740178508,
+  "public_video_download_verified": true,
+  "url": "https://huggingface.co/lld-koi/Low-Altitude-3D-LLM/tree/main",
+  "groups": {
+    "pi05-final": {
+      "files": 68,
+      "bytes": 44747293519
+    },
+    "starvla-2b-final": {
+      "files": 5,
+      "bytes": 5839856201
+    },
+    "low-altitude-final": {
+      "files": 5,
+      "bytes": 5839856320
+    },
+    "low-altitude-videos": {
+      "files": 1989,
+      "bytes": 4313172468
+    }
+  },
+  "video_counts": {
+    "seen": 576,
+    "unseen": 417,
+    "total": 993
+  },
+  "remote_hash_verification": {
+    "files": 2070,
+    "failures": 0,
+    "methods": [
+      "LFS SHA256 for binary files",
+      "Git blob SHA1 plus locally verified SHA256 for Git files"
+    ]
+  }
+}

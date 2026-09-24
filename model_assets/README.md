@@ -2,11 +2,12 @@
 
 ## 三版最终 checkpoint 与自有 VLA 视频
 
-[最终 checkpoint 下载入口](FINAL_CHECKPOINTS.md) 提供 pi05、原 StarVLA 2B、自有 VLM 版本三套独立清单。
-自有 VLA 的最终 checkpoint 及全部 993 个评测视频已补充发布到
-[2026-09-24 Release](https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/low-altitude-vla-final-20260924)。
+[最终 checkpoint 下载入口](FINAL_CHECKPOINTS.md) 提供 pi05、原 StarVLA 2B、自有 VLM 版本的最终权重，
+以及自有 VLA 全部 993 个评测视频。完整文件保存在
+[Hugging Face 仓库](https://huggingface.co/lld-koi/Low-Altitude-3D-LLM/tree/main)，保留 `experiments/` 目录结构，约 60.74 GB。
+可直接浏览和下载，无需 Release 分片还原。逐文件 SHA256 见 [清单](huggingface/manifest.json)。
 
-## 两个实验的实际 artifacts
+## 两个实验的历史 artifacts 备份
 
 2026-09-21 的两个 `artifacts/` 快照（约 138.92 GB）以实际二进制分片保存在
 [本 fork 的 GitHub Release](https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/starvla-artifacts-20260921)，无需 Blob SAS。

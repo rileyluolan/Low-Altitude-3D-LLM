@@ -2,6 +2,10 @@
 
 来源：`output/liyan/ll_0909/pi05_hugebench/`。导入位置为本仓库的 `experiments/pi05_hugebench/`。
 
+2026-09-24 更新：5 epoch 最终 checkpoint `67189/` 的完整文件已同步到
+[Hugging Face 仓库](https://huggingface.co/lld-koi/Low-Altitude-3D-LLM/tree/main/experiments/pi05_hugebench/artifacts/checkpoints/pi05_overall_5ep/pi05_overall_5ep_run1/67189)。
+当前下载入口见 [三版最终 checkpoint 与视频](../../model_assets/FINAL_CHECKPOINTS.md)；下文保留此前导入及历史备份记录。
+
 ## 本次选定的权重
 
 按用户指定，仅同步以下三组，合计 **69,629,284,055 字节**：

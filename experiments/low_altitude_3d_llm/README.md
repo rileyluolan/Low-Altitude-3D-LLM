@@ -8,8 +8,8 @@
 实际发布 run 为 `hugebench_qwen3vl2b_refdrone_5ep_b512_20260920`，已完成 5 epoch / 16,798 次更新，
 最终模型为 `artifacts/checkpoints/<run>/final_model/pytorch_model.pt`。
 完整 Seen 576、Unseen 417 评测及全部 993 个视频已完成。
-最终 checkpoint、必要配置和全部视频见 [GitHub Release](https://github.com/rileyluolan/Low-Altitude-3D-LLM/releases/tag/low-altitude-vla-final-20260924)；
-独立下载和还原命令见 [三版最终 checkpoint 与视频](../../model_assets/FINAL_CHECKPOINTS.md)。
+最终 checkpoint、必要配置和全部逐条视频见 [Hugging Face 仓库](https://huggingface.co/lld-koi/Low-Altitude-3D-LLM/tree/main/experiments/low_altitude_3d_llm)；
+独立下载命令见 [三版最终 checkpoint 与视频](../../model_assets/FINAL_CHECKPOINTS.md)。
 
 ## 模型替换
 
