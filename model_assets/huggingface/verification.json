@@ -1,14 +1,19 @@
 {
   "stage": "complete",
   "repository": "lld-koi/Low-Altitude-3D-LLM",
-  "updated_utc": "2026-09-24T10:23:00Z",
-  "revision": "39d7ac07e9d172c52e3589403fa12ef6d6868e81",
-  "files": 2070,
-  "videos": 993,
-  "source_bytes": 60740178508,
-  "public_video_download_verified": true,
-  "url": "https://huggingface.co/lld-koi/Low-Altitude-3D-LLM/tree/main",
+  "updated_utc": "2026-09-28T03:09:02Z",
+  "revision": "02f71ed5dc4bc7b738301b48604c4badaa0ed0df",
+  "source_files": 7063,
+  "source_bytes": 61211905636,
   "groups": {
+    "low-altitude-final": {
+      "files": 5,
+      "bytes": 5839856320
+    },
+    "low-altitude-results": {
+      "files": 6985,
+      "bytes": 4784899596
+    },
     "pi05-final": {
       "files": 68,
       "bytes": 44747293519
@@ -16,14 +21,6 @@
     "starvla-2b-final": {
       "files": 5,
       "bytes": 5839856201
-    },
-    "low-altitude-final": {
-      "files": 5,
-      "bytes": 5839856320
-    },
-    "low-altitude-videos": {
-      "files": 1989,
-      "bytes": 4313172468
     }
   },
   "video_counts": {
@@ -31,12 +28,21 @@
     "unseen": 417,
     "total": 993
   },
-  "remote_hash_verification": {
-    "files": 2070,
+  "full_results_verification": {
+    "files": 6985,
     "failures": 0,
-    "methods": [
-      "LFS SHA256 for binary files",
-      "Git blob SHA1 plus locally verified SHA256 for Git files"
+    "public_download_checks": [
+      "experiments/low_altitude_3d_llm/results/hugebench_low_altitude_3d_llm_5ep_b512_20260920/final_model/ll0923_full_seed_42/rollouts/task_0/test_seen/1_office/episode_0000/traj_gt_pred_xyzk.npz",
+      "experiments/low_altitude_3d_llm/results/hugebench_low_altitude_3d_llm_5ep_b512_20260920/final_model/ll0923_full_seed_42/logs/video_export_gt_0.png",
+      "experiments/low_altitude_3d_llm/results/hugebench_low_altitude_3d_llm_5ep_b512_20260920/final_model/ll0923_full_seed_42/logs/metrics.log"
     ]
-  }
+  },
+  "previous_checkpoint_files_unchanged": 78,
+  "previous_checkpoint_verification_revision": "39d7ac07e9d172c52e3589403fa12ef6d6868e81",
+  "all_artifact_files_verified": 7063,
+  "renamed_files": 6990,
+  "path_mapping": {
+    "hugebench_qwen3vl2b_refdrone_5ep_b512_20260920": "hugebench_low_altitude_3d_llm_5ep_b512_20260920"
+  },
+  "old_directory_names_in_hf_tree": 0
 }

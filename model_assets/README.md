@@ -3,8 +3,8 @@
 ## 三版最终 checkpoint 与自有 VLA 视频
 
 [最终 checkpoint 下载入口](FINAL_CHECKPOINTS.md) 提供 pi05、原 StarVLA 2B、自有 VLM 版本的最终权重，
-以及自有 VLA 全部 993 个评测视频。完整文件保存在
-[Hugging Face 仓库](https://huggingface.co/lld-koi/Low-Altitude-3D-LLM/tree/main)，保留 `experiments/` 目录结构，约 60.74 GB。
+以及自有 VLA 完整 `results/` 目录的 6,985 个文件，含全部 993 个视频、轨迹、图片、指标与日志。完整文件保存在
+[Hugging Face 仓库](https://huggingface.co/lld-koi/Low-Altitude-3D-LLM/tree/main)，保留 `experiments/` 目录结构，约 61.21 GB。
 可直接浏览和下载，无需 Release 分片还原。逐文件 SHA256 见 [清单](huggingface/manifest.json)。
 
 ## 两个实验的历史 artifacts 备份

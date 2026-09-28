@@ -15,13 +15,13 @@
 [实验复现说明](experiments/low_altitude_3d_llm/README.md)：下载微调过的 VLM，将其接入 HUGEBENCH 训练前的 mature base，保留原 projector/action 权重，在独立目录中进行四卡 5 epoch 训练、官方评测与视频生成。
 
 两个实验的代码和已完成结果位于 `feat/starvla-qwen3vl2b-hugebench` 分支。
-三版最终权重和自有 VLA 的全部 993 个评测视频保存在 [Hugging Face 仓库](https://huggingface.co/lld-koi/Low-Altitude-3D-LLM/tree/main)，可直接浏览和下载；已完成实验的轻量结果归档在 `records/`。
+三版最终权重和自有 VLA 的完整评测结果（含 993 个视频、轨迹、图片及日志）保存在 [Hugging Face 仓库](https://huggingface.co/lld-koi/Low-Altitude-3D-LLM/tree/main)，可直接浏览和下载；已完成实验的轻量结果归档在 `records/`。
 原始数据和运行环境按各实验的准备说明恢复。
 
 ## 权重文件
 
-[三版最终 checkpoint 与自有 VLA 的 993 个视频](model_assets/FINAL_CHECKPOINTS.md)：
-分别提供 pi05、StarVLA 2B、自有 VLM 版本的最终权重，以及自有模型全部视频；实际文件共约 60.74 GB，保留 `experiments/` 目录结构。
+[三版最终 checkpoint 与自有 VLA 的完整评测结果](model_assets/FINAL_CHECKPOINTS.md)：
+分别提供 pi05、StarVLA 2B、自有 VLM 版本的最终权重，以及自有模型完整 `results/` 的 6,985 个文件；实际文件共约 61.21 GB，保留 `experiments/` 目录结构。
 
 当前最终权重与视频均使用 Hugging Face 仓库下载，无需 Release 分片还原。
 下载说明见 [最终 checkpoint 与视频](model_assets/FINAL_CHECKPOINTS.md)；源码树里的 `artifacts/README.md` 提供对应入口。

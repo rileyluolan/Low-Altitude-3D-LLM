@@ -1,6 +1,6 @@
 # Low-Altitude-3D-LLM：VLA 联合训练
 
-将含 RefDrone 微调的 Qwen3-VL-2B 接入既有 mature VLA base，再进行 HUGE-Bench 5 epoch 联合训练。
+将自有微调的 Qwen3-VL-2B 接入既有 mature VLA base，再进行 HUGE-Bench 5 epoch 联合训练。
 本目录对应本机实验 `low_altitude_3d_llm`；Git 中的启动器已改为可配置路径。
 
 ## 已完成的最终权重与视频
@@ -8,6 +8,10 @@
 实际发布 run 为 `hugebench_qwen3vl2b_refdrone_5ep_b512_20260920`，已完成 5 epoch / 16,798 次更新，
 最终模型为 `artifacts/checkpoints/<run>/final_model/pytorch_model.pt`。
 完整 Seen 576、Unseen 417 评测及全部 993 个视频已完成。
+2026-09-28 已将本机完整 `results/` 目录的 6,985 个文件（约 4.78 GB）同步到 Hugging Face，
+包括原始轨迹 NPZ、图片、指标、逐条记录、日志、完成标记和全部视频。
+HF 上层目录统一为 `experiments/low_altitude_3d_llm/`，其下训练目录使用
+`hugebench_low_altitude_3d_llm_5ep_b512_20260920`；本机历史 run ID 保留在清单的 `source_path` 和原始配置中。
 最终 checkpoint、必要配置和全部逐条视频见 [Hugging Face 仓库](https://huggingface.co/lld-koi/Low-Altitude-3D-LLM/tree/main/experiments/low_altitude_3d_llm)；
 独立下载命令见 [三版最终 checkpoint 与视频](../../model_assets/FINAL_CHECKPOINTS.md)。
 
@@ -103,5 +107,5 @@ bash scripts/render_eval_videos.sh \
 - [发布验证说明](VALIDATION.md)：移植脚本的检查范围。
 
 归档记录保留历史绝对路径以便核对来源；执行脚本使用 `env.local` 和相对实验目录。
-自有 VLM 最终评测的 `metrics.json`、`metrics_table.md` 随上述视频归档发布。原模型已完成的训练及 993 条评测结果见
+自有 VLM 最终评测的 `metrics.json`、`metrics_table.md` 随完整 `results/` 目录发布到上述 Hugging Face 仓库。原模型已完成的训练及 993 条评测结果见
 [原实验结果](../starvla_pi_qwen3vl_2b/records/hugebench_5ep_b512/README.md)。

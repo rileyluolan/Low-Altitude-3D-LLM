@@ -1,0 +1,34 @@
+{
+  "stage": "complete",
+  "repository": "lld-koi/Low-Altitude-3D-LLM",
+  "updated_utc": "2026-09-28T03:09:02Z",
+  "revision": "a284977c0a6e01169194fade35b77bbf41d2431e",
+  "local_files": 6985,
+  "local_bytes": 4784899596,
+  "missing_files": 4996,
+  "changed_files": 0,
+  "upload_bytes": 471727128,
+  "extensions": {
+    "": 2,
+    ".log": 15,
+    ".png": 1994,
+    ".json": 1994,
+    ".md": 1,
+    ".mp4": 993,
+    ".txt": 993,
+    ".npz": 993
+  },
+  "start_revision": "39d7ac07e9d172c52e3589403fa12ef6d6868e81",
+  "uploaded_files": 4996,
+  "verified_results_files": 6985,
+  "public_download_checks": [
+    "experiments/low_altitude_3d_llm/results/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/final_model/ll0923_full_seed_42/rollouts/task_0/test_seen/1_office/episode_0000/traj_gt_pred_xyzk.npz",
+    "experiments/low_altitude_3d_llm/results/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/final_model/ll0923_full_seed_42/logs/video_export_gt_0.png",
+    "experiments/low_altitude_3d_llm/results/hugebench_qwen3vl2b_refdrone_5ep_b512_20260920/final_model/ll0923_full_seed_42/logs/metrics.log"
+  ],
+  "other_files_unchanged": 78,
+  "verified_added_lfs_rules": 1871,
+  "repository_source_files": 7063,
+  "repository_source_bytes": 61211905636,
+  "url": "https://huggingface.co/lld-koi/Low-Altitude-3D-LLM/tree/main/experiments/low_altitude_3d_llm/results"
+}
